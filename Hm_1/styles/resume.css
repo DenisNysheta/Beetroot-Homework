@@ -1,0 +1,83 @@
+html{
+    background-color:rgb(211, 233, 155);
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: auto;
+}
+
+img {
+    width: 175px;
+    border-radius: 200px;
+    margin: 20px;
+}
+
+p {
+  font-size: 50px;
+  background-color: rgb(192, 219, 219);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+header{
+    position: relative;
+}
+
+main {
+    display: flex;
+}
+
+.container-nav {
+    position: absolute;
+    top: 30px;
+    left: 300px;
+}
+
+.list {
+    margin: 40px;
+}
+
+.ul-1{
+    border: 2px solid olive;
+    margin: 5px;
+}
+
+li {
+    margin: 40px;
+}
+
+footer {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.container-foot {
+    position: absolute;
+    top: 852px;
+    height: 110px;    
+}
+
+.instagram {
+    width: 40px;
+    position: absolute;
+    left: 975px;    
+}
+
+
+
+.gmail {
+    position: absolute;
+    left: 940px;
+    top: 70px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 500ms all ease;
+}
+
+.gmail:hover{
+    color: rgb(255, 4, 4);
+}
