@@ -1,0 +1,8 @@
+header {
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: -150px;
+}
