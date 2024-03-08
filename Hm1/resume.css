@@ -64,7 +64,12 @@ footer {
 .instagram {
     width: 40px;
     position: absolute;
-    left: 975px;    
+    left: 975px;
+    transition: 500ms all ease;    
+}
+
+.instagram:hover{
+    background-color: rgb(179, 195, 116);
 }
 
 
