@@ -10,6 +10,15 @@ body{
     justify-content: center;
 }
 
+.nav-item{
+    color: #070707;
+    transition: .5s ease-out;
+}
+
+.nav-item:hover {
+    font-weight:600 ;
+}
+
 .list{
     display: flex;
 }
@@ -119,15 +128,23 @@ h2{
 }
 
 .send {
-    border-radius: 22px;
-    background-color:#070707 ;
-    color: aliceblue;
+    border-radius: 15px;
+    background-color:#fffdfd ;
+    color: rgb(0, 0, 0);
     width: 180px;
     height: 44px;
     font-size: large;
     font-weight:lighter;
     padding: 0px, 16px, 0px, 16px;
     cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.send:hover{
+    background-color: #070707;
+    color: #F6F6F6;
+    border-radius: 22px;
+    font-weight: 500;
 }
 
 .social-media {
