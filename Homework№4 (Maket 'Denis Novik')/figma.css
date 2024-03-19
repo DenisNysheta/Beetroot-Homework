@@ -47,7 +47,7 @@ h2 {
 
 /* Header */
 
-.nav-bar__items {
+.nav-bar__list {
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -97,12 +97,12 @@ h2 {
     margin: 80px 0 100px 0;
 }
 
-.skills__products img {
+.skills__list-products img {
     width: 80px;
     height: 80px;
 }
 
-.skills__products {
+.skills__list-products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);

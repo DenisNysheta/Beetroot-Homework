@@ -3,84 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Shoping List</title>
     <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
-    <link rel="stylesheet" href="assets/style/index.css">
+    <link rel="stylesheet" href="./assets/style/index.css">
+    <link rel="icon" href="./assets/icons/favicon.png">
 </head>
 <body>
-    <header>
-        <div class="title">
-            <h1 class="title__main-title">CSS Dinner Shopping List</h1>
-            <p class="title__subtitle">Let’s go to the mall!</p>
+    <header class="header container">
+        <div class="header__container ">
+            <h1 class="header__title">CSS Dinner Shopping List</h1>
+            <p class="header__subtitle">Let’s go to the mall!</p>
         </div>
     </header>
-    <main>
-        <form class="products">
-            <ul class="products__list">
-                <li class="products__list__item">
-                        <label for="one">
-                            <input id="one" type="checkbox">
+    <main class="main container">
+        <div class="products-list__container ">
+                <ul class="products-list__list-items">
+                    <li class="products-list__list-items__item">
+                        <input name="pickles" id="first" type="checkbox">
+                        <label for="first">
                             A lot of pickles
-                            <small>
-                                (for the next lessons about CSS)
-                            </small>
+                            <small  class="list-item__description"> for the next lessons about CSS</small>
                         </label>
-                </li>
+                    </li>
+                    <li class="products-list__list-items__item">
+                        <input name="apples" id="second" type="checkbox">
+                        <label for="second">
+                            10 apples
+                            <small  class="list-item__description">  for more CSS manipulations</small>
+                        </label>
+                    </li>
+                    <li class="products-list__list-items__item">
+                        <input name="oranges" id="three" type="checkbox">
+                        <label for="three">
+                            20 oranges
+                            <small  class="list-item__description">because they are awesome</small>
+                        </label>
+                    </li>
+                    <li class="products-list__list-items__item">
+                        <input name="plates" id="four" type="checkbox">
+                        <label for="four">
+                            13 plates
+                            <small  class="list-item__description">  hm... they always dissapear</small>
+                        </label>
+                    </li>
+                    <li class="products-list__list-items__item">
+                        <input name="bentos" id="fifth" type="checkbox">
+                        <label for="fifth">
+                            15 bentos
+                        </label>
+                    </li>
+                    <li class="products-list__list-items__item">
+                        <input name="sake" id="six" type="checkbox">
+                        <label for="six">
+                            1 bottle of Sake 
+                            <small class="list-item__description">for my friends</small>
+                        </label>
+                    </li>
+                </ul>
 
-                <li class="products__list__item">
-                    <label for="second">
-                        <input id="second" type="checkbox">
-                        10 apples
-                        <small>
-                            (for more CSS manipulations)
-                        </small>
-                    </label>
-                </li>
-
-                <li class="products__list__item">
-                    <label for="third">
-                        <input id="third" type="checkbox">
-                        20 oranges
-                        <small>
-                            (because they are awesome)
-                        </small>
-                    </label>
-                </li>
-
-                <li class="products__list__item">
-                    <label   for="four">
-                        <input id="four" type="checkbox">
-                        13 plates
-                        <small>
-                            (hm... they always dissapear)
-                        </small>
-                    </label>
-                </li>
-
-                <li class="products__list__item">
-                    <label  for="fifth">
-                        <input id="fifth" type="checkbox">
-                        15 bentos
-                        <small>
-
-                        </small>
-                    </label>
-                </li>
-
-                <li class="products__list__item">
-                    <label  for="six">
-                        <input id="six" type="checkbox">
-                        1 bottle of Sake 
-                        <small>
-                            (for my friends)
-                        </small>
-                    </label>
-                </li>
-                
-            </ul>
-
-            <button class="products__btn" type="submit">Bon appetit :)</button>
-        </form>
+                <button class="products-list__btn">Bon appetit :)</button>
+        </div>
     </main>
 </body>
 </html>
