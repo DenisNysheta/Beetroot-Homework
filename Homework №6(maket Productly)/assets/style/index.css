@@ -1,0 +1,46 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #544837;
+    width: 1440px;
+}
+
+header {
+    padding: 17px 120px;
+}
+
+.container {
+    display: inline-block;
+}
+
+.nav-bar__container {
+    width: 1200px;
+}
+
+.nav-bar__item {
+    margin: 0 20px 0 20px;
+}
+
+.nav-bar__menu {
+   
+}
+
+.nav-bar__logo__name{
+    vertical-align:calc(100% - 27px);
+    font-size: 25px;
+    color: #173A56;
+    font-weight: 900;
+}
+
+.nav-bar__menu  {
+    margin: 2px 178px 2px 178px;
+}
+
+button {
+   padding: 13px 20px;
+}
+
+.nav-bar__btns {
+}
+
