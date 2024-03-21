@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -6,41 +12,112 @@ body {
     width: 1440px;
 }
 
-header {
-    padding: 17px 120px;
+button, a {
+    cursor: pointer;
 }
 
-.container {
-    display: inline-block;
+header, main , footer {
+    text-align: center;
 }
 
-.nav-bar__container {
-    width: 1200px;
+
+li, a{
+    text-decoration: none;
+    list-style-type: none;
 }
 
-.nav-bar__item {
-    margin: 0 20px 0 20px;
+button:hover {
+    background-color: #FF9900;
+    color: #FFFFFF;
+}
+
+.nav-bar__logo {
+    margin: 18px 0 0 31px;
+}
+
+.nav-bar__item a {
+    color: #2F281E;
+    transition: .2s ease-in;
+}
+
+.nav-bar__item a:hover {
+    color: #FF9900;
 }
 
 .nav-bar__menu {
-   
+    display: flex;
+    column-gap: 30px;
+    margin-top: 23px;
+    margin-left: 33px;
 }
 
-.nav-bar__logo__name{
-    vertical-align:calc(100% - 27px);
-    font-size: 25px;
-    color: #173A56;
-    font-weight: 900;
-}
-
-.nav-bar__menu  {
-    margin: 2px 178px 2px 178px;
-}
-
-button {
-   padding: 13px 20px;
+.nav-bar__container {
+    display: flex;
+    justify-content: space-around;
 }
 
 .nav-bar__btns {
+    display: flex;
+    column-gap: 32px;
+    margin-left: 37px;
+    margin-top: 10px;
+    margin-right: 45px;
 }
 
+.nav-bar__btns button {
+    border-radius: 4px;
+    font-weight: 600;
+    border: 1px solid #BCD0E5;
+    height: 46px;
+    width: 110px;
+    transition: all .3s ease-in;
+}
+
+/* 
+//First section
+*/
+
+.first-section {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 70px;
+    height: 495px;
+}
+
+.first-section__container {
+    display: flex;
+    margin-top: 33px;
+}
+
+.first-section__text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.first-section__title {
+    color: #2F281E;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: start;
+    margin: 0;
+}
+
+.first-section__description{
+   max-width: 518px;
+   line-height: 28px;
+   text-align: left;
+   margin: 30px 0 20px 0;
+   font-size: 18px;
+}
+
+.first-section__btn {
+    height: 50px;
+    width: 180px;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    transition: all .3s ease-in;
+}

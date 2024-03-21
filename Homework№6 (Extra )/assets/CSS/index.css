@@ -1,0 +1,138 @@
+@import url("https://fonts.cdnfonts.com/css/lucida-sans?styles=20863");
+
+* {
+    font-family: "Lucida Sans Unicode", sans-serif;
+    transition: all .2s ease-in;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    width: 1400px;
+    height: 900px;
+    color: white;
+    background-color: #3399CC;
+    box-sizing: border-box;
+    padding: 0 110px;
+    border: 25px solid #2B81AC;
+    margin: 30px auto auto auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+.header-title {
+    font-size: 21px;
+    line-height: 24.61px;
+    font-weight: 400;
+   
+}
+
+.header-title i {
+    font-size: 27px;
+}
+
+.cards-section{
+    width: 1170px;
+    font-size: 0;
+    background-color: white;
+}
+
+.cards-container {
+    padding: 0;
+    width: 1170px;
+    height: 592px;
+}
+
+.cards-item p i {
+    display: unset;
+    margin: 5px 0 0 5px;
+}
+
+.cards-item p {
+    margin: 0 auto;
+    font-size: 22px;
+}
+
+.cards-container {
+   font-size: 0;
+}
+
+.cards-item {
+    font-size: 22px;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    height: 147px;
+    box-sizing: border-box;
+    border: 3px solid #FFFFFF;
+    padding: 26px 0 27px 0;
+    cursor: pointer;
+}
+
+[data-order]:hover{
+    opacity: 0.7;
+}
+
+
+[data-order="1"]{
+    width:50%;
+    background-color: #3399CC;
+}
+[data-order="2"]{
+    width:25%;
+    background-color: #33CCCC;
+}
+[data-order="3"]{
+    width:25%;
+    background-color: #996699;
+}
+[data-order="4"]{
+    width:25%;
+    background-color: #C24747;
+}
+[data-order="5"]{
+    width:25%;
+    background-color: #E2674A;
+}
+[data-order="6"]{
+    width:25%;
+    background-color: #FFCC66;
+}
+[data-order="7"]{
+    width:25%;
+    background-color: #99CC99;
+}
+[data-order="8"]{
+    width:25%;
+    background-color: #669999;
+}
+[data-order="9"]{
+    width:50%;
+    background-color: #CC6699;
+}
+[data-order="10"]{
+    width:25%;
+    background-color: #339966;
+}
+[data-order="11"]{
+    width:100%;
+    background-color: #666699;
+}
+
+.cards-item a{
+   color: white;
+   text-decoration: none;
+}
+
+.cards-item p i {
+    font-size: 42px;
+    margin-left: 20px;
+}
+
+.footer__text {
+    margin: 33px 0 16px 0;
+}
