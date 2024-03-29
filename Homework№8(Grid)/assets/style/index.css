@@ -3,7 +3,7 @@
 
 * {
     box-sizing: border-box;
-    transition: all .3s ;
+    transition: all .3s ease-in-out;
 }
 
 body {
@@ -117,10 +117,8 @@ main {
     position: relative;
     overflow: hidden;
     border-radius: 20px;
+    transition: all .3s ease-in-out;
 }
-
-
-
 
 .arhitect__card::before {
     content: '';
@@ -135,6 +133,7 @@ main {
     border-radius: 20px;
     z-index: 1;
     opacity: 1;
+    transition: opacity .4s ease;
 }
 
 .arhitect__card:hover::before {

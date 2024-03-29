@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "PT Sans Regular";
+    src: url('./fonts/PT_Sans-Web-Regular.woff2') format(woff2);
+}
+@font-face {
+    font-family: "Francois One Regular";
+    src: url('./fonts/FrancoisOne-Regular.woff2') format(woff2);
+}
+@font-face {
+    font-family: "PT Sans Bold";
+    src: url('./fonts/PT_Sans-Web-Bold.woff2') format(woff2);
+}
+@font-face {
+    font-family: "Farro Light";
+    src: url('./fonts/Farro-Light.woff2') format(woff2);
+}
+@font-face {
+    font-family: "Staatliches Regular";
+    src: url('./fonts/Staatliches-Regular.woff2') format(woff2);
+}
+@font-face {
+    font-family: "PT Sans Italic";
+    src: url('./fonts/PT_Sans-Web-Italic.woff2') format(woff2);
+}
+@font-face {
+    font-family: "Tourney";
+    src: url('./fonts/tourney-semibold.woff2') format(woff2);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+header {
+    width: 1440px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+em {
+    font-family: "PT Sans Italic";
+}
+
+li {
+    list-style-type: none;
+}
+
+main {
+    width: 1200px;
+    margin: 40px 0 40px 0;
+}
+
+.nav__list-item {
+    list-style-type: none;
+}
+
+span {
+    background-color: rgba(46, 38, 38, 0.2);
+}
+
+b {
+    font-family: "PT Sans Bold";
+}
+
+.nav__container {
+    width: 1200px;
+    height: 54px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.nav__list {
+    display: flex;
+    padding: 0;
+}
+
+.nav__list:first-child {
+    font-family: "Tourney";
+    font-size: 1.375rem;
+}
+
+.nav__list :last-child {
+    margin-left: 40px;
+    font-family: "Staatliches Regular";
+}
+
+/* 
+//Introduction
+*/
+
+ sup {
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Farro Light";
+}
+
+.intrd__title,
+.core__title,
+.react__title,
+.handling__title {
+    display: flex;
+    font-weight: 400;
+    font-size: 36px;
+    font-family: "Francois One Regular";
+}
+
+.intrd__text,
+.core__text,
+.react-text__item,
+.handling__list-text__item {
+    font-size: 28px;
+    font-family: "PT Sans Regular";
+    font-weight: 400;
+    line-height: 48px;
+}
+
+.react-text__list,
+.handling__list-text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0;
+}
