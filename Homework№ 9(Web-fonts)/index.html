@@ -21,18 +21,34 @@
     </div>
    </header>
    <main>
+    <section>
+        <aside  class="aside-bar">
+            <nav class="aside-bar__container">
+                <ul class="aside-bar__list">
+                    <li class="aside-bar__list-item"><a href="">INTRODUCTION</a></li>
+                    <li class="aside-bar__list-item"><a href="">CORE COMPONENTS</a></li>
+                    <li class="aside-bar__list-item"><a href="">REACT FUNDAMENTALS</a></li>
+                    <li class="aside-bar__list-item"><a href="">HANDLING TEXT INPUT</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </section>
     <section class="intrd">
         <article class="intrd__container">
-            <h2 class="intrd__title">IINTRODUCTION<sup>Chapter 1</sup></h2>
+            <div class="horizontal">
+                <hr>
+                <h2 class="intrd__title"> INTRODUCTION<sup>Chapter 1</sup></h2>
+            </div>
             <p class="intrd__text">Welcome to the very start of your React Native 
                 journey! If you're looking for environment setup instructions, they've moved to <u>their own section</u>. 
                 Continue reading for an introduction to the documentation, Native Components, React, and more!
             </p>
         </article>
-    </section>
-    <section class="core">
         <article class="core__container">
-            <h2 class="core__title">CORE COMPONENTS<sup>Chapter 2</sup></h2>
+            <div class="horizontal">
+                <hr>
+                <h2 class="core__title">CORE COMPONENTS<sup>Chapter 2</sup></h2>
+            </div>
             <p class="core__text">React Native is an open source framework for
                  building Android and iOS applications using React and the app platform’s native capabiles. 
                  With React Native, you use JavaScript to access your platform’s
@@ -40,52 +56,54 @@
                   UI using React components: <em>bundles of reusable, nestable code</em>. You can learn more about 
                 React in the next section. But first, let’s cover how components work in React Native.
             </p>
-            </article>
-        </section>
-        <section class="react">
-            <article class="react__container">
+        </article>
+        <article class="react__container">
+            <div style="gap: 15px;" class="horizontal">
+                <hr>
                 <h2 class="react__title">REACT FUNDAMENTALS<sup>Chapter 3</sup></h2>
-                <ul class="react-text__list">
-                    <li class="react-text__item">
+            </div>
+            <ul class="react-text__list">
+                <li class="react-text__item">
                         React Native runs on <u>React</u>, a popular open source 
                         library for building user interfaces with JavaScript. To make the most of React Native, it helps 
                         to understand React itself. This section can get you started or can serve as a refresher course.
-                    </li>
-                    <li class="react-text__item">
+                </li>
+                <li class="react-text__item">
                         We’re going to cover the core concepts behind React:
-                    </li>
-                    <li class="react-text__item">
+                </li>
+                <li class="react-text__item">
                         <b>+ components.</b> The rest of this introduction 
                         to React uses cats in its examples: friendly, 
                         approachable creatures that need names and a cafe to work in.
-                    </li>
-                    <li class="react-text__item">
+                </li>
+                <li class="react-text__item">
                         <b>+ JSX.</b> React and React Native use JSX, 
                         a syntax that lets you write elements inside JavaScript like so: 
                          <span>&lt;Text&gt;Hello, I am your cat!&lt;/Text&gt;</span>.
-                    </li>
-                    <li class="react-text__item">
+                </li>
+                <li class="react-text__item">
                         The React docs have <ins>a comprehensive guide to JSX</ins> you can refer 
                         to learn even more. Because JSX is JavaScript, you can use variables inside it. 
                         Here you are declaring a <span>name</span> for the cat, name, 
                         and embedding it with curly braces inside <span>&lt;Text&gt;</span>
-                    </li>
-                    <li class="react-text__item">
+                </li>
+                <li class="react-text__item">
                         <b>+ props.</b> Props is short for “properties”. 
-                    </li>
-                    <li class="react-text__item">
+                </li>
+                <li class="react-text__item">
                         <b>+ state.</b> While you can think of props as arguments you use to 
                         configure how components render, state is like a component’s 
                         personal data storage. State is useful for handling 
                         data that changes over time or that comes from user interaction. 
                         State gives your components memory!
-                    </li>
-                </ul>
-            </article>
-        </section>
-        <section class="handling">
+                </li>
+            </ul>
+        </article>
         <article class="handling__container">
-            <h2 class="handling__title">HANDLING TEXT INPUT <sup>Chapter 4</sup></h2>
+            <div class="horizontal">
+                <hr>
+                <h2 class="handling__title">HANDLING TEXT INPUT <sup>Chapter 4</sup></h2>
+            </div>
             <ul class="handling__list-text">
                 <li class="handling__list-text__item">
                     TextInput 
