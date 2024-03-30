@@ -54,16 +54,26 @@ main {
     margin: 40px 0 40px 0;
 }
 
-.nav__list-item {
-    list-style-type: none;
-}
-
 span {
     background-color: rgba(46, 38, 38, 0.2);
 }
 
 b {
     font-family: "PT Sans Bold";
+}
+
+.nav__item-3 {
+    width: 238px;
+    height: 54px;
+}
+    
+
+
+.header__container {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav__container {
