@@ -101,10 +101,6 @@ main {
     gap: 40px;
 }
 
-.title {
-    
-}
-
 .title__container {
     display: flex;
     align-items: center;
@@ -145,7 +141,7 @@ section:nth-child(2) {
     align-items: center;
     border-radius: 8px;
     position: relative;
-    perspective: 1000px;
+    perspective: 500px;
 }
 
 .cards__card-flip {
