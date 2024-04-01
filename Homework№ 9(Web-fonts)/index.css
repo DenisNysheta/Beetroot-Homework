@@ -79,16 +79,17 @@ main {
     justify-content: center;
     position: relative;
     gap: 30px;
+    /* background-image: url('./bg-picture.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;
+    background-size:760px; */
 }
 
-main::before {
-    content: url(./bg-picture.png);
-    width: 760px;
-    height: 760px;
+.back__container {
     position: fixed;
-    top: 7%;
-    right: 27%;
-    z-index: -1;
+    top: 0;
+    margin: 9rem 0 0 51rem;
 }
 
 span {
