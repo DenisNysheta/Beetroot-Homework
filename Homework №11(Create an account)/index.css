@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --color-text-color:#969696;
+    --main-color:#545454;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: 500;
+}
+
+span {
+    display: block;
+    margin-top: 2px;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+main {
+    margin: 100px auto;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    width: 1440px;
+    height: 700px;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+label {
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+
+select:focus {
+    border-color:#007BFF ;
+    outline: none;
+}
+
+input,
+select {
+    border-radius: 7px;
+    border: 1px solid darkgrey;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+
+option {
+    color:var(--main-color);
+}
+
+input:focus {
+    outline: none;
+    border-color:  #007BFF;
+}
+
+.container {
+    width: 500px;
+}
+
+.create-account,
+.profile {
+    width: 590px;
+    height: 570px;
+    background-color: white;
+}
+
+.firstname__container,
+.gender__container,
+.country__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gender__container {
+    justify-content: flex-start;
+}
+
+.create-account,
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;flex-direction: column;
+}
+/* 
+//Create account section
+*/
+
+.create-account__title {
+    width: 500px;
+    text-align: start;
+    height: 32px;
+}
+
+.fistname__email input {
+    width: 500px;
+}
+
+.radio__container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 90px;
+    position: relative;
+}
+
+.radio__container label {
+    display: flex; flex-direction: row;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.radio__container > label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E4E4E4;
+    border-radius: 50%;
+}
+
+.radio__container > label::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border:7px solid #007BFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+input[type="radio"]:checked + label::after {
+    opacity: 1;
+}
+
+.text__container {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sign-up__btn {
+    width: 100%;
+    padding: 8px 10px;
+    background-color: #007BFF;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    color: black;
+    background-color: rgb(246, 246, 246);
+    letter-spacing: -0.1px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sign-up__btn:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.text__text {
+    color: #545454;
+    font-size: 13px;
+    line-height: 18px;
+    max-width: 390px;
+    letter-spacing: -0.1px;
+}
+
+.text__text,
+.text__sub-text {
+    text-align: center;
+}
+
+.text__line {
+    width: 100%;
+}
+
+.country__country,
+.country__city,
+.fistname__name,
+.fistname__last-name {
+    width: 245px;
+    height: 67px;
+}
+
+.country-select,
+.country-select_ {
+    appearance: none;
+    background-image: url('./chevron.svg');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+/* 
+//Profile
+*/
+
+.profile__file__container {
+    display: flex;
+    gap: 20px;
+}
+
+.profile__file__input input {
+    width: 165px;
+    height: 30px;
+}
+
+.profile__file__input__btn {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 7px;
+}
+
+.profile__file__input__btn :hover {
+    background-color: white;
+}
+
+.profile__file__input {
+    display: flex;
+    width: 200px;
+    gap: 10px;
+    position: relative;
+}
+
+input[type="file"] {
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    left: 8px;
+    font-size: 17px;
+    color: #b8b8b8;
+}
+
+.profile__file__input__f {
+    display: inline-block;
+  padding: 12px 18px;
+  cursor: pointer;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  width: 138px;
+  height: 32px;
+}
+
+label[for="upload"] {
+    position: absolute;
+    z-index: 1;
+    height: 31px;
+    width: 138px;
+    top: 0;
+    left: 0;
+}
+
+label[for="upload"] img {
+    margin: 8% 0 0 85%;
+}
+
+.upload-text {
+    color: #545454;
+    width: 160px;
+    font-size: 13px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: #969696;
+}
+
+.inputs__container {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 20px;
+}
+
+.inputs__container__input {
+    width: 245px;
+    height: 67px;
+}
+
+.profile-btn__btn {
+    width: 150px;
+    height: 38px;
+    background-color: rgb(246, 246, 246);;
+    border: 1px solid transparent;
+    border-radius: 7px;
+}
+
+.profile-btn__btn:hover {
+    background-color: #007BFF;
+    color: white;
+}

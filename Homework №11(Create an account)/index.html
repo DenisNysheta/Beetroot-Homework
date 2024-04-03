@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form page</title>
+    <link rel="icon" type="image/x-icon" href="./icons8-starburst-shape-48.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <section class="create-account">
+            <h1 style="margin-bottom: 20px;" class="create-account__title">Create an Account</h1>
+            <form action="post">
+                <div style="margin-bottom: 20px;" class="firstname__container container">
+                    <label class="fistname__name" for="name">Name
+                        <input id="name" name="first-name" type="text" required>
+                    </label>
+                    <label class="fistname__last-name" for="last-name">
+                        Last Name
+                        <input autofocus id="last-name" name="last-name" type="text">
+                    </label>
+                    <label class="fistname__email" for="email">
+                        Email
+                        <input id="email" name="email" type="email" required>
+                        <p>We'll never share your email with anyone else.</p>
+                    </label>
+                </div>
+                <div style="margin-bottom: 20px;" class="gender__container container">
+                    <div class="radio__container">
+                        <input id="male" name="male" type="radio" required>
+                        <label for="male">
+                           <span> Male</span>
+                        </label>
+                    </div>
+                    <div class="radio__container">
+                        <input id="female" name="male" type="radio" required>
+                        <label for="female">
+                            <span>Female</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="country__container container">
+                    <label class="country__country" for="country">
+                        Country
+                        <select class="country-select" name="country" id="country" required>
+                            <option style="color: #545454;" value="select" disabled selected>Select</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="America">USA</option>
+                            <option value="Australia">Australia</option>
+                            <option value="France">France</option>
+                            <option value="Italy">Italy</option>
+                        </select>
+                    </label>
+                    <label class="country__city" for="city">
+                        City
+                        <input id="city" name="city" type="text" required>
+                    </label>
+                    <button type="submit" style="margin-bottom: 22px;" class="sign-up__btn">Sign up</button>
+                </div>
+                <div class="text__container">
+                    <p class="text__text">
+                        By clicking the 'Sign Up' button, you confirm that you accept our
+                        <a class="text__link" href="">Terms of Use</a> and <a class="text__link" href="">Privacy Policy</a>                         
+                    </p>
+                    <hr class="text__line">
+                    <p class="text__sub-text">Have an account? <a class="text__link" href="">Log In</a></p>
+                </div>
+            </form>
+        </section>
+        <section class="profile">
+            <h1 style="width: 500px; text-align: start;height: 32px; margin-bottom: 20px;">Profile</h1>
+            <form style="align-items: flex-start; gap: 20px; width: 500px;margin-bottom: 50px;" action="post">
+                <div class="profile__container">
+                    <div class="profile__file__container">
+                        <img class="profile__file__img" src="./📷 Image.png" alt="user-image">
+                        <div class="profile__file__input">
+                            <div class="profile__file__input__f">
+                                <label for="upload">
+                                    <img width="13px" height="12px" src="./photo.svg" alt="photo camera">
+                                </label>
+                                <input style="margin-bottom: 9px;"  id="upload" name="file" type="file">
+                                <p class="upload-text">Up to 1 MB (300x300 px)</p>
+                            </div>
+                            <button type="reset" class="profile__file__input__btn">
+                                <img src="./garbage.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="inputs__container">
+                    <label class="inputs__container__input" for="nam">
+                        Name
+                        <input id="nam" name="name" type="text" required>
+                    </label> 
+                    <label class="inputs__container__input" for="emai">
+                        Email
+                        <input id="emai" name="email" type="email" required>
+                    </label> 
+                    <label class="inputs__container__input" for="countr">
+                        Country
+                        <select class="country-select_" name="country" id="countr" required>
+                            <option value="select" selected disabled>Select</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="America">USA</option>
+                            <option value="Australia">Australia</option>
+                            <option value="France">France</option>
+                            <option value="Italy">Italy</option>
+                        </select>
+                    </label> 
+                    <label class="inputs__container__input" for="cit">
+                        City
+                        <input id="cit" name="city" type="text" required>
+                    </label> 
+                    <label class="inputs__container__input" for="zip-code">
+                        Zip Code
+                        <input maxlength="10" id="zip-code" name="zip-code" type="password" required>
+                    </label> 
+                    <label class="inputs__container__input" for="number">
+                        Phone Number
+                        <input id="number" name="number" type="number" required>
+                    </label> 
+                </div>
+                <button type="submit" class="profile-btn__btn">
+                    Update
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
