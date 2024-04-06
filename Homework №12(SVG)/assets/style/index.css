@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    margin: 10px auto;
+    margin: 65px auto;
     width: 1440px;
     height: 934px;
     font-family: "Roboto", sans-serif;
@@ -213,50 +213,50 @@ footer {
 path {
    transition: .3s ease;
 }
-.card-container:hover #house-middle-1,
-.card-container:hover #house-middle-2,
-.card-container:hover #house-middle-3
+.services__cards-item__container:hover #house-middle-1,
+.services__cards-item__container:hover #house-middle-2,
+.services__cards-item__container:hover #house-middle-3
 {
     fill: var(--middle-green);
 }
 
-.card-container:hover #house-light {
+.services__cards-item__container:hover #house-light {
     fill: var(--light-green);
 }
 
-.card-container:hover #house-dark {
+.services__cards-item__container:hover #house-dark {
     fill: var(--dark-green);
 }
 
 /*  */
 
-.card-container:hover #megaphone-middle-1,
-.card-container:hover #megaphone-middle-2,
-.card-container:hover #megaphone-middle-3 {
+.services__cards-item__container:hover #megaphone-middle-1,
+.services__cards-item__container:hover #megaphone-middle-2,
+.services__cards-item__container:hover #megaphone-middle-3 {
     fill: var(--middle-green);
 }
 
-.card-container:hover #megaphone-light-1,
-.card-container:hover #megaphone-light-2 {
+.services__cards-item__container:hover #megaphone-light-1,
+.services__cards-item__container:hover #megaphone-light-2 {
     fill: var(--light-green);
 }
 
-.card-container:hover #megaphone-dark {
+.services__cards-item__container:hover #megaphone-dark {
     fill: var(--dark-green);
 }
 
 /*  */
 
-.card-container:hover #megaphone-light-1,
-.card-container:hover #megaphone-light-2 {
+.services__cards-item__container:hover #megaphone-light-1,
+.services__cards-item__container:hover #megaphone-light-2 {
     fill: var(--light-green);
 }
 
-.card-container:hover #phone-middle-1,
-.card-container:hover #phone-middle-2 {
+.services__cards-item__container:hover #phone-middle-1,
+.services__cards-item__container:hover #phone-middle-2 {
     fill: var(--middle-green);
 }
 
-.card-container:hover #phone-dark {
+.services__cards-item__container:hover #phone-dark {
     fill: var(--dark-green);
 }
