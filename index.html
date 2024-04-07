@@ -19,26 +19,50 @@
         background-color: rgba(46, 81, 111, 0.7);
         width: 700px;
         height: auto;
-        margin: 250px auto;
+        margin: 125px auto;
         border-radius: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
       }
       
+      .link {
+        width: 485px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
       li, a {
         list-style-type: none;
         text-decoration: none;
         font-size: 25px;
-        color:chocolate;
+        color: chocolate;
         font-family: "Roboto Mono", sans-serif;
         transition: .3s ease;
+      }
+
+      .link:before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background-color:darkkhaki;
+        display: block;
+        border-radius: 50%;
+        opacity: 0;
+        outline: 4px solid darkcyan;
+        transition: .3s ease;
+      }
+
+      .link:hover:before  {
+        opacity: 1;
       }
 
       ul {
         padding: 0;
         display: flex;
         flex-direction: column;
+        width: 590px;
         gap: 15px;
       }
 
@@ -50,11 +74,13 @@
         color:chartreuse;
       }
 
+      
+
     </style>
   </head>
   <body>
     <ul>
-      <li>
+      <li class="link">
         <a
           target="_blank"
           href="Homework№1(My resume)/resume.html"
@@ -62,7 +88,7 @@
           first CV)</a
         >
       </li>
-      <li>
+      <li class="link">
         <a
           target="_blank"
           href="Homework№2(Semantic)/semantic.html"
@@ -70,40 +96,40 @@
           tags)</a
         >
       </li>
-      <li>
+      <li class="link">
         <a target="_blank" href="Homework№3(Form)/form.html">Homework 3(Form)</a>
       </li>
-      <li>
+      <li class="link">
         <a target="_blank" href="Homework№4 (Maket 'Denis Novik')/figma.html">Homework 4 (Maket Denis Novik)</a>
       </li>
-      <li>
+      <li class="link">
         <a target="_blank" href="Homework №5 (CSS Selectors, Pseudoelements and Pseudoclasses)/index.html">Homework 5 (CSS Shopping List)</a>
       </li>
-      <li>
+      <li class="link">
         <a target="_blank" href="Homework №6(maket Productly)/index.html">Homework №6(maket Productly)</a>
       </li>
-      <li>
+      <li class="link" style="width: 510px;">
         <a target="_blank" href="Homework№6 (Extra )/index.html">Homework №6(Extra Weather List)</a>
       </li>
-      <li>
+      <li class="link">
         <a target="_blank" href="Homework№7(Maket ITLIFE)/index.html">Homework №7(ITLIFE)</a>
       </li>
-      <li>
+      <li class="link">
         <a target="_blank" href="Homework№8(Grid)/index.html">Homework №8(Grid)</a>
       </li>
-      <li>
+      <li class="link">
         <a target="_blank" href="Homework№ 9(Web-fonts)/index.html">Homework №9(Fonts)</a>
       </li>
-      <li>
+      <li class="link">
         <a target="_blank" href="Homework№ 10(Who's using)/index.html">Homework №10(Who's using)</a>
       </li>
-      <li>
+      <li class="link" style="width: 510px;">
         <a target="_blank"  href="Homework №11(Create an account)/index.html">Homework №11(Create an account)</a>
       </li>
-      <li>
+      <li class="link">
         <a target="_blank"  href="Homework №12(SVG)/index.html">Homework №12(SVG)</a>
       </li>
-      <li>
+      <li class="link">
         <a target="_blank"  href="Homework№ 13(SASS)/index.html">Homework №13(SASS)</a>
       </li>
       
