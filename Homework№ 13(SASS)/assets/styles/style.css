@@ -82,6 +82,8 @@ body {
   font-weight: 500;
   font-size: 18px;
   color: #898F8F;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
 }
 .team__container .team__title {
   color: #FFCC00;
@@ -300,10 +302,11 @@ body {
           flex-direction: column;
 }
 .team-text__descr__text {
-  color: #666666;
+  color: #333333;
   font-size: 14px;
   font-weight: 500;
   text-align: center;
+  line-height: 24px;
 }
 .team-text__descr img {
   display: block;
@@ -315,6 +318,10 @@ body {
   padding: 5px 10px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  color: #666666;
 }
 .team-text__descr__btn:hover {
   background-color: #FFCC00;

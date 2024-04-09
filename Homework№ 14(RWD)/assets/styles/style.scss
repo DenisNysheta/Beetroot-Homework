@@ -1,0 +1,220 @@
+// 
+// ---Imports
+// 
+
+@import "./variables.scss";
+
+// 
+// --Mixins< Extensions
+// 
+
+@mixin flexy($display, $justify, $align, $direction) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+// 
+// --Style
+// 
+
+html {
+    width: 1440px;
+    height: auto;
+    margin: 0 auto;
+}
+
+header {
+    width: $standart-width;
+    height: 100px;
+    
+    & .logo__container{
+
+        .logo__icon {
+            width: 142px;
+            height: 12px;
+        }
+
+    }
+
+    & .nav__container {
+
+        gap: 84px;
+
+        & .nav__list {
+            margin: 25px 0 16px 0;
+            padding: 0;
+            gap: 42px;
+
+
+            &-item{
+                letter-spacing: 3px;
+                font-family: $main-font;
+                font-size: 14px;
+                font-weight: 400;
+                list-style-type: none;
+                text-transform: uppercase;
+                height: 25px;
+                transform: rotate();
+                position: relative;
+                
+
+                @include flexy(flex,space-around,center,column);
+
+                &::after{
+                    content: '';
+                    border: 0px solid black;
+                    width: 0px;
+                    top: 17px;
+                    left: 7px;
+                    transition: .2s ease;
+                }
+                
+                &:hover::after{
+                    width: 60%;
+                    border: 1px solid black;
+                }
+
+                & a{
+                    text-decoration: none;
+                    color: black;
+                }
+
+            }
+
+            @include flexy(flex,center,center,row)
+        }
+
+        & .nav-btn {
+            border: none;
+            background-color: white;
+            width: 17px;
+            height: 16px;
+            cursor: pointer;
+    
+            &__icon{
+                width: 17px;
+                height: 16px;
+                fill: darkgrey;
+                transition: .3s ease;
+
+            }
+            
+            &:hover > .nav-btn__icon{
+                fill: black;
+            }
+
+        }
+        @include flexy(flex,center,center,row)
+    }
+
+
+    @include flexy(flex,space-around,center,row)
+}
+
+.logo__icon {
+    width: 142px;
+    height: 12px;
+}
+
+// 
+// Main
+// 
+
+.manifest {
+    width: inherit;
+    height: 500px;
+    background: url('../images/bg-image.png') no-repeat  center;
+    padding: 100px 0 0 135px;
+    margin-bottom: 90px;
+
+    &__text{
+        font-family: $topic-font;
+        font-weight: 600;
+        font-size: 48px;
+        max-width: 770px;
+        margin: 0;
+    }
+
+    @include flexy(flex, flex-start, flex-start, row)
+}
+
+.blog {
+    @include flexy(flex, center, center, row)
+}
+
+.blog__section {
+    width: 1170px;
+
+    & .blog__title {
+        font-size: 48px;
+        font-weight: 400;
+        font-family: $topic-font;
+        letter-spacing: 3px;
+    }
+
+    & .blog__first-container{
+        gap: 30px;
+        width: 1170px;
+
+        & .blog__first-container__text {
+            width: 450px;
+            height: 300px;
+            gap: 15px;
+            @include flexy(flex, center,flex-start, column)
+        }
+
+        @include flexy(flex, space-between,center,row)
+    }
+
+    @include flexy(flex, center,flex-start,column)
+}
+
+.blog__first-container__text__title {
+    gap: 30px;
+    & .blog__first-container__text__title__sub{
+        color: $sub-color;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-family: $main-font;
+        margin: 0;
+    }
+
+    & .blog__first-container__text__title__title{
+        font-size: 23px;
+        font-weight: 500;
+        font-family: $topic-font;
+        line-height: 38px;
+        letter-spacing: 1px;
+        margin: 0;
+    }
+
+    @include flexy(flex, center,flex-start,column)
+}
+
+.blog__first-container__text__text {
+
+    gap: 50px;
+
+    & .blog__first-container__text__text__data{
+        font-family: $main-font;
+        color: $sub-color;
+        letter-spacing: 1px;
+    }
+
+    & .blog__first-container__text__text__parg {
+        font-family: $main-font;
+        max-width: 444px;
+        margin: 0;
+        font-weight: 400;
+        font-size: 16px;
+        color: $text-color;
+        letter-spacing: .5px;
+        word-spacing: 2px;
+        line-height: 26px;
+    }
+
+    @include flexy(flex, center,flex-start,column)
+}

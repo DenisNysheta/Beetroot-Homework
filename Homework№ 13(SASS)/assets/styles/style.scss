@@ -48,7 +48,6 @@ body {
     width: 1170px;
     height: 757px;
     margin: auto;
-
     &__main {
         width: 1030px;
         height: 560px;
@@ -64,6 +63,8 @@ body {
         font-weight: $weight-text;
         font-size: 18px;
         color: #898F8F;
+        font-family: $font-text;
+        font-weight: 500;
     }
     
     & .team__title {
@@ -218,10 +219,11 @@ body {
     height: 200px;
 
     &__text{
-        color: $color-text;
+        color: #333333;
         font-size: 14px;
         font-weight: $weight-text;
         text-align: center;
+        line-height: 24px;
     }
 
     & img {
@@ -234,6 +236,10 @@ body {
         border: $border;
         padding: 5px 10px;
         transition: .3s ease;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: "Open Sans", sans-serif;
+        color: $color-text;
         &:hover {
             background-color: $main-color;
             color: white;
