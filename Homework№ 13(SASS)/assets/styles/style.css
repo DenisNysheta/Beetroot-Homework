@@ -150,14 +150,18 @@ body {
           flex-direction: row;
 }
 .team-img__container::before {
-  bottom: 0;
+  top: 0;
   left: 0;
+  right: none;
+  bottom: none;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
 }
 .team-img__container::after {
   top: 0;
+  left: none;
   right: 0;
+  bottom: none;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
@@ -182,10 +186,14 @@ body {
 .team-img__container .team-img__img::before {
   top: 0;
   left: 0;
+  right: none;
+  bottom: none;
 }
 .team-img__container .team-img__img::after {
-  bottom: 0;
+  top: none;
+  left: none;
   right: 0;
+  bottom: 0;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
