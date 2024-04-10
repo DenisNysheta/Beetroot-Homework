@@ -19,7 +19,7 @@ html {
 
 body {
   margin: 125px auto;
-  width: 1400px;
+  width: 1440px;
   height: 1000px;
   background-color: white;
   font-family: "Raleway", sans-serif;
@@ -64,6 +64,7 @@ body {
 .team__container {
   width: 450px;
   height: 157px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,8 +92,45 @@ body {
   font-weight: 900;
   font-family: "Roboto", sans-serif;
 }
+.team__container .team__icon {
+  position: absolute;
+  bottom: -5px;
+  background-color: white;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25px;
+}
+.team__container .team__icon svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 20px;
+  height: 20px;
+}
+.team__container::after {
+  content: "";
+  position: relative;
+  bottom: 5px;
+  width: 100%;
+  border-bottom: 1px solid #FFCC00;
+}
 
 .team__main {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,9 +145,12 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-.team__main .team__line {
+.team__main::before {
+  content: "";
+  position: absolute;
   height: 100%;
-  border: 1px solid #FFCC00;
+  left: 50%;
+  border-left: 1px solid #FFCC00;
   margin: 0;
 }
 
@@ -154,8 +195,6 @@ body {
   left: 0;
   right: none;
   bottom: none;
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
 }
 .team-img__container::after {
   top: 0;
@@ -184,10 +223,12 @@ body {
           flex-direction: row;
 }
 .team-img__container .team-img__img::before {
-  top: 0;
+  top: none;
   left: 0;
   right: none;
-  bottom: none;
+  bottom: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 .team-img__container .team-img__img::after {
   top: none;
@@ -199,8 +240,9 @@ body {
 }
 
 .team-text__title {
-  width: 283px;
-  height: 174px;
+  position: relative;
+  width: 285px;
+  height: 184px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,6 +257,13 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.team-text__title::after {
+  content: "";
+  width: 100px;
+  border-top: 1px solid #FFCC00;
+  position: absolute;
+  top: 35%;
+}
 .team-text__title .team__text__title__title {
   font-family: "Roboto", sans-serif;
   font-size: 36px;
@@ -224,7 +273,8 @@ body {
 }
 .team-text__title .team-text__title__line {
   width: 100px;
-  border: 1px solid #FFCC00;
+  border-top: 1px solid #FFCC00;
+  height: 1px;
   margin: 0;
 }
 .team-text__title .team-text__title__sub {
@@ -232,6 +282,8 @@ body {
   font-size: 24px;
   font-weight: 400;
   color: #666666;
+  letter-spacing: 1px;
+  margin-top: 30px;
 }
 
 .icon-social {
@@ -315,15 +367,20 @@ body {
   font-weight: 500;
   text-align: center;
   line-height: 24px;
+  letter-spacing: 0.3px;
 }
-.team-text__descr img {
-  display: block;
+.team-text__descr .team-text__descr__decor-line {
+  height: 6px;
+}
+.team-text__descr .team-text__descr__decor-line svg {
+  width: 50px;
+  height: 4px;
 }
 .team-text__descr__btn {
   background-color: white;
   text-transform: uppercase;
   border: 1px solid #FFCC00;
-  padding: 5px 10px;
+  padding: 0px 10px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   font-size: 14px;
