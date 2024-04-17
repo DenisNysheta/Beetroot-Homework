@@ -1,0 +1,132 @@
+@import "../variables/variables.scss";
+
+.popular__section {
+    width: 81.3%;
+    gap: 46px;
+    margin: 0 auto 90px auto;
+    & .popular__title {
+        width: 100%;
+        & h2 {
+            @extend %heading_h2;
+        }
+        & button {
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+            @extend %text_latest_posts;
+            & svg {
+                width: 25px;
+                height: 12px;
+                margin-left: 15px;
+            }
+        }
+        @include tablet-landscape {
+            width: 112%;
+        }
+        @include phone-landscape {
+            flex-direction: column;
+            align-items: flex-start
+        }
+        @include flexy (flex,space-between,center,row);
+    }
+
+    & .popular__list-cards {
+        width: 100%;
+        gap: 30px;
+        & #popular__second {
+            align-self: flex-start;
+            @include phone-landscape {
+                margin-left: 3px;
+            }
+        }
+        @include tablet-landscape {
+            gap: 20px;
+        }
+        @include phone-landscape {
+            flex-direction: column;
+        }
+        @include flexy (flex,space-between,center,row)
+    }
+
+    & .popular__btn {
+        cursor: pointer;
+        align-self: center;
+        width: 180px;
+        height: 46px;
+        color: black;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 26.56px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        border: none;
+        border-radius: 4px;
+        transition: .3s ease;
+
+        &:hover {
+            background-color: $text-color;
+            color: white;
+        }
+        @include tablet-landscape {
+            margin-left: 55px;
+        }
+    }
+    @include tablet-landscape {
+        margin-right: 108px;
+    }
+    @include phone-landscape {
+        margin-left: 5px;
+    }
+    @include flexy (flex,center,flex-start,column)
+}
+
+.popular__list-cards__card {
+    width: 55.1%;
+
+    & picture {
+        & img {
+            @include phone-landscape {
+                width: 300px;
+            }
+        }
+    }
+
+    &__text {
+        width: 97.5%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        & h6 {
+            @extend %subtitles_most_poplular;
+        }
+        & time {
+            @extend %subtitles_most_poplular;
+        }
+        @include phone-landscape {
+            width: 120%;
+        }
+        @include flexy(flex,space-between,center,row);
+    }
+
+    &__title {
+        margin: 0 0 20px 0;
+        @include phone-landscape {
+            width: 120%;
+        }
+        @extend %topics_most_poplular;
+    }
+
+    &__info {
+        margin-bottom: 20px;
+        width: 86%;
+        @extend %subtitles_most_poplular;
+        @include tablet-landscape {
+            width: 80%;
+        }
+        @include phone-landscape {
+            width: 120%;
+        }
+    }
+    @include phone-landscape {
+        width: 97.1%;
+    }
+}

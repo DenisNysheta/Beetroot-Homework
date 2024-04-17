@@ -1,0 +1,124 @@
+@import "../variables/variables.scss";
+
+.posts__section {
+    width: 81.3%;
+    margin: 0 auto;
+    gap: 3rem;
+    margin-bottom: 90px;
+    & .posts__head {
+        width: 100%;
+        & .posts__title {
+            @extend %heading_h2;
+        }
+
+        & .posts__btn {
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+            & svg {
+                margin-left: 15px;
+                width: 25px;
+                height: 12px;
+            }
+            @extend %text_latest_posts;
+            @include phone-landscape {
+                padding: 0;
+            }
+        }
+        @include tablet-landscape {
+            width: 111%;
+        }
+        @include phone-landscape {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        @include phone-landscape {
+            gap: .6rem;
+        }
+        @include flexy(flex,space-between,center,row);
+    }
+    @include flexy(flex,center,flex-start,column);
+
+    & .posts__list-cards {
+        gap: 30px;
+
+        & #post_box-2 {
+            @include tablet-landscape {
+                flex-direction: row-reverse;
+            }
+
+            @include phone-landscape {
+                flex-direction: column;
+            }
+        }
+
+        @include flexy(flex,center,flex-start,row);
+        @include tablet-landscape {
+            flex-direction: column;
+        }
+    }
+    @include tablet-landscape {
+        margin-left: 35px;
+        margin-bottom: 70px;
+    }
+    @include phone-landscape {
+        margin-left: 10px;
+        gap: 2rem;
+    }
+}
+
+.posts__list-cards__card {
+    gap: 25px;
+
+    &__sub {
+        width: 100%;
+        & h6, time {
+            @extend %subtitles_latest_posts;
+        }
+
+        @include flexy(flex,space-between,center,row);
+    }
+
+    &__text {
+        gap: 20px;
+        & h3{
+            @extend %topics_latest_posts;
+            @include phone-landscape {
+                max-width: 300px;
+            }
+        }
+        
+        & p {
+            max-width: 370px;
+            @extend %text_latest_posts;
+            @include phone-landscape {
+                max-width: 300px;
+            }
+        }
+        @include tablet-landscape {
+            width: 340px;
+        }
+        @include flexy(flex,space-between,flex-start,column);
+    }
+
+    @include tablet-landscape {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    @include phone-landscape {
+        flex-direction: column;
+    }
+
+    @include flexy(flex,center,flex-start,column);
+}
+
+.posts__info {
+    @include tablet-landscape {
+        gap: 10px;
+    }
+    @include phone-landscape {
+        width: 89%;
+    }
+    @include flexy(flex,center,flex-start,column);
+}

@@ -1,0 +1,159 @@
+@import "../variables/variables.scss";
+
+.header {
+    width: 81.3%;
+    gap: 35%;
+    padding: 40px 135px;
+    &__logo {
+
+        & svg {
+            width: 145px;
+            height: 13px;
+        }
+    }
+
+    .header__menu {
+            gap: 84px;
+            
+        &__list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            gap: 42px;
+
+            & .header__menu__item {
+                position: relative;
+                transition: .3s ease;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -5px;
+                    left: 15%;
+                    width: 0%;
+                    border-bottom:1px solid black;
+                    transition: .3s ease;
+                }
+
+                &:hover::after {
+                    width: 65%;
+                }
+
+                & a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                @extend %nav_item;
+            }
+
+            @include flexy(flex,center,center,row);
+
+            @include tablet-landscape {
+                display: none;
+                z-index: 1;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                padding: none;
+                &.open {
+                    background-color: aliceblue;
+                    display: flex;
+
+                    @include flexy(flex,center,center,column);
+                }
+            };
+        }
+
+        & .header__btn {
+            gap: 40px;
+            & button {
+                border: none;
+                cursor: pointer;
+                background: transparent;
+                padding: 0;
+                
+                & svg {
+                    width: 17px;
+                    height: 16px;                                    
+                }
+            }
+
+            & .header__burger-menu {
+                display: none;
+                height: 20px;
+                width: 32px;
+                gap: 5px;
+                transition: .3s ease;
+
+                & span {
+                    display: none;
+                    width: 100%;
+                    border: 1px solid black;
+                    transition: .3s ease;
+                }
+
+                &.active {
+                    position: relative;
+                    & span:nth-child(1) {
+                        position: absolute;
+                        top: 50%;
+                        transform: rotate(45deg);
+                        width: 100%;
+                    }
+
+                    & span:nth-child(2) {
+                        position: absolute;
+                        top: 50%;
+                        transform: rotate(45deg);
+                        width: 100%;
+                    }
+
+                    & span:nth-child(3) {
+                        position: absolute;
+                        top: 50%;
+                        transform: rotate(-45deg);
+                        width: 100%;
+                    }
+
+                    z-index: 1;
+                    transition: .3s ease;
+                }
+
+                @include flexy(flex,space-between,flex-start,column);
+
+                @include tablet-landscape {
+                    display: block;
+
+                    & span {
+                        display: block;
+                    }
+
+                    @include flexy(flex,space-between,flex-start,column);
+                };
+            }
+
+            @include flexy(flex,center,center,row);
+
+            @include phone-landscape {
+                gap: 20px;
+            }
+        }
+
+        @include flexy(flex,space-between,center,row);
+    }
+
+    @include tablet-landscape {
+        width: 90.3%;
+        padding: 26px 25px;
+    }
+
+    @include phone-landscape {
+        gap: 26%;
+    }
+
+    @include flexy(flex,space-between,center,row);
+}
+

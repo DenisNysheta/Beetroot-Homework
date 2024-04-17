@@ -1,0 +1,102 @@
+@import "../variables/variables.scss";
+
+.footer {
+    width: 100%;
+    background-color: #F4F4F4;
+    gap: 20px;
+    height: 300px;
+    &__info {
+        gap: 33rem;
+        & .footer__info__contacts {
+            & h2 {
+                margin: 0 0 30px 0;
+                font-family: "Red Hat Display", sans-serif;
+                font-size: clamp(2rem, 1.7143rem + 1.4286vw, 3rem);
+                font-weight: 400;
+                line-height: 64px;
+                letter-spacing: 0.05em;
+                text-align: left;
+            }
+
+            & p {
+                margin: 0 0 15px 0;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26.56px;
+                letter-spacing: 0.1em;
+                text-align: left;
+            }
+
+            & a {
+                color: black;
+                font-family: Lato;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26.56px;
+                letter-spacing: 0.1em;
+                text-align: left;
+                text-decoration: none;
+            }
+            @include tablet-landscape {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+
+        & .footer__info__socials-list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            gap: 23px;
+
+            &__item {
+                width: 50px;
+                height: 50px;
+                border: 1px solid $posts-text-color;
+                @include flexy (flex,center,center,row);
+                transition: .3s ease;
+                
+                &:hover {
+                    background-color: $posts-text-color;
+                }
+
+                &:hover a svg {
+                    fill: white;
+                }
+
+                & svg {
+                    fill: $posts-text-color;
+                }
+            }
+            @include flexy (flex,center,center,row)
+        }
+        @include tablet-landscape {
+            flex-direction: column;
+            gap: 40px;
+        }
+        @include flexy (flex,space-between,center,row)
+    }
+
+    & .footer__copyright {
+        color: black;
+        font-size: 12px;
+        margin: 0;
+        font-weight: 400;
+        line-height: 19.92px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: #7B7B7B;
+
+        @include phone-landscape {
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+    @include tablet-landscape {
+        height: 410px;
+        gap: 40px;
+    }
+    @include flexy (flex, center,center,column)
+}

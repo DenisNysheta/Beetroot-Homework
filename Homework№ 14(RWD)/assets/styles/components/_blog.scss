@@ -1,0 +1,107 @@
+@import "../variables/variables.scss";
+
+.blog__section {
+    width: 81.3%;
+    margin: 0 auto;
+    margin-bottom: 90px;
+
+    .blog{
+        gap: 3rem;
+        &__title {
+            @extend %heading_h1;
+        }
+
+        & .blog__first-box {
+            gap: 2rem;
+            @include flexy(flex,center,center, row);
+
+            @include phone-landscape {
+                flex-direction: column-reverse;
+            }
+        }
+
+       & #second__box{
+        align-self: flex-end;
+        @include phone-landscape {
+            flex-direction: column;
+            align-self: center;
+        }
+       }
+
+        @include flexy (flex,center,flex-start,column);
+
+        @include phone-landscape {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    @include phone-landscape {
+        margin-bottom: 70px;
+    }
+
+    @include tablet-landscape {
+        width: 90.3%;
+    }
+}
+
+
+
+.blog__first-box__info {
+    gap: 2rem;
+
+    & .blog__first-box__info__title {
+        gap: 1.5rem;
+        & h6{
+            @extend %subtitles_blog_properties;
+        }
+
+        & h3{
+            max-width:369px; 
+            @extend %topics_blog_properties;
+        }
+        @include tablet-landscape {
+            gap: 0rem;
+        }
+        @include phone-landscape {
+            gap: 2rem;
+        }
+        @include flexy (flex,center,flex-start,column);
+    }
+
+    & .blog__first-box__info__text {
+        gap: 3.5rem;
+        & time {
+            @extend %subtitles_blog_properties;
+        }
+
+        & p{
+
+            & svg {
+                width: 25px;
+                height: 12px;
+                margin-left: 20px;
+            }
+            overflow: hidden;
+            max-width: 448px;
+            @extend %text_blog_properties;
+            @include tablet-landscape {
+                max-width: 340px;
+            }
+        }
+        @include tablet-landscape {
+            gap: 2.5rem;
+
+        }
+        @include flexy(flex,center,flex-start,column);
+    }
+
+    @include tablet-landscape {
+        gap: 0rem;
+    }
+
+    @include phone-landscape {
+        gap: 1rem;
+    }
+    @include flexy (flex,center,flex-start,column);
+}
