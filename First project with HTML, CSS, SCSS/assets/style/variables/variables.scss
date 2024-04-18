@@ -1,0 +1,118 @@
+
+// <---Fonts--->
+
+
+@font-face {
+    font-family: "Aleo";
+    src: url('../../fonts/aleoregular.woff2') format(woff2);
+}
+@font-face {
+    font-family: "Josefin Bold";
+    src: url('../../fonts/JosefinSans-Bold.woff2') format(woff2);
+}
+@font-face {
+    font-family: "Josefin Light";
+    src: url('../../fonts/JosefinSans-Light.woff2') format(woff2);
+}
+@font-face {
+    font-family: "Josefin Regular";
+    src: url('../../fonts/JosefinSans-Regular.woff2') format(woff2);
+}
+
+
+// <---Fonts--->
+//
+// <>
+// 
+// <---Mixins--->
+
+
+@mixin flexy ($display,$justify,$align,$direction) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+
+// <---Mixins--->
+// 
+// <>
+// 
+// <---Extencion--->
+
+%h1__title {
+    font-family: "Josefin Light";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52px;
+}
+%subtitle_h1 {
+    font-family: "Josefin Light";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.31em;
+}
+%text-input__properties {
+    font-family: "Josefin Light";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+}
+%text-link__navigation {
+    font-family: "Aleo";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+}
+// Also use for btn in input
+%scroll__text {
+    font-family: "Josefin Light";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+// Also use for footer text ^
+%text__properties {
+    font-family: "Josefin Light";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+}
+%h2__title {
+    font-family: "Aleo";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+}
+// Also use for section with search icons
+%properties__for__btn-main {
+    font-family: "Aleo";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.07em;
+}
+%h6__subtitle {
+    font-family: "Josefin Light";
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+}
+%h5__title {
+    font-family: "Josefin Light";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+// <---Extencion--->
+// 
+// <>

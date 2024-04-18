@@ -1,0 +1,12 @@
+@import "../variables/variables.scss";
+
+.box {
+    width: 100vw;
+    height: 862px;
+    position: relative;
+    // background: url("../../images/Phone/HeaderBackground\ \(Phone\).png") no-repeat top;
+    & .text {
+        color: aqua;
+        position: absolute;
+    }
+}
