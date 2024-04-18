@@ -97,6 +97,9 @@
 
                 &.active {
                     position: relative;
+                    z-index: 1;
+                    transition: .3s ease;
+
                     & span:nth-child(1) {
                         position: absolute;
                         top: 50%;
@@ -106,20 +109,17 @@
 
                     & span:nth-child(2) {
                         position: absolute;
-                        top: 50%;
+                        top: 110%;
                         transform: rotate(45deg);
                         width: 100%;
                     }
 
                     & span:nth-child(3) {
                         position: absolute;
-                        top: 50%;
-                        transform: rotate(-45deg);
+                        top: 0%;
+                        transform: rotate(225deg);
                         width: 100%;
                     }
-
-                    z-index: 1;
-                    transition: .3s ease;
                 }
 
                 @include flexy(flex,space-between,flex-start,column);
