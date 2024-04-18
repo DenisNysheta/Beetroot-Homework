@@ -21,18 +21,18 @@
                 height: 12px;
             }
             @extend %text_latest_posts;
-            @include phone-landscape {
+            @include phone-portrait {
                 padding: 0;
             }
         }
-        @include tablet-landscape {
+        @include tablet-portrait {
             width: 111%;
         }
-        @include phone-landscape {
+        @include phone-portrait {
             flex-direction: column;
             align-items: flex-start;
         }
-        @include phone-landscape {
+        @include phone-portrait {
             gap: .6rem;
         }
         @include flexy(flex,space-between,center,row);
@@ -43,25 +43,25 @@
         gap: 30px;
 
         & #post_box-2 {
-            @include tablet-landscape {
+            @include tablet-portrait {
                 flex-direction: row-reverse;
             }
 
-            @include phone-landscape {
+            @include phone-portrait {
                 flex-direction: column;
             }
         }
 
         @include flexy(flex,center,flex-start,row);
-        @include tablet-landscape {
+        @include tablet-portrait {
             flex-direction: column;
         }
     }
-    @include tablet-landscape {
+    @include tablet-portrait {
         margin-left: 35px;
         margin-bottom: 70px;
     }
-    @include phone-landscape {
+    @include phone-portrait {
         margin-left: 10px;
         gap: 2rem;
     }
@@ -83,7 +83,7 @@
         gap: 20px;
         & h3{
             @extend %topics_latest_posts;
-            @include phone-landscape {
+            @include phone-portrait {
                 max-width: 300px;
             }
         }
@@ -91,22 +91,22 @@
         & p {
             max-width: 370px;
             @extend %text_latest_posts;
-            @include phone-landscape {
+            @include phone-portrait {
                 max-width: 300px;
             }
         }
-        @include tablet-landscape {
+        @include tablet-portrait {
             width: 340px;
         }
         @include flexy(flex,space-between,flex-start,column);
     }
 
-    @include tablet-landscape {
+    @include tablet-portrait {
         flex-direction: row;
         gap: 10px;
     }
 
-    @include phone-landscape {
+    @include phone-portrait {
         flex-direction: column;
     }
 
@@ -114,10 +114,10 @@
 }
 
 .posts__info {
-    @include tablet-landscape {
+    @include tablet-portrait {
         gap: 10px;
     }
-    @include phone-landscape {
+    @include phone-portrait {
         width: 89%;
     }
     @include flexy(flex,center,flex-start,column);

@@ -20,10 +20,10 @@
                 margin-left: 15px;
             }
         }
-        @include tablet-landscape {
+        @include tablet-portrait {
             width: 112%;
         }
-        @include phone-landscape {
+        @include phone-portrait {
             flex-direction: column;
             align-items: flex-start
         }
@@ -35,14 +35,14 @@
         gap: 30px;
         & #popular__second {
             align-self: flex-start;
-            @include phone-landscape {
+            @include phone-portrait {
                 margin-left: 3px;
             }
         }
-        @include tablet-landscape {
+        @include tablet-portrait {
             gap: 20px;
         }
-        @include phone-landscape {
+        @include phone-portrait {
             flex-direction: column;
         }
         @include flexy (flex,space-between,center,row)
@@ -67,14 +67,14 @@
             background-color: $text-color;
             color: white;
         }
-        @include tablet-landscape {
+        @include tablet-portrait {
             margin-left: 55px;
         }
     }
-    @include tablet-landscape {
+    @include tablet-portrait {
         margin-right: 108px;
     }
-    @include phone-landscape {
+    @include phone-portrait {
         margin-left: 5px;
     }
     @include flexy (flex,center,flex-start,column)
@@ -85,7 +85,7 @@
 
     & picture {
         & img {
-            @include phone-landscape {
+            @include phone-portrait {
                 width: 300px;
             }
         }
@@ -101,7 +101,7 @@
         & time {
             @extend %subtitles_most_poplular;
         }
-        @include phone-landscape {
+        @include phone-portrait {
             width: 120%;
         }
         @include flexy(flex,space-between,center,row);
@@ -109,7 +109,7 @@
 
     &__title {
         margin: 0 0 20px 0;
-        @include phone-landscape {
+        @include phone-portrait {
             width: 120%;
         }
         @extend %topics_most_poplular;
@@ -119,14 +119,14 @@
         margin-bottom: 20px;
         width: 86%;
         @extend %subtitles_most_poplular;
-        @include tablet-landscape {
+        @include tablet-portrait {
             width: 80%;
         }
-        @include phone-landscape {
+        @include phone-portrait {
             width: 120%;
         }
     }
-    @include phone-landscape {
+    @include phone-portrait {
         width: 97.1%;
     }
 }

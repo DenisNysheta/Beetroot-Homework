@@ -13,19 +13,19 @@ $posts-text-color:#565656;
     flex-direction: $direction;
 }
 
-@mixin desctop-landscape {
+@mixin desctop-portrait {
     @media (max-width:1440px) {
         @content
     }
 };
 
-@mixin tablet-landscape {
+@mixin tablet-portrait {
     @media (max-width:768px) {
         @content
     }
 };
 
-@mixin phone-landscape {
+@mixin phone-portrait {
     @media (max-width:320px) {
         @content
     }

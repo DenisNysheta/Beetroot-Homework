@@ -15,14 +15,14 @@
             gap: 2rem;
             @include flexy(flex,center,center, row);
 
-            @include phone-landscape {
+            @include phoneportrait {
                 flex-direction: column-reverse;
             }
         }
 
        & #second__box{
         align-self: flex-end;
-        @include phone-landscape {
+        @include phoneportrait {
             flex-direction: column;
             align-self: center;
         }
@@ -30,17 +30,17 @@
 
         @include flexy (flex,center,flex-start,column);
 
-        @include phone-landscape {
+        @include phoneportrait {
             flex-direction: column;
             align-items: center;
         }
     }
 
-    @include phone-landscape {
+    @include phoneportrait {
         margin-bottom: 70px;
     }
 
-    @include tablet-landscape {
+    @include tabletportrait {
         width: 90.3%;
     }
 }
@@ -60,10 +60,10 @@
             max-width:369px; 
             @extend %topics_blog_properties;
         }
-        @include tablet-landscape {
+        @include tablet-portrait {
             gap: 0rem;
         }
-        @include phone-landscape {
+        @include phone-portrait {
             gap: 2rem;
         }
         @include flexy (flex,center,flex-start,column);
@@ -85,22 +85,22 @@
             overflow: hidden;
             max-width: 448px;
             @extend %text_blog_properties;
-            @include tablet-landscape {
+            @include tablet-portrait {
                 max-width: 340px;
             }
         }
-        @include tablet-landscape {
+        @include tablet-portrait {
             gap: 2.5rem;
 
         }
         @include flexy(flex,center,flex-start,column);
     }
 
-    @include tablet-landscape {
+    @include tablet-portrait {
         gap: 0rem;
     }
 
-    @include phone-landscape {
+    @include phone-portrait {
         gap: 1rem;
     }
     @include flexy (flex,center,flex-start,column);

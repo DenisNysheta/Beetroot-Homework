@@ -18,7 +18,7 @@
             margin-top: 15px;
             display: block;
         }
-        @include phone-landscape {
+        @include phone-portrait {
             font-size: 24px;
             line-height: 39.84px;
         }
@@ -37,11 +37,11 @@
         & p:nth-child(1) {
             max-width: 67%;
             margin: 0;
-            @include tablet-landscape {
+            @include tablet-portrait {
                 max-width: 100%;
                 text-align: right;
             }
-            @include phone-landscape {
+            @include phone-portrait {
                 text-align: left;
             }
         }
@@ -49,27 +49,27 @@
         & p:nth-child(2) {
             max-width: 67%;
             margin: 0;
-            @include tablet-landscape {
+            @include tablet-portrait {
                 max-width: 100%;
                 text-align: right;
             }
-            @include phone-landscape {
+            @include phone-portrait {
                 text-align: left;
             }
         }
-        @include tablet-landscape {
+        @include tablet-portrait {
             gap: 20px;
         }
-        @include phone-landscape {
+        @include phone-portrait {
             font-size: 18px;
         }
         @include flexy(flex, flex-end, flex-end, column)
     }
-    @include tablet-landscape {
+    @include tablet-portrait {
         flex-direction: column;
         gap: 70px;
     }
-    @include phone-landscape {
+    @include phone-portrait {
         gap: 50px;
     }
     @include flexy(flex,space-between,flex-start,row)

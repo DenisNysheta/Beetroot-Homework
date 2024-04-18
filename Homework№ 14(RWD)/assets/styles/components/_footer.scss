@@ -37,7 +37,7 @@
                 text-align: left;
                 text-decoration: none;
             }
-            @include tablet-landscape {
+            @include tablet-portrait {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -72,7 +72,7 @@
             }
             @include flexy (flex,center,center,row)
         }
-        @include tablet-landscape {
+        @include tablet-portrait {
             flex-direction: column;
             gap: 40px;
         }
@@ -89,12 +89,12 @@
         text-align: left;
         color: #7B7B7B;
 
-        @include phone-landscape {
+        @include phone-portrait {
             text-align: center;
             font-size: 16px;
         }
     }
-    @include tablet-landscape {
+    @include tablet-portrait {
         height: 410px;
         gap: 40px;
     }

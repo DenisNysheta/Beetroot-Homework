@@ -10,26 +10,26 @@
         max-width: 770px;
         top: 16.5%;
         left: 9.5%;
-        @include tablet-landscape {
+        @include tablet-portrait {
             top: 4.5%;
             left: 4.5%;
             max-width: 660px;
         }
-        @include phone-landscape {
+        @include phone-portrait {
             top: 11.5%;
         }
         @extend %heading_h1;
     }
-    @include tablet-landscape {
+    @include tablet-portrait {
         height: 320px;
     }
-    @include phone-landscape {
+    @include phone-portrait {
         height: 500px;
     }
 }
 
 .hero__section {
-    @include phone-landscape {
+    @include phone-portrait {
         margin-bottom: 70px;
     }
 }
