@@ -74,27 +74,42 @@
         color:chartreuse;
       }
 
+      #project-1 {
+        filter: blur(10px);
+      }
+
+      #project-1 a {
+        color: black;
+      }
+
+      #project-1 a:hover {
+        color:darkorchid;
+      }
       
+      img {
+        filter:blur(3px);
+      }
+
+      #project-1:hover, img {
+        filter: blur(0);
+      }
 
     </style>
   </head>
   <body>
     <ul>
-      <li class="link">
-        <a
-          target="_blank"
-          href="Homework№1(My resume)/resume.html"
-          >Homework 1(Make my
-          first CV)</a
-        >
+      <li id="project-1" class="link">
+        <a target="_blank" href="First project with HTML, CSS, SCSS/index.html">Project №1
+           <img id="stack-html" style="height: 25px;" src="./icons/icons8-html-48.png" alt="">
+           <img id="stack-css" style="height: 25px;" src="./icons/icons8-css-48.png" alt="">
+           <img id="stack-sass" style="height: 25px;" src="./icons/icons8-sass-48.png" alt="">
+          </a>
       </li>
       <li class="link">
-        <a
-          target="_blank"
-          href="Homework№2(Semantic)/semantic.html"
-          >Homework 2(Semantic
-          tags)</a
-        >
+        <a target="_blank" href="Homework№1(My resume)/resume.html">Homework 1(Make myfirst CV)</a>
+      </li>
+      <li class="link">
+        <a target="_blank" href="Homework№2(Semantic)/semantic.html">Homework 2(Semantictags)</a>
       </li>
       <li class="link">
         <a target="_blank" href="Homework№3(Form)/form.html">Homework 3(Form)</a>
