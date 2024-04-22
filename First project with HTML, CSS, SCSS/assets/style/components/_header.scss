@@ -1,12 +1,185 @@
 @import "../variables/variables.scss";
 
-.box {
+.head {
     width: 100vw;
     height: 862px;
     position: relative;
-    // background: url("../../images/Phone/HeaderBackground\ \(Phone\).png") no-repeat top;
-    & .text {
-        color: aqua;
-        position: absolute;
+    background-image: url("../../images/bg/Full-HD/HeaderBackground\ \(6\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: bisque;
+
+    @include flexy (flex, center,center, column);
+}
+
+.head__info {
+    margin-top: 157px;
+    &__title {
+        color: white;
+        text-transform: uppercase;
+        margin: 0 0 8px;
+        text-align: center;
+        letter-spacing: 1px;
+        @extend %h1__title;
     }
+
+    &__subtitle {
+        color: white;
+        margin: 0 0 48px 0;
+        @extend %subtitle_h1;
+    }
+}
+
+.search {
+    width: 637px;
+    height: 60px;
+    background-color: white;
+    padding: 0 5px 0 5px;
+    margin: 0 0 211px;
+    transition: .5s ease;
+
+    &:focus-within {
+        background-color:darkgrey;
+    }
+
+    &__input {
+        outline: none;
+        border: none;
+        width: 100%;
+        height: 80%;
+        transition: .5s ease;
+        font-size: 20px;
+
+        &::placeholder {
+            padding-left: 35px;
+            letter-spacing: 2px;
+            font-size: 14px;
+            @extend %scroll__text;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+    }
+
+    &__btn {
+        background-color: #5373FD;
+        border: none;
+        padding: 15px 19.5px;
+        color: black;
+        background-color: white;
+        gap: 7px;
+        transition: .5s ease;
+        
+        &:hover {
+            background-color: #5373FD;
+            padding: 15px 19.5px;
+            color: white;
+        }
+
+        &:hover svg {
+            fill: white;
+        }
+
+        
+        svg {
+            width: 16px;
+            height: 16px;
+            fill: black;
+            transition: .5s ease;
+        }
+        
+        span {
+            text-transform: uppercase;
+            display: block;
+            @extend %text-input__properties;
+        }
+        @include flexy (flex,center,center,row);
+    }
+    @include flexy(flex,space-between,center,row);
+
+    @include tablet-portrait {
+        width: 82.1%;
+    }
+
+    @include mobile-portrait {
+        width: 92.1%;
+    }
+}
+
+.scroll {
+    position: relative;
+    cursor: pointer;
+    gap: 4px;
+    &__text {
+        transition: .5s ease;
+        margin: 0;
+        color: white;
+        animation-name: scale-text;
+        animation-duration: 2.2s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        
+        a {
+            @extend %scroll__text;
+        }
+
+    //    &:hover {
+    //     color: aquamarine;
+    //    } 
+
+       @keyframes scale-text {
+        0% {
+            color: white;
+            transform: scale(1);
+        }
+        50% {
+            color: aqua;
+            transform: scale(1.3);
+        }
+        100% {
+            color: white;
+            transform: scale(1);
+        }
+       }
+    }
+
+    &::after {
+        content: "";
+        box-sizing: border-box;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border-right: 3px solid white;
+        border-bottom: 3px solid white;
+        transform: rotate(45deg);
+        top: 120%;
+        animation-name:scroll;
+        animation-duration: 2.2s;
+        // animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+    }
+    
+    // &:hover::after {
+    // }
+    
+    @keyframes scroll {
+        0% {
+            top: 120%;
+            transform: rotate(45deg);
+        } 
+        50% {
+            top: 250%;
+            transform: rotate(-315deg)
+        }
+        100% {
+            top: 120%;
+            transform: rotate(-315deg);
+        }
+    }
+
+    @include flexy(flex,center,center,column);
 }

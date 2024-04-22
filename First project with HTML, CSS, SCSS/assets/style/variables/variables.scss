@@ -26,6 +26,41 @@
 // 
 // <---Mixins--->
 
+@mixin desctop_fullhd-portrait {
+    @media (max-width: 1920px) {
+        @content
+    }
+};
+
+@mixin desctop_hd-portrait {
+    @media (max-width: 1360px) {
+        @content
+    }
+};
+
+@mixin desctop_xga-portrait {
+    @media (max-width: 1024px) {
+        @content
+    }
+};
+
+@mixin tablet-portrait {
+    @media (max-width: 768px) {
+        @content
+    }
+};
+
+@mixin mobile-portrait {
+    @media (max-width: 576px){
+        @content
+    }
+};
+
+@mixin mobile_s-portrait {
+    @media (max-width: 400px) {
+        @content
+    }
+}
 
 @mixin flexy ($display,$justify,$align,$direction) {
     display: $display;
@@ -55,7 +90,7 @@
     letter-spacing: 0.31em;
 }
 %text-input__properties {
-    font-family: "Josefin Light";
+    font-family: "Aleo";
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -75,7 +110,7 @@
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0.2em;
-    text-align: center;
+    text-align: left;
 }
 // Also use for footer text ^
 %text__properties {

@@ -9,8 +9,7 @@
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -23,38 +22,20 @@ body {
   height: 1000px;
   background-color: white;
   font-family: "Raleway", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .team {
   width: 1170px;
   height: 757px;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 .team__main {
   width: 1030px;
@@ -65,19 +46,10 @@ body {
   width: 450px;
   height: 157px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 .team__container .team__subtitle {
   font-weight: 500;
@@ -97,27 +69,15 @@ body {
   bottom: -5px;
   background-color: white;
   z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 25px;
 }
 .team__container .team__icon svg {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  justify-content: center;
+  align-self: center;
   width: 20px;
   height: 20px;
 }
@@ -131,19 +91,10 @@ body {
 
 .team__main {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
 .team__main::before {
   content: "";
@@ -157,38 +108,20 @@ body {
 .team-text__container {
   width: 430px;
   height: 420px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 
 .team-img__container {
   position: relative;
   width: 430px;
   height: 430px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 .team-img__container::before {
   top: 0;
@@ -201,61 +134,40 @@ body {
   left: none;
   right: 0;
   bottom: none;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .team-img__container .team-img__img {
   position: relative;
   width: 430px;
   height: 430px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 .team-img__container .team-img__img::before {
   top: none;
   left: 0;
   right: none;
   bottom: 0;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 .team-img__container .team-img__img::after {
   top: none;
   left: none;
   right: 0;
   bottom: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .team-text__title {
   position: relative;
   width: 285px;
   height: 184px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 .team-text__title::after {
   content: "";
@@ -291,46 +203,26 @@ body {
   height: 12px;
   margin: 0;
   fill: #CCCCCC;
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
 .team-text__links-list {
   width: 135px;
   height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: none;
-      -ms-flex-align: none;
-          align-items: none;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
   gap: 5px;
 }
 .team-text__links-list-item {
   border: 2px solid #CCCCCC;
   border-radius: 50%;
   width: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: none;
-          flex-direction: none;
-  -webkit-transition: 0.3s ease;
+  justify-content: center;
+  align-items: center;
+  flex-direction: none;
   transition: 0.3s ease;
 }
 .team-text__links-list-item:hover {
@@ -347,19 +239,10 @@ body {
 .team-text__descr {
   width: 430px;
   height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 .team-text__descr__text {
   color: #333333;
@@ -381,7 +264,6 @@ body {
   text-transform: uppercase;
   border: 1px solid #FFCC00;
   padding: 0px 10px;
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   font-size: 14px;
   font-weight: 700;
@@ -391,4 +273,4 @@ body {
 .team-text__descr__btn:hover {
   background-color: #FFCC00;
   color: white;
-}
+}/*# sourceMappingURL=style.css.map */

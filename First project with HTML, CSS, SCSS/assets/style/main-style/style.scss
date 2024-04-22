@@ -1,1 +1,27 @@
 @import "../variables/imports.scss";
+
+body {
+    font-family: "Josefin Light";
+    overflow-y: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    width: inherit;
+    height: inherit;
+    fill: inherit;
+}
+
+:any-link {
+    color: inherit;
+    text-decoration: none;
+    @extend %text-link__navigation;
+}

@@ -1,1 +1,185 @@
 @import "../variables/variables.scss";
+
+.menu {
+    width: 100vw;
+    height: 8.7vh;
+    background-color: #5373FD;
+    position: relative;
+
+    &__input {
+        display: none;
+    }
+
+    @include flexy (flex,center,center,row);
+
+    
+    @include desctop_hd-portrait {
+        height: 9.7vh;
+    }
+    @include tablet-portrait {
+        height: 15.7vh;
+    }
+
+    @include mobile-portrait {
+        height: 9.7vh;
+    }
+}
+
+.menu-wrapper {
+    width: 68.75%;
+
+    & .menu__logo {
+        width: 168px;
+        height: 20px;
+        fill: white;
+        margin: 0 auto 0 0;
+
+        @include tablet-portrait {
+            align-self: center;
+            margin: 0;
+        }
+
+        @include mobile-portrait {
+           position: relative;
+           margin-left: 35%;
+        }
+
+        @include mobile_s-portrait {
+            margin-left: 0%;
+        }
+    }
+
+    & .menu__nav {
+        gap: 38px;
+
+        &__item {
+            text-transform: uppercase;
+            color: white;
+            position: relative;
+            transition: color .9s ease ;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 0%;
+                box-sizing: border-box;
+                height: 10px;
+                border-bottom: 1px solid #241623;
+                right: 25%;
+                top: 80%;
+                 transition: width .3s ease;
+            }
+
+            &:hover {
+                color: aquamarine;
+            }
+
+            &:hover::after {
+                width: 50%;
+            }
+
+            & a {
+                text-align: center;
+            }
+
+            
+        }
+
+        @include flexy (flex,center,center,row);
+    }
+    
+    @include flexy (flex,space-between,center,row);
+    
+    @include desctop_hd-portrait {
+        width: 83.95%;
+    }
+
+    @include desctop_xga-portrait {
+        width:  93.75%;
+    }
+    
+    @include tablet-portrait {
+        width: 93.75%;
+        gap: 32px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    @include mobile-portrait {
+        flex-direction: row;
+    }
+}
+
+
+.burger__menu {
+    display: none;
+    width: 60px;
+    height: 25px; 
+    position: relative; 
+    right: 0px;
+    
+    &::after {
+        transition: .3s ease;
+        content: "";
+        position: absolute;
+        width: 40px;
+        bottom: 0;
+        border-bottom: 1px solid white;
+    }
+
+    &__line {
+        transition: .3s ease;
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 40px;
+        border-bottom: 1px solid white;
+    }
+
+    &::before {
+        transition: .3s ease;
+        content: "";
+        position: absolute;
+        width: 40px;
+        top: 0;
+        border-bottom: 1px solid white;
+    }
+
+   
+    @include mobile-portrait {
+        display: block;
+    }
+}
+
+@media (max-width:576px) {
+    #burger-toggle:checked ~ label::after {
+        transform: rotate(45deg);
+        bottom: 16px;
+    }
+    
+    #burger-toggle:checked ~ label::before {
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+    
+    #burger-toggle:checked ~ label span {
+       width: 0%;
+    }
+    
+    .menu__nav {
+        position: absolute;
+        width: 100%;
+        padding: 50px 0 50px 0;
+        flex-direction: column !important; 
+        background-color: #5373FD;
+        top: 60px;
+        opacity: 0;
+        left: 0;
+        height: 0px;
+        transition: all .5s ease;
+    }
+
+    #burger-toggle:checked ~ .menu__nav {
+        height: 196px;
+        opacity: 1;
+    }
+}
