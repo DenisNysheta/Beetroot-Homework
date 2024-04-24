@@ -85,10 +85,6 @@
     margin: 0 0 211px;
     transition: .5s ease;
 
-    // &:focus-within {
-    //     background-color:darkgrey;
-    // }
-
     &__input {
         outline: none;
         border: none;
@@ -165,9 +161,10 @@
 
 .scroll {
     position: relative;
-    cursor: pointer;
     gap: 4px;
+    
     &__text {
+        cursor: pointer;
         transition: .5s ease;
         margin: 0;
         color: white;
@@ -181,10 +178,6 @@
             letter-spacing: 0.2em;
             @extend %scroll__text;
         }
-
-    //    &:hover {
-    //     color: aquamarine;
-    //    } 
 
        @keyframes scale-text {
         0% {
@@ -214,13 +207,9 @@
         top: 120%;
         animation-name:scroll;
         animation-duration: 2.2s;
-        // animation-direction: alternate;
         animation-iteration-count: infinite;
         animation-fill-mode: both;
     }
-    
-    // &:hover::after {
-    // }
     
     @keyframes scroll {
         0% {

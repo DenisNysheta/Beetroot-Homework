@@ -41,9 +41,25 @@
     & .steps__card:nth-child(3) {
         fill: #00A2FF;
 
-
         &:hover > .steps__card__icon {
            fill: aqua;
+           animation-name: thumbs;
+           animation-duration: 1s;
+           animation-direction: alternate;
+
+           @keyframes thumbs {
+                0% {
+                    top: 0;
+                }
+
+                50% {
+                    top: 20px;
+                }
+
+                100% {
+                    top: 0;
+                }
+           }
         }
 
         @include mobile-portrait {
@@ -86,6 +102,7 @@
     }
 
     &__icon {
+        position: relative;
         transition: .6s ease;
         width: 64px;
         height: 64px;
