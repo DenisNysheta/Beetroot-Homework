@@ -69,6 +69,23 @@
     flex-direction: $direction;
 }
 
+@mixin background ( $hd, $xga, $tablet, $mobile) {
+    @include desctop_hd-portrait {
+        background-image: $hd;
+    }
+    
+    @include desctop_xga-portrait {
+        background-image: $xga;
+    }
+
+    @include tablet-portrait {
+        background-image: $tablet;
+    }
+
+    @include mobile-portrait {
+        background-image: $mobile;
+    }
+}
 
 // <---Mixins--->
 // 
@@ -85,16 +102,16 @@
 %subtitle_h1 {
     font-family: "Josefin Light";
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 28px;
-    letter-spacing: 0.31em;
+    letter-spacing: 0.33em;
 }
 %text-input__properties {
     font-family: "Aleo";
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.15em;
 }
 %text-link__navigation {
     font-family: "Aleo";
@@ -107,18 +124,17 @@
 %scroll__text {
     font-family: "Josefin Light";
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 20px;
-    letter-spacing: 0.2em;
     text-align: left;
 }
 // Also use for footer text ^
 %text__properties {
     font-family: "Josefin Light";
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 28px;
-    letter-spacing: 0.1em;
+    letter-spacing: 1.64px;
 }
 %h2__title {
     font-family: "Aleo";
@@ -144,8 +160,9 @@
 %h5__title {
     font-family: "Josefin Light";
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 28px;
+    letter-spacing: 1.5px;
 }
 
 // <---Extencion--->

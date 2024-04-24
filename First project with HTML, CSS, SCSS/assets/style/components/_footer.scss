@@ -1,1 +1,103 @@
 @import "../variables/variables.scss";
+
+.footer {
+    width: 100vw;
+    background-color: black;
+    height: 268px;
+
+    &__wrapper {
+        width: 290px;
+        height: 110px;
+
+        @include flexy (flex,center,center,column)
+    }
+
+    &__logo {
+        width: 168px;
+        height: 19px;
+        fill: white;
+        margin-bottom: 4px;
+    }
+
+    &__text {
+        font-family: "Josefin Light";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 3px;
+        text-align: center;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    &__socials {
+        width: 275px;
+        height: 32px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include flexy (flex,center,center,row)
+}
+
+.footer__socials__item {
+    fill: white;
+    transition: .3s ease;
+
+    a {
+        display: inline-block;
+        width: inherit;
+        height: inherit;
+    }
+
+    a svg {
+        width: inherit;
+        height: inherit;
+    }
+
+}
+
+.footer__socials__item:nth-child(1){
+    width: 20px;
+    height: 32px;
+
+    &:hover {
+        fill: #3b5998;
+    }
+}
+.footer__socials__item:nth-child(2){
+    width: 32px;
+    height: 32px;
+
+    &:hover {
+        fill: #00acee;
+    }
+
+}
+.footer__socials__item:nth-child(3){
+    width: 28px;
+    height: 32px;
+
+    &:hover {
+        fill: #0e76a8;
+    }
+
+}
+.footer__socials__item:nth-child(4){
+    width: 36px;
+    height: 32px;
+
+    &:hover {
+        fill: red;
+    }
+
+}
+.footer__socials__item:nth-child(5){
+    width: 31px;
+    height: 32px;
+
+    &:hover {
+        fill: rgb(248, 93, 93);
+    }
+
+}

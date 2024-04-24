@@ -1,1 +1,207 @@
 @import "../variables/variables.scss";
+
+.say {
+    position: relative;
+    width: 100vw;
+    height: 681px;
+    background-image: url("../../images/FullHD/whattouristsay-full.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flexy (flex,center,center,row);
+
+
+    @include background (
+                        url("../../images/HD/whattouristsay-hd.avif"),
+                         url("../../images/XGA/whattouristsay-xga.avif"),
+                         url("../../images/Tablet/whattouristsay-tablet.avif"),
+                         url("../../images/Phone/whattouristsay-mobile.avif")
+    );
+
+    @include desctop_hd-portrait {
+        height: 707px;
+    }
+
+    @include tablet-portrait {
+        height: 735px;
+    }
+
+    @include mobile-portrait {
+        height: 979px;
+    }
+}
+
+.say__background {
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    display: none;
+
+    @include desctop_hd-portrait {
+        display: block;
+    }
+
+}
+
+.say-wrapper {
+    width: 68.75%;
+    @include desctop_hd-portrait {
+        width: 83.82%;
+        margin-bottom: 35px;
+    }
+
+    @include desctop_xga-portrait {
+        width: 93.82%;
+        margin-bottom: 70px;
+    }
+    
+    @include mobile-portrait {
+        margin-bottom: 60px;
+    }
+}
+
+.say__quote {
+    height: 280px;
+
+    &__img {
+        height: inherit;
+
+        img {
+            @include tablet-portrait {
+                width: 100%;
+            }
+        }
+
+        @include tablet-portrait {
+            height: 336px;
+        }
+
+        @include mobile_s-portrait {
+            height: 234px;
+        }
+    }
+
+    &__info {
+        height: inherit;
+        background-color: #232323E5;
+        
+    }
+
+    @include desctop_hd-portrait {
+        height: 308px;
+    }
+
+    @include desctop_xga-portrait {
+        height: 336px;
+    }
+
+    @include tablet-portrait {
+        flex-direction: column;
+        height: 644px;
+    }
+
+    @include mobile-portrait {
+        height: 700px;
+    }
+
+    @include flexy(flex,center,center,row)
+}
+
+.say__info {
+    margin: 0 0 61px 0;
+    &__title {
+        margin: 0 0 64px 0;
+        text-align: center;
+        color: white;
+
+        @include tablet-portrait {
+            margin-bottom: 62px
+        }
+
+        @extend %h2__title;
+    }
+
+    @include desctop_hd-portrait {
+        margin-bottom: 30px;
+    }
+
+    @include desctop_xga-portrait {
+        margin-bottom: 0;
+    }
+
+    @include tablet-portrait {
+        margin-bottom: 60px;
+    }
+
+    @include mobile-portrait {
+        margin-bottom: 5px;
+    }
+}
+
+.say__quote__info {
+    width: 67%;
+    background-color: #333333;
+
+    &__title {
+        text-transform: uppercase;
+        color: white;
+        margin: 0 0 13px 58px;
+        letter-spacing: .3px;
+
+        @include tablet-portrait {
+        }
+
+        @include mobile_s-portrait {
+            margin-left: 20px;
+        }
+
+        @extend %h5__title;
+    }
+
+    &__text {
+        margin: 0 0 0 58px;
+        color: white;
+        max-width: 760px;
+
+        img {
+            margin:0 15px 0 2px;
+            display: inline-block;
+        }
+
+        @include desctop_hd-portrait {
+            max-width: 660px;
+        }
+
+        @include desctop_xga-portrait {
+            max-width: 557px;
+        }
+
+        @include tablet-portrait {
+            max-width: 590px;
+        }
+
+        @include mobile-portrait {
+            max-width: 428px;
+        }
+
+        @include mobile_s-portrait {
+            margin-left: 10px;
+        }
+
+        @extend %text__properties;
+    }
+
+    @include desctop_hd-portrait {
+        height: inherit;
+    }
+
+    @include tablet-portrait {
+        height: 308px;
+        width: 100%;
+    }
+
+    @include mobile-portrait {
+        height: 364px;
+    }
+
+    @include flexy (flex,center,flex-start,column)
+}

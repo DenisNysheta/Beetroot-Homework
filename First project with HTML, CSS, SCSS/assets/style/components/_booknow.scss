@@ -1,1 +1,187 @@
 @import "../variables/variables.scss";
+
+.booknow {
+    width: 100vw;
+    height: 1368px;
+
+    @include desctop_hd-portrait {
+        height: 1424px;
+    }
+
+    @include tablet-portrait {
+        height: 1176px;
+    }
+
+    @include mobile-portrait {
+        height: 1232px;
+    }
+}
+
+.booknow__first-section,
+.booknow__second-section {
+    height: 50%;
+    background-image: url("../../images/FullHD/house-full.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & .house-wrapper,
+      .sunset-wrapper {
+        width: 68.75%;
+        height: 100%;
+
+        & .house__info {
+            @include mobile-portrait {
+                margin-bottom: 0;
+            }
+        }
+
+        & .sunset__info {
+            margin-top: 95px;
+
+            &__subtitle {
+            }
+
+            @include desctop_xga-portrait {
+                height: 372px;
+                padding-top: 0;
+            }
+
+            @include tablet-portrait {
+               height: 348px;
+               padding-top: 0;
+               margin-top: 5px;
+            }
+
+            @include mobile-portrait {
+                height: 376px;
+                padding-top: 0;
+            }
+        }
+
+        @include desctop_hd-portrait {
+            width: 83.75%;
+        }
+
+        @include desctop_xga-portrait {
+            width: 93.75%;
+        }
+
+        @include flexy(flex,flex-start,center,row);
+    }
+
+    & .sunset-wrapper {
+        justify-content: flex-end
+    }
+
+    @include background (url("../../images/HD/house-hd.avif"),
+                         url("../../images/XGA/house-xga.avif"),
+                         url("../../images/Tablet/house-tablet.avif"),
+                         url("../../images/Phone/house-mobile.avif")
+    );
+
+    @include flexy(flex,center,center,row);
+}
+
+.booknow__second-section {
+    height: 50%;
+    background-image: url("../../images/FullHD/sunset-full.avif")
+}
+
+.booknow__second-section {
+    @include background ( url("../../images/HD/sunset-hd.avif"),
+                          url("../../images/XGA/sunset-xga.avif"),
+                          url("../../images/Tablet/sunset-tablet.avif"),
+                          url("../../images/Phone/sunset-mobile.avif")
+    );
+}
+
+.house__info,
+.sunset__info {
+    padding-left: 32px;
+    margin-top: 108px;
+    width: 46.75%;
+    height: 344px;
+    transition: .6s cubic-bezier(0.42, 0.42, 0, 1.13);
+    background-color: rgba($color: #232323, $alpha: .9);
+
+    &__subtitle {
+        color: white;
+        display: block;
+        margin: 0 0 15px 0;
+        @extend %h5__title;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin: 0;
+        color: white;
+        font-family: "Josefin Light";
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 28px;
+        letter-spacing: .3px;
+    }
+
+    &__text {
+        color: white;
+        max-width: 90.124%;
+        margin-bottom: 24px;    
+        @include tablet-portrait {
+            max-width: 100%;
+            margin-bottom: 29px;
+        }
+
+        @extend %text__properties;
+    }
+
+    &__btn {
+        border: none;
+        text-transform: uppercase;
+        padding: 20px 56px;
+        color: #232323;
+        background-image: url("../../images/btn/back-btn.png");
+        background-color: #5373FD;
+        background-repeat: no-repeat;
+        transition: .3s ease;
+        @extend %properties__for__btn-main;
+
+        &:hover {
+            color: white;
+            border-radius: 10px;
+        }
+
+        &:active {
+            color:brown;
+        }
+
+    }
+
+    &:hover {
+        background-color: rgba($color: #232323, $alpha: 1);
+    }
+
+    @include desctop_hd-portrait {
+        width: 46.2%;
+        height: 372px;
+        background-color: rgba($color: #232323, $alpha: .9);
+    }  
+
+    @include desctop_xga-portrait {
+        width: 54%;
+    }
+
+    @include tablet-portrait {
+        width: 96%;
+        height: 348px;
+        margin-top: 0;
+    }
+
+    @include mobile-portrait {
+        height: 376px;
+    }
+
+    @include flexy (flex,center,flex-start,column)
+}
+
+
+

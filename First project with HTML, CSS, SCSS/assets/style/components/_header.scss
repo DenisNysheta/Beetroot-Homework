@@ -4,17 +4,53 @@
     width: 100vw;
     height: 862px;
     position: relative;
-    background-image: url("../../images/bg/Full-HD/HeaderBackground\ \(6\).png");
+    background-image: url("../../images/FullHD/HeaderBackground-full.avif");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: bisque;
 
     @include flexy (flex, center,center, column);
+
+    @include desctop_hd-portrait {
+        background-size: cover;
+    }
+
+    @include desctop_hd-portrait {
+        background-position-x: 32%;
+    }
+
+    @include desctop_xga-portrait {
+        background-position-x: 34.6%;
+    }
+
+    @include tablet-portrait {
+    background-position-x: 41.5%;
+    }
+
+    @include mobile-portrait {
+        background-position-x: 45%;
+    }
+
+    @include background(
+        url("../../images/HD/HeaderBackground-hd.avif"),
+        url("../../images/XGA/HeaderBackground-xga.avif"),
+        url("../../images/Tablet/HeaderBackground-tablet.avif"),
+        url("../../images/Phone/HeaderBackground-mobile.avif")
+    )
+}
+
+
+.blog {
+    @include desctop_hd-portrait {
+        width: 1360px;
+        height: 862px;
+        object-fit: cover;
+    }
 }
 
 .head__info {
-    margin-top: 157px;
+    margin-top: 155px;
     &__title {
+        font-weight: 600;
         color: white;
         text-transform: uppercase;
         margin: 0 0 8px;
@@ -26,7 +62,18 @@
     &__subtitle {
         color: white;
         margin: 0 0 48px 0;
+        padding: 0 0 0 8px;
+
+        @include mobile_s-portrait {
+            font-size: 18px
+        }
+
         @extend %subtitle_h1;
+    }
+
+
+    @include desctop_hd-portrait {
+        margin-top: 155px;
     }
 }
 
@@ -38,9 +85,9 @@
     margin: 0 0 211px;
     transition: .5s ease;
 
-    &:focus-within {
-        background-color:darkgrey;
-    }
+    // &:focus-within {
+    //     background-color:darkgrey;
+    // }
 
     &__input {
         outline: none;
@@ -51,9 +98,13 @@
         font-size: 20px;
 
         &::placeholder {
-            padding-left: 35px;
+            padding-top: 30px;
+            padding-left: 29.6px;
+            word-spacing: 4px;
             letter-spacing: 2px;
+            color: #999999;
             font-size: 14px;
+            letter-spacing: 0.2em;
             @extend %scroll__text;
         }
 
@@ -68,14 +119,17 @@
         border: none;
         padding: 15px 19.5px;
         color: black;
-        background-color: white;
-        gap: 7px;
-        transition: .5s ease;
+        gap: 10.8px;
+        transition: .3s ease;
         
         &:hover {
-            background-color: #5373FD;
             padding: 15px 19.5px;
             color: white;
+            border-radius: 10px;
+        }
+
+        &:active {
+            color: aquamarine;
         }
 
         &:hover svg {
@@ -123,6 +177,7 @@
         animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
         
         a {
+            letter-spacing: 0.2em;
             @extend %scroll__text;
         }
 

@@ -51,6 +51,8 @@
 
     & .menu__nav {
         gap: 38px;
+        z-index: 1;
+
 
         &__item {
             text-transform: uppercase;
@@ -109,8 +111,12 @@
     }
 }
 
+.menu__nav__item:nth-child(2) {
+    padding: 0 2px 0 0;
+}
 
 .burger__menu {
+    z-index: 2;
     display: none;
     width: 60px;
     height: 25px; 
@@ -147,6 +153,7 @@
    
     @include mobile-portrait {
         display: block;
+        left: 22px;
     }
 }
 

@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B H R O M A O N</title>
-    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
-    <!-- <link rel="stylesheet" href="/node_modules/reset.css"> -->
     <link rel="icon" href="./assets/images/favicon/free-icon-mountain-9140425.png">
+    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="./assets/style/main-style/style.css">
 </head>
 <body>
@@ -31,12 +30,12 @@
       </div>
       <div class="scroll">
         <p class="scroll__text">
-          <a href="#">Scroll Down</a>
+          <a href="#scroll">Scroll Down</a>
         </p>
       </div>
     </div>
   </header>
-  <nav class="menu"> 
+  <nav id="scroll" class="menu"> 
     <div class="menu-wrapper">
       <div class="menu__logo">
         <svg>
@@ -49,34 +48,188 @@
       </label>
       <ul class="menu__nav">
         <li class="menu__nav__item">
-          <a href="#WhoWeAre">Who We Are</a>
+          <a target="_self" href="#whoweare">Who We Are</a>
         </li>
         <li class="menu__nav__item">
-          <a href="#WhatWeDo">What We Do</a>
+          <a target="_self" href="#whatwedo">What We Do</a>
         </li>
         <li class="menu__nav__item">
-          <a href="#TravelWithUs">Travel With Us</a>
+          <a target="_self" href="#travelwithus">Travel With Us</a>
         </li>
         <li class="menu__nav__item">
-          <a href="#ContactUs">Contact Us</a>
+          <a target="_self" href="#contactus">Contact Us</a>
         </li>
       </ul>
     </div>
   </nav>
-  <picture>
-      <source media="(max-width: 1360px)" srcset="./assets/images/bg/HD/HeaderBackground-hd.png">
-      <source media="(max-width: 1024px)" srcset="./assets/images/bg/XGA/HeaderBackground-xga.png"> 
-      <!-- <source media="(max-width: 768px)" srcset="./assets/images/bg/Tablet/HeaderBackground-tablet.png">
-      <source media="(max-width: 576px)" srcset="./assets/images/bg/Phone/HeaderBackground-mobile.png">  -->
-    <img src="./assets/images/bg/Full-HD/HeaderBackground-full.png" alt="">
-  </picture>
   <main>
-   <section class="choose">
-    <article class="choose__info">
-
-    </article>
-
-   </section>
+    <div  class="choose">
+      <div class="choose-wrapper">
+        <article class="choose__info">
+          <hgroup class="choose__info__text">
+            <h2 class="choose__info__text__title">
+              Why Choose Us
+            </h2>
+            <p class="choose__info__text__text">
+              Tion and dislike men who are so beguiled and
+              demoralized by desire by the charms of pleasure 
+              of the moment, so blinded by desire, that they 
+              cannot foresee
+            </p>
+            <p class="choose__info__text__text">
+              Ddislike men who are so beguiled and 
+              demoralized by the charms of pleasure of
+              the moment, so blinded by desire, that.
+            </p>
+          </hgroup>
+          <div class="choose__info__btn">
+            <button>Explore Places</button>
+          </div>
+        </article>
+        <div class="choose__imgs">
+          <div class="choose__imgs__image">
+            <img src="./assets/images/FullHD/river-house_Full-HD_.avif" alt="Photo river">
+          </div>
+          <div class="choose__imgs__image">
+            <img src="./assets/images/FullHD/canyon_Full-HD_.avif" alt="Photo canyon">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="steps-wrapper">
+        <div class="steps__card">
+          <svg class="steps__card__icon">
+            <use xlink:href="./assets/svg/sprite.svg#search-steps"></use>
+          </svg>
+          <p class="steps__card__text">Search Places</p>
+        </div>
+        <div class="steps__card">
+          <svg class="steps__card__icon">
+            <use xlink:href="./assets/svg/sprite.svg#check-circle"></use>
+          </svg>
+          <p class="steps__card__text">Select Places</p>
+        </div>
+        <div class="steps__card">
+          <svg class="steps__card__icon">
+            <use xlink:href="./assets/svg/sprite.svg#thumbs-up"></use>
+          </svg>
+          <p class="steps__card__text">Book & Enjoy</p>
+        </div>
+        <div class="steps__line-1">
+        </div>
+        <div class="steps__line-2">
+        </div>
+      </div>
+    </div>
+    <div class="booknow">
+      <div class="booknow__first-section">
+        <div class="house-wrapper">
+          <article class="house__info">
+            <span class="house__info__subtitle">Spain</span>
+            <h5 class="house__info__title">Grand Spain Madrid</h5>
+            <p class="house__info__text">But I must explain to you how all this mistaken 
+              idea of account to denouncing pleasure and praising pain 
+              was account  born and I account will give you a complete 
+              account of the system</p>
+            <button class="house__info__btn">book now</button>
+          </article>
+        </div>
+      </div>
+      <div class="booknow__second-section">
+        <div class="sunset-wrapper">
+          <article class="sunset__info">
+            <span class="sunset__info__subtitle">Spain</span>
+            <h5 class="sunset__info__title">Grand Spain Madrid</h5>
+            <p class="sunset__info__text">But I must explain to you how all this mistaken 
+              idea of account to denouncing pleasure and praising pain 
+              was account  born and I account will give you a complete 
+              account of the system</p>
+            <button class="sunset__info__btn">book now</button>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="say">
+      <div class="say-wrapper">
+        <div class="say__info">
+          <h2 class="say__info__title">
+            What Our  Tourists Say
+          </h2>
+          <div class="say__quote">
+            <picture class="say__quote__img">
+              <source media="(max-width: 576px)" srcset="./assets/images/Phone/ReviewPhoto-mobile.avif">
+              <source media="(max-width: 768px)" srcset="./assets/images/Tablet/ReviewPhoto-tablet.avif">
+              <source media="(max-width: 1024px)" srcset="./assets/images/XGA/ReviewPhoto-xga.avif">
+              <source media="(max-width: 1360px)" srcset="./assets/images/HD/ReviewPhoto-hd.avif">
+              <source media="(max-width: 1920px)" srcset="./assets/images/FullHD/ReviewPhoto-full.avif">
+              <img src="./assets/images/FullHD/ReviewPhoto-full.avif" alt="Picture tourist">
+            </picture>
+            <div class="say__quote__info">
+              <h5 class="say__quote__info__title">  
+                Sam Sumon
+              </h5>
+              <p class="say__quote__info__text">
+                <img src="./assets/images/text/quote-left.png" alt="text-quotes">But I must explain to you how all this mistaken idea of account to denouncinpleasure 
+                and praising pain  But I must explain to you how all this mistaken idea of account to nai
+                denouncing pleasure and praising pain was account  born and I account will give you a 
+                complete account of the system was account  born and I account will give you a nai the 
+                complete account of the system
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__logo">
+        <svg>
+          <use xlink:href="./assets/svg/sprite.svg#logo"></use>
+        </svg>
+      </div>
+      <p class="footer__text">
+        Safe Travel Anywhere
+      </p>
+      <ul class="footer__socials">
+        <li class="footer__socials__item">
+          <a target="_blank" href="https://uk-ua.facebook.com/">
+            <svg>
+              <use xlink:href="./assets/svg/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__socials__item">
+          <a target="_blank" href="https://twitter.com/?lang=ru">
+            <svg>
+              <use xlink:href="./assets/svg/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__socials__item">
+          <a target="_blank" href="https://www.linkedin.com/feed/">
+            <svg>
+              <use xlink:href="./assets/svg/sprite.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__socials__item">
+          <a target="_blank" href="https://www.youtube.com/">
+            <svg>
+              <use xlink:href="./assets/svg/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__socials__item">
+          <a target="_blank" href="https://ru.pinterest.com/">
+            <svg>
+              <use xlink:href="./assets/svg/sprite.svg#pinterest"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
