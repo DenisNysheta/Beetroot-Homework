@@ -3,7 +3,7 @@
 .menu {
     width: 100vw;
     height: 8.7vh;
-    background-color: #5373FD;
+    background-color: #2E2EFF;
     position: relative;
 
     &__input {
@@ -34,7 +34,7 @@
     & .menu__logo {
         width: 168px;
         height: 20px;
-        fill: white;
+        fill: #FFFFFF;
         margin: 0 auto 0 0;
 
         @include tablet-x-portrait {
@@ -58,7 +58,7 @@
     & .menu__nav {
         gap: 55px;
         z-index: 1;
-
+        background-color: #2E2EFF;
 
         &__item {
             text-transform: uppercase;
