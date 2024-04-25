@@ -16,22 +16,6 @@
         height: 97.5vh;
     }
 
-    // @include desctop_hd-portrait {
-    //     background-position-x: 32%;
-    // }
-
-    // @include desctop_xga-portrait {
-    //     background-position-x: 34.6%;
-    // }
-
-    // @include tablet-portrait {
-    // background-position-x: 41.5%;
-    // }
-
-    // @include mobile-portrait {
-    //     background-position-x: 45%;
-    // }
-
     @include background(
         url("../../images/HD/HeaderBackground-hd.avif"),
         url("../../images/XGA/HeaderBackground-xga.avif"),
