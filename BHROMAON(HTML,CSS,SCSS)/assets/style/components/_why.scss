@@ -53,6 +53,7 @@
     width: 648px;
 
     &__btn {
+        margin-bottom: 5px;
         position: relative;
         & button {
             cursor: pointer;
@@ -82,7 +83,7 @@
     }
 
     @include desctop_hd-portrait {
-        width: 48.246%;
+        width: 48.979%;;
     }
 
     @include desctop_xga-portrait {
@@ -90,7 +91,7 @@
     }
 
     @include tablet-portrait {
-        margin-bottom: 86px;
+        margin-bottom: 80px;
         align-items: center;
         width: 100.04%;
     }
@@ -108,6 +109,10 @@
         margin: 0 0 28px 0;
         color: white;
         @extend %h2__title;
+
+        @include desctop_hd-portrait {
+            margin: 0 0 25px 0;
+        }
 
         @include tablet-portrait {
             text-align: center;
@@ -135,6 +140,10 @@
         @include tablet-portrait {
             margin: 0 0 24px 0;
         }
+    }
+    
+    @include desctop_hd-portrait {
+        padding: 0 0 35px;
     }
 
     @include desctop_xga-portrait {

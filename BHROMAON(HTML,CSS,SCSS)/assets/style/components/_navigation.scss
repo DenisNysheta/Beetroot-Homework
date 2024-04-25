@@ -16,7 +16,7 @@
     @include desctop_hd-portrait {
         height: 9.7vh;
     }
-    @include tablet-portrait {
+    @include tablet-x-portrait {
         height: 15.7vh;
     }
 
@@ -34,9 +34,12 @@
         fill: white;
         margin: 0 auto 0 0;
 
+        @include tablet-x-portrait {
+            margin: 0;
+        }
+
         @include tablet-portrait {
             align-self: center;
-            margin: 0;
         }
 
         @include mobile-portrait {
@@ -58,7 +61,7 @@
             text-transform: uppercase;
             color: white;
             position: relative;
-            transition: color .9s ease ;
+            transition: color .4s ease ;
             &::after {
                 content: "";
                 position: absolute;
@@ -72,7 +75,7 @@
             }
 
             &:hover {
-                color: aquamarine;
+                color:brown;
             }
 
             &:hover::after {
@@ -83,7 +86,10 @@
                 text-align: center;
             }
 
-            
+            @include mobile-l-portrait {
+                font-size: 13px;
+            }
+
         }
 
         @include flexy (flex,center,center,row);
@@ -99,9 +105,13 @@
         width:  93.75%;
     }
     
+    @include tablet-x-portrait {
+        flex-direction: column;
+        gap: 32px;
+    }
+
     @include tablet-portrait {
         width: 93.75%;
-        gap: 32px;
         flex-direction: column;
         align-items: center;
     }
@@ -179,7 +189,7 @@
         padding: 50px 0 50px 0;
         flex-direction: column !important; 
         background-color: #5373FD;
-        top: 60px;
+        top: 45px;
         opacity: 0;
         left: 0;
         height: 0px;

@@ -44,8 +44,20 @@
     }
 };
 
+@mixin tablet-x-portrait {
+    @media (max-width:820px) {
+        @content
+    }
+};
+
 @mixin tablet-portrait {
     @media (max-width: 768px) {
+        @content
+    }
+};
+
+@mixin mobile-l-portrait {
+    @media (max-width: 685px) {
         @content
     }
 };
@@ -60,14 +72,14 @@
     @media (max-width: 400px) {
         @content
     }
-}
+};
 
 @mixin flexy ($display,$justify,$align,$direction) {
     display: $display;
     justify-content: $justify;
     align-items: $align;
     flex-direction: $direction;
-}
+};
 
 @mixin background ( $hd, $xga, $tablet, $mobile) {
     @include desctop_hd-portrait {
@@ -85,7 +97,7 @@
     @include mobile-portrait {
         background-image: $mobile;
     }
-}
+};
 
 // <---Mixins--->
 // 
@@ -115,7 +127,7 @@
 }
 %text-link__navigation {
     font-family: "Aleo";
-    font-size: 14px;
+    
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0.1em;

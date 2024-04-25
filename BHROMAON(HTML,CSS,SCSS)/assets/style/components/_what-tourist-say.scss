@@ -21,8 +21,12 @@
         height: 707px;
     }
 
+    @include desctop_xga-portrait {
+        height: 733px;
+    }
+
     @include tablet-portrait {
-        height: 735px;
+        height: 923px;
     }
 
     @include mobile-portrait {
@@ -57,6 +61,10 @@
     @include mobile-portrait {
         margin-bottom: 60px;
     }
+
+    @include mobile_s-portrait {
+        margin: 0;
+    }
 }
 
 .say__quote {
@@ -76,7 +84,7 @@
         }
 
         @include mobile_s-portrait {
-            height: 234px;
+            height: 215px;
         }
     }
 
@@ -117,6 +125,11 @@
             margin-bottom: 62px
         }
 
+        @include mobile_s-portrait {
+            font-size: 34px;
+            margin: 0;
+        }
+
         @extend %h2__title;
     }
 
@@ -129,7 +142,7 @@
     }
 
     @include tablet-portrait {
-        margin-bottom: 60px;
+        margin-bottom: 0px;
     }
 
     @include mobile-portrait {

@@ -2,6 +2,7 @@
 
 .head {
     width: 100vw;
+    // height: 862px;
     height: 862px;
     position: relative;
     background-image: url("../../images/FullHD/HeaderBackground-full.avif");
@@ -12,23 +13,24 @@
 
     @include desctop_hd-portrait {
         background-size: cover;
+        height: 97.5vh;
     }
 
-    @include desctop_hd-portrait {
-        background-position-x: 32%;
-    }
+    // @include desctop_hd-portrait {
+    //     background-position-x: 32%;
+    // }
 
-    @include desctop_xga-portrait {
-        background-position-x: 34.6%;
-    }
+    // @include desctop_xga-portrait {
+    //     background-position-x: 34.6%;
+    // }
 
-    @include tablet-portrait {
-    background-position-x: 41.5%;
-    }
+    // @include tablet-portrait {
+    // background-position-x: 41.5%;
+    // }
 
-    @include mobile-portrait {
-        background-position-x: 45%;
-    }
+    // @include mobile-portrait {
+    //     background-position-x: 45%;
+    // }
 
     @include background(
         url("../../images/HD/HeaderBackground-hd.avif"),
@@ -56,6 +58,11 @@
         margin: 0 0 8px;
         text-align: center;
         letter-spacing: 1px;
+
+        @include desctop_hd-portrait {
+            margin: 0 0 8px 7px
+        }
+
         @extend %h1__title;
     }
 
@@ -125,14 +132,15 @@
             border-radius: 10px;
         }
 
-        &:active {
-            color: aquamarine;
-        }
-
+        
+        
         &:hover svg {
             fill: white;
         }
 
+        &:active {
+            color:crimson;
+        }
         
         svg {
             width: 16px;

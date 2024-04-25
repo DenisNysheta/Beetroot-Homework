@@ -12,7 +12,7 @@ body {
 
 ::-webkit-scrollbar {
     width: 10px;
-    background-color: rgba($color: #676671, $alpha: .5);
+    background-color: rgba($color: #000000, $alpha: .8);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -39,6 +39,9 @@ svg {
 :any-link {
     color: inherit;
     text-decoration: none;
+    font-size: inherit;
+
+
     @extend %text-link__navigation;
 }
 
