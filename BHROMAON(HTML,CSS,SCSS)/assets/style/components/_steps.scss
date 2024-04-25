@@ -1,7 +1,8 @@
 @import "../variables/variables.scss";
 
 .steps {
-    width: 100vw;
+     width: 100vw;
+    //  width: 100%;
     background-color: #333333;
     position: relative;
     @include flexy(flex,center,center,row)

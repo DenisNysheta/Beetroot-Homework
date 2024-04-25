@@ -7,7 +7,23 @@ html {
 body {
     font-family: "Josefin Light";
     overflow-x: hidden;
-    margin: 0;
+}
+
+@media  (min-width: 1921px) {
+    body {
+        margin: 0 auto;
+        width: 1920px;
+    }
+
+    .head,
+    .menu,
+    .choose,
+    .steps,
+    .booknow,
+    .say,
+    .footer {
+        width: 100%;
+    }
 }
 
 ::-webkit-scrollbar {
