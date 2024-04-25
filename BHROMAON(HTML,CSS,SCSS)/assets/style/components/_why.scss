@@ -62,7 +62,7 @@
             padding: 20px 32px;
             border: none;
             outline: none;
-            color: #232323;
+            color: white;
             @extend %properties__for__btn-main;
             background-repeat: no-repeat;
             background-image: url("../../images/btn/back-btn.png");
@@ -71,12 +71,12 @@
             
             &:hover {
                 border-radius: 10px;
-                color: white;
+                color: brown;
                 background-repeat: no-repeat;
             }
             
             &:active {
-                color: brown;
+                color: black;
             }
 
         }

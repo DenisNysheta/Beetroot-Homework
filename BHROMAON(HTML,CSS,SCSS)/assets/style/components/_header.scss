@@ -83,6 +83,9 @@
         height: 80%;
         transition: .5s ease;
         font-size: 20px;
+        color: brown;
+        font-weight: 900;
+        font-size: 25px;
 
         &::placeholder {
             padding-top: 30px;
@@ -93,10 +96,16 @@
             font-size: 14px;
             letter-spacing: 0.2em;
             @extend %scroll__text;
+            transition: .5s ease;
         }
 
         &:focus {
             outline: none;
+        }
+
+        &:focus::placeholder {
+            color: brown;
+            font-size: 17.5px;
         }
 
     }
@@ -106,20 +115,18 @@
         background-color: #5373FD;
         border: none;
         padding: 15px 19.5px;
-        color: black;
+        color: white;
         gap: 10.8px;
         transition: .3s ease;
         
         &:hover {
             padding: 15px 19.5px;
-            color: white;
+            color: brown;
             border-radius: 10px;
         }
 
-        
-        
         &:hover svg {
-            fill: white;
+            fill: brown;
         }
 
         &:active {
@@ -129,7 +136,7 @@
         svg {
             width: 16px;
             height: 16px;
-            fill: black;
+            fill: white;
             transition: .5s ease;
         }
         

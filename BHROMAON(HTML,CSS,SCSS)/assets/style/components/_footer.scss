@@ -34,6 +34,7 @@
         width: 275px;
         height: 32px;
         display: flex;
+        position: relative;
         justify-content: space-between;
     }
 
@@ -41,6 +42,7 @@
 }
 
 .footer__socials__item {
+    position: relative;
     fill: white;
     transition: .3s ease;
 
@@ -63,6 +65,7 @@
 
     &:hover {
         fill: #3b5998;
+        transform: scale(1.25);
     }
 }
 .footer__socials__item:nth-child(2){
@@ -71,8 +74,8 @@
 
     &:hover {
         fill: #00acee;
+        transform: scale(1.25);
     }
-
 }
 .footer__socials__item:nth-child(3){
     width: 28px;
@@ -80,8 +83,8 @@
 
     &:hover {
         fill: #0e76a8;
+        transform: scale(1.25);
     }
-
 }
 .footer__socials__item:nth-child(4){
     width: 36px;
@@ -89,8 +92,8 @@
 
     &:hover {
         fill: red;
+        transform: scale(1.25);
     }
-
 }
 .footer__socials__item:nth-child(5){
     width: 31px;
@@ -98,6 +101,24 @@
 
     &:hover {
         fill: rgb(248, 93, 93);
+        transform: scale(1.25);
     }
-
 }
+
+// @keyframes socials {
+//     // 0% {
+//     //     top: 0;
+//     // }
+//     // 50% {
+//     //     top: 5px;
+//     // }
+//     // 100% {
+//     //     top: 3px;
+//     // }
+//     from {
+//         top: 0;
+//     }
+//     to {
+//         top: 5px;
+//     }
+// }

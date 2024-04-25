@@ -168,7 +168,7 @@
         border: none;
         text-transform: uppercase;
         padding: 20px 56px;
-        color: #232323;
+        color: white;
         background-image: url("../../images/btn/back-btn.png");
         background-color: #5373FD;
         background-repeat: no-repeat;
@@ -176,12 +176,12 @@
         @extend %properties__for__btn-main;
 
         &:hover {
-            color: white;
+            color: brown;
             border-radius: 10px;
         }
 
         &:active {
-            color:brown;
+            color:black;
         }
 
     }
