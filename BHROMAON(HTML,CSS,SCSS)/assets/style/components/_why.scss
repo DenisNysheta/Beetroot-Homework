@@ -80,6 +80,10 @@
             }
 
         }
+
+        @include desctop_xga-portrait {
+            margin: 0;
+        }
     }
 
     @include desctop_hd-portrait {
@@ -91,13 +95,13 @@
     }
 
     @include tablet-portrait {
-        margin-bottom: 80px;
+        margin-bottom: 86px;
         align-items: center;
         width: 100.04%;
     }
 
     @include mobile-portrait {
-        margin-bottom: 95px
+        margin-bottom: 99px
     }
 
     @include flexy (flex,center,flex-start,column);

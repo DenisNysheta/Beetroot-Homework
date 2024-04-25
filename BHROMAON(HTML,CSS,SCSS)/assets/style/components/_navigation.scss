@@ -14,7 +14,10 @@
 
     
     @include desctop_hd-portrait {
-        height: 9.7vh;
+        height: 9.9vh;
+    }
+    @include desctop_xga-portrait {
+        height: 9.4vh;
     }
     @include tablet-x-portrait {
         height: 15.7vh;
@@ -53,13 +56,14 @@
     }
 
     & .menu__nav {
-        gap: 38px;
+        gap: 55px;
         z-index: 1;
 
 
         &__item {
             text-transform: uppercase;
             color: white;
+            font-size: 12.5px;
             position: relative;
             transition: color .4s ease ;
             &::after {
@@ -189,7 +193,7 @@
         padding: 50px 0 50px 0;
         flex-direction: column !important; 
         background-color: #5373FD;
-        top: 45px;
+        top: 52px;
         opacity: 0;
         left: 0;
         height: 0px;

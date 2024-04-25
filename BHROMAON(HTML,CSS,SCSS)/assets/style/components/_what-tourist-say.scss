@@ -22,7 +22,7 @@
     }
 
     @include desctop_xga-portrait {
-        height: 733px;
+        height: 740px;
     }
 
     @include tablet-portrait {
@@ -55,11 +55,11 @@
 
     @include desctop_xga-portrait {
         width: 93.82%;
-        margin-bottom: 70px;
+        margin-bottom: 60px;
     }
     
     @include mobile-portrait {
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
 
     @include mobile_s-portrait {
@@ -76,6 +76,7 @@
         img {
             @include tablet-portrait {
                 width: 100%;
+                height: 100%;
             }
         }
 
@@ -146,7 +147,7 @@
     }
 
     @include mobile-portrait {
-        margin-bottom: 5px;
+        margin-bottom: 15px;
     }
 }
 

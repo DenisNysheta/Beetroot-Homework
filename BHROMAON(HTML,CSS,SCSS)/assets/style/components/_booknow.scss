@@ -31,6 +31,18 @@
 
         & .house__info {
 
+            &__subtitle {
+                @include desctop_xga-portrait {
+                    margin-top: 7px;
+                }
+                @include tablet-portrait {
+                    margin-top: 0;
+                }
+                @include mobile-portrait {
+                    margin-top: 0;
+                }
+            }
+
             @include desctop_hd-portrait {
                 margin-top: 96px;
             }
@@ -46,6 +58,18 @@
 
         & .sunset__info {
             margin-top: 95px;
+
+            &__subtitle {
+                @include desctop_xga-portrait {
+                    margin-top: 7px;
+                }
+                @include tablet-portrait {
+                    margin-top: 0;
+                }
+                @include mobile-portrait {
+                    margin-top: 0;
+                }
+            }
 
             @include desctop_xga-portrait {
                 height: 372px;
