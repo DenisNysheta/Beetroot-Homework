@@ -16,6 +16,7 @@
         fill: #5373FD;
 
         &:hover > .steps__card__icon {
+            fill: #314392;
             transform: rotate(360deg);
         }
         
@@ -30,6 +31,7 @@
 
 
         &:hover > .steps__card__icon {
+            fill: #a40101;
             transform: rotateX(360deg);
         }
 
@@ -42,7 +44,7 @@
         fill: #00A2FF;
 
         &:hover > .steps__card__icon {
-           fill: aqua;
+           fill: #00639c;
            animation-name: thumbs;
            animation-duration: .6s;
            animation-direction: alternate;
