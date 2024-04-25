@@ -7,10 +7,6 @@ html {
 body {
     font-family: "Josefin Light";
     overflow-x: hidden;
-    
-    @include desctop_fullhd-portrait {
-        margin: 0;
-    }
 }
 
 @media  (min-width: 1921px) {
