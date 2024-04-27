@@ -71,14 +71,10 @@
             
             &:hover {
                 border-radius: 10px;
-                color: brown;
+                color: rgb(4, 193, 48);
                 background-repeat: no-repeat;
             }
             
-            &:active {
-                color: black;
-            }
-
         }
 
         @include desctop_xga-portrait {

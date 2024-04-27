@@ -16,13 +16,14 @@
         fill: #5373FD;
 
         &:hover > .steps__card__icon {
-            fill: #314392;
+            fill: aqua;
             transform: rotate(360deg);
         }
         
         &:hover ~ .steps__line-1{
             border-top: 2px dashed darkgray;
         }
+
 
     }
     
@@ -31,20 +32,21 @@
 
 
         &:hover > .steps__card__icon {
-            fill: #a40101;
+            fill: aqua;
             transform: rotateX(360deg);
         }
 
         &:hover ~ .steps__line-2{
             border-top: 2px dashed darkgray;
         }
+
     }
 
     & .steps__card:nth-child(3) {
         fill: #00A2FF;
         
         &:hover > .steps__card__icon {
-           fill: #00639c;
+           fill:aqua;
            animation-name: thumbs;
            animation-duration: .6s;
            animation-direction: alternate;
@@ -92,6 +94,7 @@
 }
 
 .steps__card {
+    cursor: pointer;
     background-color: #333333;
     z-index: 1;
     height: 139px;

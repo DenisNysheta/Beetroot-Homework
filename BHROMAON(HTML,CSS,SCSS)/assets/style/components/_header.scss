@@ -119,17 +119,14 @@
         
         &:hover {
             padding: 15px 19.5px;
-            color: brown;
+            color: rgb(4, 193, 48);
             border-radius: 10px;
         }
 
         &:hover svg {
-            fill: brown;
+            fill:rgb(4, 193, 48);
         }
 
-        &:active {
-            color:crimson;
-        }
         
         svg {
             width: 16px;
