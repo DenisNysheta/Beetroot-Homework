@@ -17,17 +17,19 @@
       }
 
       body{
+        gap: 50px;
         background-color: rgba(46, 81, 111, 0.4);
-        width: 700px;
+        width: 1880px;
         height: auto;
-        margin: 65px auto;
+        margin: 25px auto auto auto;
         border-radius: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
       }
       
-      .link {
+      .link__html-css
+       {
         width: 485px;
         display: flex;
         align-items: center;
@@ -35,15 +37,17 @@
       }
 
       li, a {
+        position: relative;
         list-style-type: none;
         text-decoration: none;
         font-size: 25px;
-        color: chocolate;
+        color: burlywood;
         font-family: "Roboto Mono", sans-serif;
         transition: .3s ease;
       }
 
-      .link:before {
+      .link__html-css:before
+      {
         content: '';
         width: 8px;
         height: 8px;
@@ -55,16 +59,24 @@
         transition: .3s ease;
       }
 
-      .link:hover:before  {
+      .link__html-css:hover:before
+      {
         opacity: 1;
       }
 
-      ul {
-        padding: 0;
+      .html {
+        background-color: rgba(111, 34, 34, .3);
+        padding: 20px 0 20px 20px;
         display: flex;
         flex-direction: column;
         width: 590px;
         gap: 15px;
+        transition: .3s ease;
+      }
+
+      .html:hover {
+        background-color: rgba(111, 34, 34, 1);
+        border-radius: 20px;
       }
 
       a:hover {
@@ -95,67 +107,120 @@
         filter: blur(0);
       }
 
+      .jaba {
+        height: 850px;
+        background-color: rgba(111, 34, 34, .3);
+        padding: 20px 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+        width: 590px;
+        gap: 15px;
+        transition: .3s ease;
+      }
+
+      .jaba:hover {
+        border-radius: 20px;
+        background-color: rgba(0, 139, 88, 1);
+      }
+
+      .link__js:before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background-color:rgb(112, 106, 13);
+        display: block;
+        border-radius: 50%;
+        opacity: 0;
+        outline: 4px solid rgb(0, 0, 0);
+        transition: .3s ease;
+      }
+
+      .link__js:hover:before
+      {
+        opacity: 1;
+      }
+
+      .link__js {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+      }
+
+      .link__js a {
+        color:gold;
+      }
+
+      .link__js a:hover {
+        color: aliceblue;
+      }
+
     </style>
   </head>
   <body>
-    <ul>
-      <li id="project-1" class="link">
+    <ul class="html">
+      <li id="project-1" class="link__html-css">
         <a target="_blank" href="./BHROMAON(HTML,CSS,SCSS)/index.html">BHROMAON
            <img id="stack-html" style="height: 25px;" src="./icons/icons8-html-48.png" alt="">
            <img id="stack-css" style="height: 25px;" src="./icons/icons8-css-48.png" alt="">
            <img id="stack-sass" style="height: 25px;" src="./icons/icons8-sass-48.png" alt="">
           </a>
       </li>
-      <li class="link">
+      <li class="link__html-css">
         <a target="_blank" href="Homework№1(My resume)/resume.html">Homework 1(Make myfirst CV)</a>
       </li>
-      <li class="link">
+      <li class="link__html-css">
         <a target="_blank" href="Homework№2(Semantic)/semantic.html">Homework 2(Semantictags)</a>
       </li>
-      <li class="link">
+      <li class="link__html-css">
         <a target="_blank" href="Homework№3(Form)/form.html">Homework 3(Form)</a>
       </li>
-      <li class="link">
-        <a target="_blank" href="Homework№4 (Maket 'Denis Novik')/figma.html">Homework 4 (Maket Denis Novik)</a>
+      <li class="link__html-css">
+        <a target="_blank" href="Homework№4 (Maket 'Denis Novik')/figma.html">Homework 4(Maket Denis Novik)</a>
       </li>
-      <li class="link">
-        <a target="_blank" href="Homework №5 (CSS Selectors, Pseudoelements and Pseudoclasses)/index.html">Homework 5 (CSS Shopping List)</a>
+      <li class="link__html-css">
+        <a target="_blank" href="Homework №5 (CSS Selectors, Pseudoelements and Pseudoclasses)/index.html">Homework 5(CSS Shopping List)</a>
       </li>
-      <li class="link">
+      <li class="link__html-css">
         <a target="_blank" href="Homework №6(maket Productly)/index.html">Homework №6(maket Productly)</a>
       </li>
-      <li class="link" style="width: 510px;">
+      <li class="link__html-css" style="width: 510px;">
         <a target="_blank" href="Homework№6 (Extra )/index.html">Homework №6(Extra Weather List)</a>
       </li>
-      <li class="link">
+      <li class="link__html-css">
         <a target="_blank" href="Homework№7(Maket ITLIFE)/index.html">Homework №7(ITLIFE)</a>
       </li>
-      <li class="link">
+      <li class="link__html-css">
         <a target="_blank" href="Homework№8(Grid)/index.html">Homework №8(Grid)</a>
       </li>
-      <li class="link">
+      <li class="link__html-css">
         <a target="_blank" href="Homework№ 9(Web-fonts)/index.html">Homework №9(Fonts)</a>
       </li>
-      <li class="link">
+      <li class="link__html-css">
         <a target="_blank" href="Homework№ 10(Who's using)/index.html">Homework №10(Who's using)</a>
       </li>
-      <li class="link" style="width: 510px;">
+      <li class="link__html-css" style="width: 510px;">
         <a target="_blank"  href="Homework №11(Create an account)/index.html">Homework №11(Create an account)</a>
       </li>
-      <li class="link">
+      <li class="link__html-css">
         <a target="_blank"  href="Homework №12(SVG)/index.html">Homework №12(SVG)</a>
       </li>
-      <li class="link">
+      <li class="link__html-css">
         <a target="_blank"  href="Homework№ 13(SASS)/index.html">Homework №13(SASS)</a>
       </li>
-      <li class="link">
+      <li class="link__html-css">
         <a target="_blank"  href="Homework№ 14(RWD)/index.html">Homework №14(RWD)</a>
       </li>
-      <li class="link">
+      <li class="link__html-css">
         <a target="_blank"  href="Homework №15(Animation)/index.html">Homework №15(Animation)</a>
       </li>
-      <li class="link">
+      <li class="link__html-css">
         <a target="_blank"  href="Homework №16(Cross Browser)/index.html">Homework №16(Cross Browser)</a>
+      </li>
+    </ul>
+
+    <ul class="jaba">
+      <li class="link__js">
+        <a href="/JS/Homework№1(JS-Introduction)/index.html">Homework №1(JS-Introduction)</a>
       </li>
     </ul>
   </body>
