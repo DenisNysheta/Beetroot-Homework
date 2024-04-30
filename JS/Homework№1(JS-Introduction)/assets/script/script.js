@@ -9,7 +9,7 @@ let cube = prompt('Яка довжина, однієї сторони квадр
 const CUBE_PERUMETR = cube * 4;
 alert(`Периметр квадрату, ${CUBE_PERUMETR}см`)
 let radius = prompt('Введіть радіус кола?')
-const PLOHA_CIRCLE = 3.14 * (radius * 2);
+const PLOHA_CIRCLE = 3.14 * radius ** 2;
 alert(`Площа кола становить ${PLOHA_CIRCLE}`)
 let distance = prompt('Яка відстань між двома містами ?')
 let time = prompt('За скільки годин ви хочете дістатися, з точки А в точку Б?')
