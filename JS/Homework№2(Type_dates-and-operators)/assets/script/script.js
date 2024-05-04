@@ -18,12 +18,13 @@ console.log(rezult)
 
 const SIZE_FILE = 820;
 let gigabyteUser = prompt('Скільки би ви хотіли мати ГБ на вашій флешці?')
-let userGb = Math.floor14((gigabyteUser * 1000 / 1.024) / SIZE_FILE);
+let userGb = Math.floor((gigabyteUser * 1000 / 1.024) / SIZE_FILE);
 let rezultCount = confirm(`На вашій флешці поміститься ${userGb} кількість файлів обсягом 820мб`)
 
 // Norma 
 
 // 1
+
 let money = prompt("Введіть кількість грошей");
 let cost = prompt("Скільки буде коштувати ваша шоколадка?");
 let reminder = money % cost;
@@ -37,8 +38,17 @@ let rezultReplace = confirm(`Ось ваша цифра в іншому поря
 
 // Max
 
+// 1
+
+const MONTS_YEAR = 12;
+const PROCENT = 0.05;
+let PROCENT_FOR_MONTH = MONTS_YEAR / PROCENT;
+let sumUser = prompt("Введіть сумму вкладу")
+let procentForMonth = ((sumUser / MONTS_YEAR * PROCENT) * 2).toFixed(1);
+alert(`Ваші нараховані відсотки ${procentForMonth}`)
+
 // 2
 
-let firstTask = 2 && 0 && 3;//Поверне 0 так як, з усіх чисел лише 0 рівняється false
-let secondTask = 2 || 0 || 3;//Поверне 2, так як він перший зустрічається в виразі, і відразу ловиться значення true
-let thirdTask = 2 && 0 || 3;//Поверне 3, так як в першому виразі де 2 && 0 - вертається 0, a вже потім при 0 || 3 вернеться 3
+// let firstTask = 2 && 0 && 3;//Поверне 0 так як, з усіх чисел лише 0 рівняється false
+// let secondTask = 2 || 0 || 3;//Поверне 2, так як він перший зустрічається в виразі, і відразу ловиться значення true
+// let thirdTask = 2 && 0 || 3;//Поверне 3, так як в першому виразі де 2 && 0(і він має більший пріорітет , тому вирішується перший) - вертається 0, a вже потім при 0 || 3 вернеться 3
