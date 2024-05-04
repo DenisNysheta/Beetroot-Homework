@@ -18,7 +18,7 @@ console.log(rezult)
 
 const SIZE_FILE = 820;
 let gigabyteUser = prompt('Скільки би ви хотіли мати ГБ на вашій флешці?')
-let userGb = Math.round((gigabyteUser * 1000 / 1.024) / SIZE_FILE);
+let userGb = Math.floor14((gigabyteUser * 1000 / 1.024) / SIZE_FILE);
 let rezultCount = confirm(`На вашій флешці поміститься ${userGb} кількість файлів обсягом 820мб`)
 
 // Norma 
