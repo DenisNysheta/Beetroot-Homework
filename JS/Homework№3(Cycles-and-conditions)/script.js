@@ -10,7 +10,7 @@ if (USER_AGE <= 11) {
     confirm('Ви підліток')
 } else if (USER_AGE <= 59) {
     confirm('Ви дорослий')
-} else if (USER_AGE <= 60 ) {
+} else if (USER_AGE >= 60 ) {
     confirm('Ви пенсіонер')
 } else {
     confirm('Перепрошую ваші данні не співпадають з очікуванною відповідью')
@@ -79,6 +79,7 @@ for (let i = startDiapazon; i <= endDiapazon; i++) {
     console.log(sumAll)
 }
 
+confirm(`Сумма всіх чисел в діапазоні від ${startDiapazon} до ${endDiapazon} , дорівнює ${sumAll}`)
 // 4 Найбільший спільний дільник серед двох чисел
 
 let firstNumber = Number(prompt('Ввкажіть перше число, для знаходження найбільшого спільного дільника'))
@@ -93,7 +94,7 @@ for (let i = 0; i < secondNumber; i++) {
 
 }
 
-let moreDilnik = numbers.pop()
+let moreDilnik = NUMBERS.pop()
 alert(`Найбільшим спільеим дільником серед вказаних вами чисел буде ( ${moreDilnik} )`)
 
 // 5 Вивести всі дільники числа
@@ -146,7 +147,6 @@ if(sum !== String()) {
         confirm(`Ваша сумма ${sum}грн зі знижкою в 5%, становить ${sumWithDiskount2}`)
 
     } 
-        // break
     
 
     else if(sum <= 500 || sum >= 500) {
