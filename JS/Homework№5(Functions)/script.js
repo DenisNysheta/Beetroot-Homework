@@ -80,41 +80,40 @@ let thirdInOne = prompt('Вкажіть третє число для його п
 
 
 const sumThreeNumbers = function(first,second,third) {
-    let sum = first + second + third
+    let sum = Number(first + second + third)
     alert(`Вказані числа створюють єдине число ${sum}`) 
 }
 
-sumThreeNumbers(first,second,third)
+sumThreeNumbers(firstInOne,secondInOne,thirdInOne)
 
-// 6 Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу. Якщо в функцію передали 1 параметр, то вона обчислює площу квадрата.
+// // 6 Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу. Якщо в функцію передали 1 параметр, то вона обчислює площу квадрата.
 
 const FIRST = Number(prompt('Введіть перший параметр'))
 const SECOND = Number(prompt('Введіть другий параметр'))
-const THIRD = Number(prompt('Введіть третій параметр'))
 
 
-let formulaForCube = (first,second, ...third) => {
+let plohaSquareOrUpright = (first,...second) => {
 
     if (first && second) {
         let ploha = first * second
         alert(`Площа прямокутника ${ploha}`)
 
-    } else if (third) {
-        let ploha = Math.pow(third,2)
+    } else if (second) {
+        let ploha = Math.pow(second,2)
         alert(`Площа квадрата ${ploha}`)
 
     }
 
 }
 
-formulaForCube(FIRST,SECOND,THIRD)
+plohaSquareOrUpright(FIRST,SECOND)
 
 // Max 
 
 // 1 Напиши функцію, яка перевіряє, чи є передане їй число “досконалим числом”
 
 
-let isNumberDosconale = (n) => {
+function isNumberDosconale (n) {
     let sum = 0
     
     for (let i = 0; i < n; i++) {
@@ -152,7 +151,7 @@ let firstDiapazon = Number(prompt('Ввкажіть будь ласка перш
 let secondDiapazon = Number(prompt('Ввкажіть будь ласка друге число діапазону, для пошуку ідеальних чисел'))
 let sumDiapazon = [];
 
-let isNumbers = function(first, second) {
+function isNumbers(first, second) {
 
     for (let i = first; i <= second;i++) {
 
