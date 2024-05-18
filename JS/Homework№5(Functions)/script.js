@@ -1,26 +1,26 @@
-// Min
+// // Min
 
-// 1 Напиши всі можливі варіанти створення функцій.
+// // 1 Напиши всі можливі варіанти створення функцій.
 
-// Function declaration
+// // Function declaration
 
-function isNum (arguments) {
-    actions
-}
+// function isNum (arguments) {
+//     actions
+// }
 
-// Function expression
+// // Function expression
 
-let func = function (arguments) {
-    actions
-}
+// let func = function (arguments) {
+//     actions
+// }
 
-// Arrow function
+// // Arrow function
 
-let arrow = (arguments) => {
-    actions
-}
+// let arrow = (arguments) => {
+//     actions
+// }
 
-// 2 Створи функцію, яка буде виводити кількість переданих їй аргументів.
+// // 2 Створи функцію, яка буде виводити кількість переданих їй аргументів.
 
 
 function manyArguments(...str) {
@@ -28,7 +28,7 @@ function manyArguments(...str) {
     alert(`Кількість переданих аргументів в функцію становить ${x}`)
 }
 
-// manyArguments()
+manyArguments(233333333)
 
 // 3 Напиши функцію, яка приймає 2 числа 
 
@@ -53,7 +53,7 @@ let returnNumbers = (first,second) => {
 
 returnNumbers(first,second)
 
-// 4 Вирахування факторіалу числа
+// // 4 Вирахування факторіалу числа
 
 let numberForFactorial = Number(prompt('Ввкажіть будь ласка число вирахування факторіалу числа'))
 factirialNumber(numberForFactorial)
@@ -155,12 +155,8 @@ function isNumbers(first, second) {
 
     for (let i = first; i <= second;i++) {
 
-        if (Boolean(isNumberDosconale(i)) === true) {
+        isNumberDosconale(i) === true ? sumDiapazon.push(i) : false
 
-            sumDiapazon.push(i)
-            
-        } 
-        
     }
     
     alert(`З вказаного діапазону лише ${sumDiapazon} є досконалими`)
