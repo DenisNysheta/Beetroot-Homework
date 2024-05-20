@@ -70,17 +70,67 @@ const car = {
 // то повинно вийти «21:00:15», а не «20:59:75». Також потрібно передбачити
 // можливість того що користувач може передати 150 секунд, або 75 хвилин.
 
-const time = {
-  години:12,
-  хвилини:12,
-  секунди:54,
+const timeObj = {
+  hours:20,
+  minutes:52,
+  seconds:33,
+  informationTime: new Date(),
 
   timeInfo: function () {
-    let info = new Date(time.години,time.хвилини,time.секунди)
-    console.log(info)
-
+    let info = this.informationTime
+    let hours = info.getHours()
+    let minutes = info.getMinutes()
+    let seconds = info.getSeconds()
+    alert(`На данний момент, час становить ${hours}:${minutes}:${seconds}`)
   },
+
+  changeTimeSeconds() {
+   let time = this.informationTime
+   let secondsChange = this.informationTime.setSeconds(Number(prompt('Ввкажіть кількість секунд для зміни часу')))
+   let hours = time.getHours()
+   let minutes = time.getMinutes()
+   let seconds = time.getSeconds()
+   alert(`Зі змінною секунд, час становить ${hours}:${minutes}:${seconds}`)
+   return secondsChange
+  },
+
+  changeTimeMinutes() {
+   let time = this.informationTime
+   let minutesChange = this.informationTime.setMinutes(Number(prompt('Ввкажіть кількість хвилин для зміни часу')))
+   let hours = time.getHours()
+   let minutes = time.getMinutes()
+   let seconds = time.getSeconds()
+   alert(`Зі змінною хвилин, час становить ${hours}:${minutes}:${seconds}`)
+   return minutesChange
+  },
+
+  changeTimeHours() {
+   let time = this.informationTime
+   let hoursChange = this.informationTime.setHours(Number(prompt('Ввкажіть кількість годин для зміни часу')))
+   let hours = time.getHours()
+   let minutes = time.getMinutes()
+   let seconds = time.getSeconds()
+   alert(`Зі змінною годин, час становить ${hours}:${minutes}:${seconds}`)
+   return hoursChange
+  }
 
 }
 
-time.timeInfo()
+// <---> Виклики функцій для перевірки
+// timeObj.timeInfo()
+// timeObj.changeTimeHours()
+// timeObj.changeTimeMinutes()
+// timeObj.changeTimeSeconds()
+// timeObj.timeInfo()
+// <--->
+
+
+// 3 
+/*
+Створи об'єкт, що описує звичайний дріб. Створи об'єкт, який має методи роботи з дробом:
+1 Складання 2-х об'єктів-дробів.
+2 Віднімання 2-х об'єктів-дробів.
+3 Множення 2-х об'єктів-дробів.
+4 Ділення 2-х об'єктів-дробів.
+5 Скорочення об'єкта-дробу.
+*/
