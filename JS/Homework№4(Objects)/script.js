@@ -12,34 +12,34 @@
 let array = []
 const car = {
     
-  'Країна виробник':"BMW",
-  Модель:"M5",
-  Бензобак: '40л',
-  'Середня витрата палива на 100км': '8л',
-  Власники:[],
+  manufacturer:"BMW",
+  model:"M5",
+  gasTank: "40л",
+  averageFuelConsumption: "8л",
+  owners:[],
     
   infoAboutCar: function () {
 
-      for (let key in car) {
+      for (let key in this) {
 
-        typeof car[key] !== 'function' ? array.push(`
-        ${key}  `, car[key]) : false
+        typeof this[key] !== "function" ? array.push(`
+        ${key}  `, this[key]) : false
        
       }
       alert(array)
   },
 // Метод для додавання водія в список
   addDriver: function (nameDriver) {
-    isNaN(nameDriver) ? car.Власники.push(`${nameDriver}`) : false
+    isNaN(nameDriver) ? this.owners.push(`${nameDriver}`) : false
   },
 // Метод для ім'я водія в списку власників 
   isYourCar: function (nameDriver) {
-    car.Власники.includes(nameDriver) ? alert("Так ваше ім'я, присутнє в списку") : alert("Вибачте, але вашого ім'я немає")
+    this.owners.includes(nameDriver) ? alert("Так ваше ім'я, присутнє в списку") : alert("Вибачте, але вашого ім'я немає")
   },
 // Метод для вирахування необхідного часу та кількості палива для подолання переданої відстані з середньою швидкістю
   sumTimePatrolDistance: function() {
-      let distance = parseInt(prompt('Ввкажіть дистанцію для подалання'));
-      let time = parseInt(prompt('Ввкажіть необхідний час'));
+      let distance = parseInt(prompt("Ввкажіть дистанцію для подалання"));
+      let time = parseInt(prompt("Ввкажіть необхідний час"));
       let relax = 4;
       let averageSpeed = Math.round(distance / time);
       let needTime = Math.round((time / relax) + time)
@@ -71,9 +71,6 @@ const car = {
 // можливість того що користувач може передати 150 секунд, або 75 хвилин.
 
 const timeObj = {
-  hours:20,
-  minutes:52,
-  seconds:33,
   informationTime: new Date(),
 
   timeInfo: function () {
@@ -85,33 +82,24 @@ const timeObj = {
   },
 
   changeTimeSeconds() {
-   let time = this.informationTime
-   let secondsChange = this.informationTime.setSeconds(Number(prompt('Ввкажіть кількість секунд для зміни часу')))
-   let hours = time.getHours()
-   let minutes = time.getMinutes()
-   let seconds = time.getSeconds()
-   alert(`Зі змінною секунд, час становить ${hours}:${minutes}:${seconds}`)
-   return secondsChange
+    let time = this.informationTime
+    let seconds = Number(prompt("Ввкажіть кількість секунд для зміни часу"))
+    time.setSeconds(time.getSeconds() + seconds)
+    alert(`Зі зміннами секунд, час становить ${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`)
   },
 
   changeTimeMinutes() {
-   let time = this.informationTime
-   let minutesChange = this.informationTime.setMinutes(Number(prompt('Ввкажіть кількість хвилин для зміни часу')))
-   let hours = time.getHours()
-   let minutes = time.getMinutes()
-   let seconds = time.getSeconds()
-   alert(`Зі змінною хвилин, час становить ${hours}:${minutes}:${seconds}`)
-   return minutesChange
+    let time = this.informationTime
+    let minutes = Number(prompt("Ввкажіть кількість хвилин для зміни часу"))
+    time.setMinutes(time.getMinutes() + minutes)
+    alert(`Зі зміннами хвилин, час становить ${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`)
   },
 
   changeTimeHours() {
-   let time = this.informationTime
-   let hoursChange = this.informationTime.setHours(Number(prompt('Ввкажіть кількість годин для зміни часу')))
-   let hours = time.getHours()
-   let minutes = time.getMinutes()
-   let seconds = time.getSeconds()
-   alert(`Зі змінною годин, час становить ${hours}:${minutes}:${seconds}`)
-   return hoursChange
+    let time = this.informationTime
+    let hours = Number(prompt("Ввкажіть кількість годин для зміни часу"))
+    time.setHours(time.getHours() + hours)
+    alert(`Зі зміннами годин, час становить ${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`)
   }
 
 }
@@ -121,7 +109,6 @@ const timeObj = {
 // timeObj.changeTimeHours()
 // timeObj.changeTimeMinutes()
 // timeObj.changeTimeSeconds()
-// timeObj.timeInfo()
 // <--->
 
 
