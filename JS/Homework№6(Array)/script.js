@@ -113,7 +113,7 @@ function addProductsInList(name, count, price) {
 const sumAllProducts = (array) => {
     const sum = array.reduce((total,value) => {
         return total + value.sum
-    }, 15)
+    }, 0)
 
     return sum
 }
@@ -149,3 +149,5 @@ function sortProducts(lessOrMore = true) {
 // <---На сам перед виклик модалки, яка поверне значення булеве, і яке буде передане в аргумент функції--->
 // let how = confirm('Якщо хочете щоб список продуктів був відсортований за спаданням, нажміть confirm, якщо ні то cancel')
 // sortProducts(how)
+console.log(listProducts)
+console.log(sumAllProducts(listProducts))
