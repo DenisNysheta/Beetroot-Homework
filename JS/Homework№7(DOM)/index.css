@@ -18,6 +18,7 @@ button {
     border: none;
     background-color: bisque;
     transition: .3s ease;
+   
 }
 
 button:hover {
