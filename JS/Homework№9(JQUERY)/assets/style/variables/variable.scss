@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+// <---- Mixin
+
+@mixin flex ($justify,$align,$direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+};
+
+@mixin desctop-protrait {
+    @media screen and (max-width:1400px) {
+        @content
+    }
+};
+@mixin desctop-hd-protrait {
+    @media screen and (max-width:1200px) {
+        @content
+    }
+};
+
+@mixin tablet-l-protrait {
+    @media screen and (max-width:890px) {
+        @content
+    }
+};
+
+@mixin tablet-protrait {
+    @media screen and (max-width:768px) {
+        @content
+    }
+};
+
+@mixin mobile-protrait {
+    @media screen and (max-width:468px) {
+        @content
+    }
+}
+
+// <---- Extenctions
+
+%price__text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+}
+
+%menu__text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+}
+
+%text__hero {
+    text-transform: uppercase;
+    color: #F8F1EA;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60.95px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+%btn__text {
+    padding: 15px 57px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+    text-align: center;
+}
+
+%in__stock {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 12.19px;
+    text-align: center;
+    font-size: 10px;
+}
+
+%arrivals__text {
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 19.5px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+%price__text {
+    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+    text-align: center;
+}
+
+%h2__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.01px;
+    text-align: center;
+    margin: 0;
+    font-family: Montserrat;
+    text-transform: uppercase;
+}

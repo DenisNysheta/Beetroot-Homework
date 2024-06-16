@@ -1,0 +1,177 @@
+@import "../variables/variable.scss";
+
+.arrivals {
+    height: 630px;
+    margin: 70px 40px;
+    gap: 55px;
+
+    &__title {
+        @extend %h2__title;
+    }
+
+    &__btn {
+        border: 1px solid black;
+        background-color: transparent;
+        transition: .5s ease;
+        cursor: url("../../images/Vector\ \(2\).png"), auto;
+
+        &:hover {
+            color: white;
+            background-color: rgba(241, 106, 80, 1);
+            border: 1px solid transparent;
+        }
+
+        &:active {
+            transition: .1s ease;
+            box-shadow: 2px 2px  10px black inset;
+        }
+
+        @extend %btn__text;
+    }
+
+    @include flex(center,center,column);
+}
+
+.arrivals__guitar {
+    margin: 0 20px;
+    list-style-type: none;
+    width: 210px;
+    height: 420px !important;
+    gap: 15px;
+    height: 437px;
+    padding:0 0 10px 0;
+    transition: .2s ease;
+    border: 1px solid #F8F1EA;
+    cursor: pointer;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    & .arrivals__stock {
+        display: block;
+        background-color: #F16A5D;
+        width: 60px;
+        height: 15px;
+        color: white;
+        align-self: flex-start;
+        text-transform: uppercase;
+
+        @extend %in__stock;
+    }
+
+    & .arrivals__title {
+        margin: 0;
+        @extend %arrivals__text;
+    }
+
+    & .arrivals__price {
+        margin: 0;
+        @extend %price__text;
+    }
+
+    &:hover {
+        border: 1px solid #F16A5D
+    }
+
+}
+
+[data-stock = true] {
+    display: block;
+    background-color: #F16A5D;
+    width: 60px;
+    height: 15px;
+    color: white;
+    align-self: flex-start;
+    text-transform: uppercase;
+    
+    @extend %in__stock;
+}
+    
+    [data-stock = false] {
+    display: block;
+    background-color: #F8F1EA;
+    width: 60px;
+    height: 15px;
+    color: black;
+    align-self: flex-start;
+    text-transform: uppercase;
+
+    @extend %in__stock;
+}
+
+.arrivals__container {
+    width: 1320px;
+    height: 395px;
+
+    @include desctop-hd-protrait {
+        width: 110%;
+    }
+
+    @include tablet-l-protrait {
+        height: 455px;
+    }
+
+    @include flex(center,center,row)
+}
+
+.arrivals__slider {
+    width: 1200px;
+    height: inherit;
+
+    &__list {
+        width: inherit;
+        height: inherit;
+        margin: 0;
+        padding: 0;
+
+    }
+    
+    @include desctop-hd-protrait {
+        width: 800px;
+    }
+
+    @include tablet-l-protrait {
+        width: 400px;
+    }
+}
+
+.arrivals__img {
+    width: 197px;
+}
+
+.arrow {
+    width: 40px;
+    height: 74px;
+    background-image: url("../../images/arrivals_slider/prev.png");
+
+    
+}
+    
+.arrivals__next {
+    transform: rotate(180deg);
+    &:active {
+        transform: rotate(360deg);
+        background-image: url("../../images/arrivals_slider/next-active.png");
+    }
+    @include tablet-l-protrait {
+        display: none;
+    }
+}
+
+.arrivals__prev {
+    &:active {
+        transform: rotate(180deg);
+        background-image: url("../../images/arrivals_slider/next-active.png");
+    }
+    @include tablet-l-protrait {
+        display: none;
+    }
+}
+
+.arrivals__dots {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+    gap: 15px;
+}

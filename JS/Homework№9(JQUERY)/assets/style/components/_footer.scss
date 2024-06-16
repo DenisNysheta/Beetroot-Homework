@@ -1,0 +1,139 @@
+@import "../variables/variable.scss";
+
+.footer {
+    background-color: #35312D;
+    height: 290px;
+    gap: 20px;
+
+    &__author {
+        margin-bottom: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        line-height: 17.07px;
+        text-align: center;
+        font-size: 14px;
+        color: white;
+    }
+
+    @include flex(flex-end,center,column);
+
+    @include desctop-hd-protrait {
+        height: 275px;
+    }
+
+    @include tablet-l-protrait {
+        height: 330px;
+    }
+}
+
+.footer__content {
+    width: 1142px;
+    height: 195px;
+
+    &__menu {
+        width: 150px;
+        height: inherit;
+
+        @include flex(space-between,flex-start,column);
+
+        @include desctop-hd-protrait {
+            padding: 0 0 0 30px;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 54%;
+        }
+
+        @include tablet-l-protrait {
+            flex-direction:  column;
+        }
+    }
+
+    &__contact {
+        width: 335px;
+        height: inherit;
+        @include flex(space-around,flex-start,column)
+    }
+
+    &__logo {
+        width: 150px;
+        height: 30px;
+
+        @include tablet-l-protrait {
+            align-self: center;
+        }
+    }
+
+    &__title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        line-height: 31.69px;
+        text-align: center;
+        font-size: 26px;
+        color: white;
+
+        @include tablet-l-protrait {
+            align-self: flex-end;
+            padding: 0 20px 0 0;
+        }
+    }
+
+    &__number {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        line-height: 31.69px;
+        text-align: left;
+        font-size: 26px;
+        color: white;
+
+        @include tablet-l-protrait {
+            align-self: flex-end;
+            padding: 0 20px 0 0;
+        }
+    }
+
+    &__socials {
+        @include flex(space-between,center,row)
+    }
+
+    @include flex(space-between,center,row);
+
+    @include desctop-hd-protrait {
+        width: 100%;
+    }
+}
+
+.footer__content__list__item {
+    color: white;
+    transition: .3s ease;
+    margin-bottom: 10px;
+
+    &:hover {
+        color: #F16A50;
+    }
+        
+    @extend %menu__text;
+}
+
+.footer__content__socials__item {
+    width: 60px;
+    height: 32px;
+    
+    & a {
+        width: inherit;
+        height: inherit;
+        display: block;
+        }
+        
+        
+    &:hover a svg {
+        transition: .4s ease;
+        fill: #F16A50;
+
+    }       
+}
+
+.footer__content__list {
+    @include desctop-hd-protrait {
+        align-self: center;
+    }
+}

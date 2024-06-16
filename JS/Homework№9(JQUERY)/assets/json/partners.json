@@ -1,0 +1,48 @@
+[
+    {
+        "id":1,
+        "img":"./assets/images/partners/epiphone.png",
+        "partner":"Epiphone"
+    },
+    {
+        "id":2,
+        "img":"./assets/images/partners/esp.png",
+        "partner": "Esp"
+    },
+    {
+        "id":3,
+        "img":"./assets/images/partners/gibson.png",
+        "partner":"Gibson"
+    },
+    {
+        "id":4,
+        "img":"./assets/images/partners/engl.png",
+        "partner":"Engl"
+    },
+    {
+        "id":5,
+        "img":"./assets/images/partners/roland.png",
+        "partner":"Roland"
+    },
+    {
+        "id":6,
+        "img":"./assets/images/partners/fender.png",
+        "partner":"Fender"
+    },
+    {
+        "id":7,
+        "img":"./assets/images/partners/peavy.png",
+        "partner":"Peavy"
+    },
+    {
+        "id":8,
+        "img":"./assets/images/partners/marshall.png",
+        "partner":"Marshall"
+    },
+    {
+        "id":9,
+        "img":"./assets/images/partners/orange.png",
+        "partner":"Orange"
+    }
+
+]

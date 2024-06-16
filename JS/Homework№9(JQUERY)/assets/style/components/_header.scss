@@ -1,0 +1,157 @@
+@import "../variables/variable.scss";
+
+.header {
+    height: 80px;
+    width: inherit;
+    background-color: rgb(248, 241, 234);
+
+    &__logo svg {
+        width: 182px;
+        height: 34px;
+    }
+
+    &__icons {
+        gap: 30px;
+        height: 60px;
+        width: 160px;
+        
+
+        & .icon {
+            width: 60px;
+            height: inherit;
+            transition: .3s ease;
+            border-radius: 50px;
+
+            &:hover {
+                background-color: #F16A50;
+                cursor: url("../../images/Vector\ \(2\).png"), auto;
+            }
+
+            @include flex(space-around, center,row)
+        }
+
+        @include tablet-protrait {
+            width: auto;
+            gap: 0;
+        }
+
+        @include flex(space-around, center,row);
+    }
+
+    &__icons a {
+        display: block;
+        width: 38px;
+        height: 38px;
+
+    }
+
+    &__icons a svg {
+        width: inherit;
+        height: inherit;
+    }
+
+    @include tablet-protrait {
+        padding: 0 35px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    @include flex(space-around, center,row);
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+    transition: .3s ease;
+    list-style-type: none;
+    width: 410px;
+    height: 80px;
+    
+    &__item {
+        cursor: pointer;
+        color: black;
+        padding: 0 15px 0 15px;
+        text-align: center;
+        height: inherit;
+        transition: .3s ease;
+        
+        &:hover {
+            cursor: url("../../images/Vector\ \(2\).png"), auto;
+            background-color: #F16A50;
+            color: white;
+        }
+        
+        @include tablet-protrait {
+            width: 100%;
+        }
+
+        @include flex(space-around, center,row); 
+        @extend %menu__text;
+    }
+
+    @include tablet-protrait {
+        z-index: 2;
+        position: absolute;
+        background-color:rgba(248, 241, 234,);
+        width: 200px;
+        top: -100%;
+        right: 0;
+        opacity: 0;
+        height: 400px;
+        border-radius: 0 0 0 20px;
+        @include flex(center, center,column);
+    }
+        
+    @include flex(center, center,row);
+ }
+        
+.menu__item:nth-child(4) {
+    @include tablet-protrait {
+        border-radius: 0 0 0 20px;
+    }
+}
+
+.burger {
+    transition: .3s ease;
+    display: none;
+    width: 45px;
+    height: 35px;
+    cursor: pointer;
+
+    &__line {
+        position: relative;
+        display: block;
+        height: 3px;
+        background-color: black;
+        width: 100%;
+        transition: .3s ease;
+    }
+
+    @include tablet-protrait {
+        position: relative;
+        margin-left: 10px;
+        @include flex(space-between,center,column)
+    }
+        
+}
+
+.transform {
+    transform: rotate(360deg);
+}
+
+.first {
+    top: 16px;
+    transform: rotate(45deg);
+}
+.second {
+    transform: rotate(45deg);
+}
+.third {
+    bottom: 15px;
+    transform: rotate(-45deg);
+}
+
+.right {
+    top: 80px;
+    opacity: 1;
+}

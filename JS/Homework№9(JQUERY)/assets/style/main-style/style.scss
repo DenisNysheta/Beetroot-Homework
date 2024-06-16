@@ -1,0 +1,40 @@
+@use "../variables/imports.scss";
+@import "../variables/variable.scss";
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: url("../../images/Vector\ \(2\).png"), auto;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+body {
+    overflow-x:hidden;
+}
+
+svg {
+    width: inherit;
+    height: inherit;
+}
+
+.wrapper {
+    margin: 0 auto;
+    height: auto;
+    width: 1400px;
+
+    @include desctop-protrait {
+        width: 100%;
+    }   
+}
