@@ -10,7 +10,7 @@ $('.hero').slick({
     lazyload:"ondemand",
     draggable:true
 });
-
+// <---- Як розумію не найкращий варіант для реалізації точок, але вирішив додати як один із способів ^_^
 let x = document.querySelector(".my-dots")
 
 for(let i = 0; i < x.children.length; i++) {
@@ -56,13 +56,12 @@ $(".arrivals__slider__list").slick({
       {
       breakpoint:890,
       settings:{
-        autoplay:true,
+        autoplay:false,
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite:true,
         arrows:false,
-        dots:true,
-        dotsClass:"arrivals__dots"
+        dots:true
       }
     },
   ]
@@ -85,40 +84,41 @@ $.getJSON("./assets/json/partners.json", function(data) {
 })
 
 $(".partners__slider").slick({
-    autoplay:true,
-    arrows:true,
-    infinite:true,
-    slidesToShow:8.99,
-    slideToScroll:4,
-    autoplaySpeed:2900,
-    speed:900,
-    draggable:true,
-    prevArrow:$(".partners__prev"),
-    nextArrow:$(".partners__next"),
-    responsive:[
-      {
-      breakpoint:1350,
-      settings:{
-        autoplay:false,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        infinite:true
-      }
-    },
-      {
-      breakpoint:890,
-      settings:{
-        autoplay:false,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite:true,
-        arrows:false,
-        dots:true,
-        dotsClass:"partners__dots"
-      }
-    },
-  ]
+  dots:false,
+  autoplay:false,
+  autoplay:true,
+  arrows:true,
+  infinite:true,
+  slidesToShow:8.99,
+  slideToScroll:4,
+  autoplaySpeed:2900,
+  speed:900,
+  prevArrow:$(".partners__prev"),
+  nextArrow:$(".partners__next"),
+  responsive:[
+    {
+    breakpoint:1350,
+    settings:{
+      autoplay:false,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      infinite:true
+    }
+  },
+    {
+    breakpoint:890,
+    settings:{
+      autoplay:false,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      infinite:true,
+      arrows:false,
+      dots:true
+    }
+  },
+]
 })
+
 
 let burger = document.querySelector(".burger")
 

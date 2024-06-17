@@ -78,4 +78,14 @@
     justify-content: center;
     margin: 20px 0 0 0;
     gap: 15px;
+
+}
+
+.partners__slider > .slick-dots li button::before {
+    background-color: #F16A5D;
+    color: transparent;
+    transition: .3s ease;
+    border-radius: 15px;
+    color: transparent !important;
+
 }
