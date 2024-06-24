@@ -1,0 +1,48 @@
+@import "../more.scss";
+
+.header {
+    width: 80%;
+
+    &__menu {
+        padding: 20px;
+        width: 100%;
+        height: 170px;
+        background-color: rgb(62, 85, 77);
+        margin: 0 auto;
+        border-radius: 0 0 20px 20px;
+        @include flexy(center,center,column,wrap);
+
+        &__list {
+            list-style-type: none;
+            width: 80%;
+            height: 70px;
+            gap: 40px;
+            @include flexy(center,center,row,wrap)
+        }
+
+    }
+
+}
+
+[id='search-title'],[id='search-year'] {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    
+    &::placeholder {
+        transition: .3s ease;
+    }
+
+    &:focus::placeholder {
+       color: transparent;
+    }
+
+}
+
+[id='search-type'] {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}

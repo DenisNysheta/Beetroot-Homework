@@ -1,0 +1,15 @@
+// <---- Mixins
+
+@mixin flexy($justify,$align,$direction,$wrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+@mixin desktop-portrait {
+    @media (max-width: 1420px) {
+        @content
+    }
+};

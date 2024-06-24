@@ -1,0 +1,289 @@
+@import "../more.scss";
+
+.movies {
+    width: 100%;
+    height: auto;
+
+    &__list {
+        border-radius: 20px;
+        padding: 20px;
+       width: inherit;
+       height: auto;
+       min-height: 210px;
+       background-color: rgba(38, 45, 43, 1);
+       @include flexy(center,center,row,wrap)
+    }
+}
+
+.movie {
+    box-sizing: border-box;
+    margin: 10px;
+    width: 300px;
+    height: auto;
+    padding: 20px 0 20px 0;
+    min-height: 400px;
+    background-color: rgba(225, 178, 121, 0.518);
+    border-radius: 10px;
+    border: 10px solid black;
+    outline: 3px solid darksalmon;
+    gap: 10px;
+
+    &__title {
+        color: rgb(125, 52, 52);
+        margin: 0;
+        height: auto;
+        min-height: 30px;
+        text-align: center;
+    }
+
+    &__img {
+        width: 255px;
+        height: 345px;
+        background-color: aqua;
+    }
+
+    &__type {
+        display: block;
+        color: rgb(74, 56, 12);
+        font-weight: 600;
+        margin: 0;
+        text-align: center;
+    }    
+
+    &__details {
+        padding: 6px 25px 6px 25px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        font-weight: 700;
+        color: rgb(158, 60, 60);
+        background-color: transparent;
+        transition: .3s ease;
+        &:hover {
+            background-color: bisque;
+        }
+
+        &:active {
+            transition: .1s ease;
+            box-shadow: .5px 0px 5px 1px inset black;
+        }
+
+    }
+
+    @include flexy(space-around,center,column,no-wrap)
+}
+
+
+.animation {
+    width: 200px;
+    height: 200px;
+    gap: 5px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    & .cube{
+        border-radius: 100%;
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-color: aqua;
+
+        &:nth-child(1) {
+            background-color: rgba(174, 76, 76, 1);
+            animation-name: first;
+            animation-delay: .4s;
+            animation-duration: .3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes first {
+            from {
+                background-color: rgba(174, 76, 76, 1);
+            }
+            to {
+                background-color: rgba(174, 76, 76, 0);
+            }
+        }
+
+        &:nth-child(2) {
+            background-color: rgba(174, 76, 76, 1);
+            animation-name: second;
+            animation-delay: .8s;
+            animation-duration: .3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes second {
+            from {
+                background-color: rgba(174, 76, 76, 1);
+            }
+            to {
+                background-color: rgba(174, 76, 76, 0);
+            }
+        }
+
+        &:nth-child(3) {
+            background-color: rgba(174, 76, 76, 1);
+            animation-name: third;
+            animation-delay: 1.2s;
+            animation-duration: .3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes third {
+            from {
+                background-color: rgba(174, 76, 76, 1);
+            }
+            to {
+                background-color: rgba(174, 76, 76, 0);
+            }
+        }
+
+    }
+
+    @include flexy(center,center,row,no-wrap)
+}
+
+.not-found {
+   color: red;
+   font-size: 30px;
+}
+
+.btn {
+    border: 1px solid rgba(134, 18, 236, 0.39);
+    outline: none;
+    color: lightseagreen;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+    background-color: transparent;
+    transition: .4s ease;
+
+    &:hover {
+        background-color: rgb(89, 46, 46);
+    }
+
+    &:active {
+        transition: .1s ease;
+        box-shadow: inset 0px 0px 8px 0px blue;
+    }
+
+}
+
+.details {
+    width: 700px;
+    height: 600px;
+    position: fixed;
+    z-index: 10;
+    right: 2%;
+    top: 5%;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    transition: .5s ease;
+
+    &__first {
+        height: inherit;
+        gap: 20px;
+        @include flexy(flex-start, center,column,no-wrap)
+    }
+
+    &__title  {
+        text-align: center;
+    }
+
+    &__released {
+        font-size: 25px;
+        font-weight: 900;
+        color: #793535;
+    }
+
+    &__actors {
+        text-align: center;
+        max-width: 270px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    &__producer {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    &__runtime {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    &__country {
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__second {
+        height: inherit;
+        padding: 0 20px 0 20px;
+        @include flexy(space-evenly, center,column,no-wrap)
+    }
+
+    &__plot {
+        text-align: center;
+        height: auto;
+        min-height: 100px;
+        font-size: 17px;
+        color: lightcoral;
+    }
+
+    @include flexy(space-between,center,row,no-wrap)
+}
+
+.details__close {
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: red;
+    transform: rotate(90deg);
+}
+
+.details__img {
+    border-radius: 20px 0 20px 0;
+    width: 300px;
+    height: 410px;
+    background-color: black;
+}
+
+.pagination {
+    max-width: 70px;
+    height: auto;
+    min-height: 100px;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    gap: 5px;
+
+    &__btn {
+        text-align: center;
+        cursor: pointer;
+        border-radius: 15px;
+        list-style-type: none;
+        border: 5px solid black;
+        width: 30px;
+        box-sizing: border-box;
+        height: 30px;
+        background-color: rgba(59, 112, 94, 0.563);
+        color: #fffafa;
+        font-weight: 900;
+    }
+    @include flexy(center,center,row,wrap)
+}
+
+.active {
+    background-color: rgba(250, 0, 0, 0.563);
+    color: black;
+}
