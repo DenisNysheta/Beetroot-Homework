@@ -1,6 +1,5 @@
 const API_KEY = "4775e6f0"
-const API = `http://www.omdbapi.com/?apikey=${API_KEY}&`
-// const APIID = `http://img.omdbapi.com/?apikey=${API_KEY}&`
+const API = `https://www.omdbapi.com/?apikey=${API_KEY}&`
 
 let btn = document.querySelector(".btn")
 let list = document.querySelector(".movies__list")
