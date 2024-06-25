@@ -153,8 +153,6 @@ p {
 }
 
 .not-found {
-    position: absolute;
-    z-index: -1;
     bottom: 22%;
     transition: .5s ease;
     color: red;
@@ -163,7 +161,6 @@ p {
     height: 50px;
     border-radius: 20px;
     text-align: center;
-    border: 1px dashed black;
 }
 
 .animation {
