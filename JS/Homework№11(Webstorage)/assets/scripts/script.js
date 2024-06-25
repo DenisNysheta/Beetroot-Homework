@@ -31,7 +31,6 @@ async function displayWeather(objInfo) {
         let groundLevel = result.main.grnd_level + " гПа"
     
         let windSpeed = result.wind.speed + " m/s"
-        console.log(result)
         cityBox.innerHTML = `
             <p class="city">City name: ${result.name}</p>
             <p class="country">Country: ${result.sys.country}</p>
@@ -63,5 +62,29 @@ async function displayWeather(objInfo) {
 
 btnSearch.addEventListener("click", () => {
     let data = log()
-    displayWeather(data)
+    cityBox.innerHTML = `
+         <div class="animation">
+            <span class="animation__cube"></span>
+            <span class="animation__cube"></span>
+            <span class="animation__cube"></span>
+        </div>
+    `
+    tempBox.innerHTML = `
+         <div class="animation">
+            <span class="animation__cube"></span>
+            <span class="animation__cube"></span>
+            <span class="animation__cube"></span>
+        </div>
+    `
+    infoBox.innerHTML = `
+         <div class="animation">
+            <span class="animation__cube"></span>
+            <span class="animation__cube"></span>
+            <span class="animation__cube"></span>
+        </div>
+    `
+    setTimeout(() => {
+        displayWeather(data)
+    },800)
+
 })
