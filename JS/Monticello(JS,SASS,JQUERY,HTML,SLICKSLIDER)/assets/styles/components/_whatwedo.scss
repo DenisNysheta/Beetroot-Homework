@@ -5,6 +5,28 @@
     height: auto;
     margin: 100px 0 150px 0;
 
+    &__btn {
+        background-color: transparent;
+        border: 1px solid black;
+        margin: 0 0  60px 0;
+        cursor: pointer;
+
+        &:active {
+            transition: .2s ease;
+            box-shadow: 0px 0px 20px 0px inset;
+        }
+
+        @include size(50px,190px);
+        @extend %btn__what-we-do;
+
+    }
+
+    &__img {
+        @include tablet-l-portrait {
+            width: inherit;
+        }
+    }
+
     &__title {
         position: relative;
         margin: 0 0 90px 0;
@@ -23,18 +45,161 @@
         @include flex(space-between,center,column,no-wrap)
     }
 
+    &__subtitle {
+
+        @extend %subtitle__what-we-do;
+
+        @include desctop-l-portrait {
+            text-align: center;
+        }
+    }
+
+    &__title-info {
+        margin: 0 0 19px 0;
+        @extend %title__what-we-do;
+
+        @include desctop-l-portrait {
+            text-align: center !important;
+        }
+    }
+
+    &__text {
+        margin: 0 0 40px 0;
+        @extend %text__what-we-do;
+
+        @include desctop-l-portrait {
+            text-align: center;
+        }
+
+        @include tablet-l-portrait {
+            max-width: 350px;
+        }
+    }
+
+    &__link {
+        display: block;
+
+        & em img {
+            margin: 0 10px 0 0;
+        }
+
+        @extend %link__what-we-do;
+    }
+
     &__first {
-        background-color: darkgray;
         margin: 0 0 120px 0;
         align-self: flex-start;
-        @include size(527px,1385px)
+        position: relative;
+        @include size(527px,1385px);
+
+        @include desctop-hd-portrait {
+            width: 100%;
+        };
     }
 
     &__second {
         align-self: flex-end;
-        background-color: darkgray;
-        @include size(527px,1385px)
+        position: relative;
+        @include size(527px,1385px);
+
+        @include desctop-hd-portrait {
+            width: 100%;
+        };
     }
 
     @include flex(center,center,column,no-wrap)
+}
+
+.what__first {
+    gap: 70px;
+
+    &__background {
+        background-color: #55B7FF;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        @include size(470px,585px);;
+
+        @include tablet-l-portrait {
+            width: 75%;
+            height:260px;
+        }
+    }
+
+    &__img {
+        align-self: flex-end;
+
+        @include desctop-l-portrait {
+            align-self: center;
+        }
+    }
+
+    &__info {
+
+        @include desctop-l-portrait {
+            margin-top: 25px;
+
+            @include flex(center,center,column,no-wrap);
+        }
+        @include size(auto,470px);
+    }
+
+    @include flex(center,center,row,no-wrap);
+
+    @include desctop-l-portrait {
+        padding-top: 50px;
+        gap: 0;
+        height: auto;
+        justify-content: end;
+        flex-direction: column;
+        display: flex;
+    }
+}
+
+.what__second {
+    gap: 70px;
+
+    &__background {
+        background-color: #7E5AFF;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        @include size(470px,585px);
+
+        @include tablet-l-portrait {
+            width: 75%;
+            height:260px;
+        }
+    }
+
+    &__img {
+        align-self: flex-end;
+
+        @include desctop-l-portrait {
+            align-self: center;
+        }
+    }
+
+    &__info {
+
+        @include desctop-l-portrait {
+            margin-top: 25px;
+
+            @include flex(center,center,column,no-wrap);
+        }
+        @include size(auto,470px);
+    }
+
+    @include flex(center,center,row-reverse,no-wrap);
+
+    @include desctop-l-portrait {
+        padding-top: 50px;
+        gap: 0;
+        height: auto;
+        justify-content: end;
+        flex-direction: column;
+        display: flex;
+    }
 }

@@ -27,6 +27,12 @@
     }
 };
 
+@mixin desctop-l-portrait{
+    @media (max-width:1300px) {
+        @content
+    }
+};
+
 @mixin desctop-xga-portrait {
     @media (max-width:1150px) {
         @content

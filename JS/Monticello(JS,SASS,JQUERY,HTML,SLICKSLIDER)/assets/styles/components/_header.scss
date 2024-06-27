@@ -74,7 +74,7 @@
     @include flex(center,center,row,no-wrap);
 
     @include desctop-hd-portrait {
-        width: 60%;
+        width: 40%;
         gap: 0px;
         justify-content: space-around;
     }
@@ -110,6 +110,11 @@
 
         &:hover {
             background-color: white;
+        }
+
+        &:active {
+            transition: .1s ease;
+            box-shadow: 0px 0px 20px 0px inset;
         }
 
         &:hover a svg {

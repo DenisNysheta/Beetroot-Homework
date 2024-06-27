@@ -14,12 +14,12 @@
 <body>
     <div class="wrapper">
         <header class="header">
-                <div class="logo">
+                <div data-wow-duration="3.5s" data-wow-iteration="infinite" class="logo wow pulse">
                     <img src="./assets/images/logo.png" alt="">
                 </div>
-                <ul class="header__menu wow zoomInUp"> 
+                <ul data-wow-delay=".5s" class="header__menu wow fadeInDown"> 
                     <li class="header__menu__item">
-                        <a href="#aboutUs">about us</a>
+                        <a href="#what">about us</a>
                     </li>
                     <li class="header__menu__item">
                         <a href="#projects">projects</a>
@@ -31,7 +31,7 @@
                         <a href="#contact">contact</a>
                     </li>
                 </ul>
-                <ul data-wow-delay="1s" class="socials wow fadeInRight">
+                <ul class="socials">
                     <li class="socials__item">
                         <a target="_self" href="#facebook">
                             <svg>
@@ -54,7 +54,7 @@
                         </a>
                     </li>
                 </ul>
-                <div class="burger">
+                <div class="burger wow fadeInRight">
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
@@ -157,13 +157,148 @@
                 <h2 id="what" class="what__title wow fadeInUp">
                     WHAT WE DO
                 </h2>
-                <div data-wow-delay=".3s" class="what__first wow fadeInLeft">
+                <div class="what__first wow fadeInLeftBig">
+                    <div class="what__first__background"></div>
                     <div class="what__first__img">
-                        <img src="assets/images/what-we-do/first.png" alt="Build that look like a ball">
+                        <picture >
+                            <source media="(max-width: 768px)" srcset="assets/images/what-we-do/tablet/first.jpg">
+                            <source media="(max-width: 1920px)" srcset="assets/images/what-we-do/first.png">
+                            <img  src="assets/images/what-we-do/first.png" alt="five-slider">
+                        </picture>
+                    </div>
+                    <div class="what__first__info">
+                        <span class="what__subtitle">
+                            ONE WORLD
+                        </span>
+                        <h3 class="what__title-info">
+                            TRADE CENTER
+                        </h3>
+                        <p class="what__text">
+                            Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.
+                        </p>
+                        <button class="what__btn">
+                            MORE DETAILS
+                        </button>
+                        <a class="what__link"  target="_blank" href="https://www.google.com/maps/place/%D0%92%D1%81%D0%B5%D0%BC%D0%B8%D1%80%D0%BD%D1%8B%D0%B9+%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D1%8B%D0%B9+%D1%86%D0%B5%D0%BD%D1%82%D1%80+1/@40.7203618,-73.9986055,12.93z/data=!4m6!3m5!1s0x89c25a197c06b7cb:0x40a06c78f79e5de6!8m2!3d40.7127431!4d-74.0133795!16zL20vMGN6YzFo?entry=ttu"><em><img src="./assets/images/icons/.png" alt="">New York City, United States - 1776 feet </em></a>
                     </div>
                 </div>
-                <div data-wow-delay=".3s" class="what__second wow fadeInRight">
-
+                <div class="what__second wow fadeInRightBig">
+                    <div class="what__second__background"></div>
+                    <div class="what__second__img">
+                        <picture >
+                            <source media="(max-width: 768px)" srcset="assets/images/what-we-do/tablet/second.jpg">
+                            <source media="(max-width: 1920px)" srcset="assets/images/what-we-do/second.png">
+                            <img  src="assets/images/what-we-do/second.png" alt="five-slider">
+                        </picture>
+                    </div>
+                    <div class="what__second__info">
+                        <span class="what__subtitle">
+                            INTERNATIONAL
+                        </span>
+                        <h3 class="what__title-info">
+                            COMMERCE CENTRE
+                        </h3>
+                        <p class="what__text">
+                            Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.
+                        </p>
+                        <button class="what__btn">
+                            MORE DETAILS
+                        </button>
+                        <a class="what__link" target="_blank"  href="https://www.google.com/maps/place/%D0%93%D0%BE%D0%BD%D0%BA%D0%BE%D0%BD%D0%B3/@22.4214641,114.0647166,11.04z/data=!4m6!3m5!1s0x3403e2eda332980f:0xf08ab3badbeac97c!8m2!3d22.3193039!4d114.1693611!16zL20vMDNoNjQ?entry=ttu"><em><img src="./assets/images/icons/.png" alt="">Hong Kong - 1588 feet</em></a>
+                    </div>
+                </div>
+            </section>
+            <section class="news">
+                <img src="./assets/images/news/background-news.png" alt="" class="news__background"/>
+                <div class="news__gradient"></div>
+                <h2 class="news__title">
+                    LATEST NEWS
+                </h2>
+                <div class="news__slider">
+                    <div class="news__slider__item">
+                        <img src="assets/images/news/first.png" alt="">
+                        <div class="news__slider__text">
+                            <h4>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
+                            <p>Free directories: directories are perfect for customers that are searching for...</p>
+                        </div>
+                        <div class="news__slider__avatar">
+                            <img class="news__slider__avatar" src="assets/images/news/avatars/first.png" alt="ALJA BRUN">
+                            <div class="news__slider__avatar__info">
+                                <p>ALJA BRUN</p>
+                                <time datetime="2020-01-20">20 Jan 2020</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__slider__item">
+                        <img src="assets/images/news/second.png" alt="">
+                        <div class="news__slider__text">
+                            <h4>EFFECTIVE ADVERTISING POINTERS.</h4>
+                            <p>Having a home based business is a wonderful asset to your life...</p>
+                        </div>
+                        <div class="news__slider__avatar">
+                            <img class="news__slider__avatar" src="assets/images/news/avatars/second.png" alt="DOMINIC FREEMAN">
+                            <div class="news__slider__avatar__info">
+                                <p>DOMINIC FREEMAN</p>
+                                <time datetime="2019-12-13">13 Dec 2019</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__slider__item">
+                        <img src="assets/images/news/third.png" alt="">
+                        <div class="news__slider__text">
+                            <h4>HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
+                            <p>There are many things that are important to catalog design...</p>
+                        </div>
+                        <div class="news__slider__avatar">
+                            <img class="news__slider__avatar" src="assets/images/news/avatars/third.png" alt="ALICE WARD">
+                            <div class="news__slider__avatar__info">
+                                <p>ALICE WARD</p>
+                                <time datetime="2019-11-30">30 Nov 2019</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__slider__item">
+                        <img src="assets/images/news/first.png" alt="">
+                        <div class="news__slider__text">
+                            <h4>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
+                            <p>Free directories: directories are perfect for customers that are searching for...</p>
+                        </div>
+                        <div class="news__slider__avatar">
+                            <img class="news__slider__avatar" src="assets/images/news/avatars/first.png" alt="ALJA BRUN">
+                            <div class="news__slider__avatar__info">
+                                <p>ALJA BRUN</p>
+                                <time datetime="2020-01-20">20 Jan 2020</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__slider__item">
+                        <img src="assets/images/news/second.png" alt="">
+                        <div class="news__slider__text">
+                            <h4>EFFECTIVE ADVERTISING POINTERS.</h4>
+                            <p>Having a home based business is a wonderful asset to your life...</p>
+                        </div>
+                        <div class="news__slider__avatar">
+                            <img class="news__slider__avatar" src="assets/images/news/avatars/second.png" alt="DOMINIC FREEMAN">
+                            <div class="news__slider__avatar__info">
+                                <p>DOMINIC FREEMAN</p>
+                                <time datetime="2019-12-13">13 Dec 2019</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__slider__item">
+                        <img src="assets/images/news/third.png" alt="">
+                        <div class="news__slider__text">
+                            <h4>HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
+                            <p>There are many things that are important to catalog design...</p>
+                        </div>
+                        <div class="news__slider__avatar">
+                            <img class="news__slider__avatar" src="assets/images/news/avatars/third.png" alt="ALICE WARD">
+                            <div class="news__slider__avatar__info">
+                                <p>ALICE WARD</p>
+                                <time datetime="2019-11-30">30 Nov 2019</time>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
@@ -172,8 +307,8 @@
     <!-- Connect main file Java Script(here all scripts) -->
     <script async type="module" src="assets/scripts/script.js"></script>
     <!-- Connect files for sliders -->
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <!-- Use library for animation -->
     <script src="js/wow.min.js"></script>
     <!-- Innitialization WOW  -->

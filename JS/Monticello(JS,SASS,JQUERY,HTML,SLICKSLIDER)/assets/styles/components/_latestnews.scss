@@ -1,1 +1,100 @@
-@import "../more/variables.scss"
+@import "../more/variables.scss";
+
+.news {
+
+    &__gradient {
+        position: absolute;
+        z-index: -2;
+        opacity: 1;
+        background: linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+
+        @include size(inherit,inherit)
+    }
+
+    &__background {
+        position: absolute;
+        bottom: 0;
+        opacity: .1;
+        z-index: -1;
+        @include size(inherit,inherit)
+    }
+
+    &__title {
+        position: relative;
+        z-index: 2;
+        color: white;
+        margin: 0 0 90px 0;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 100px;
+            position: relative;
+            box-sizing: border-box;
+            border: 1px solid white
+        }
+
+        @include size(84px,auto);
+        @extend %title__what;
+        @include flex(space-between,center,column,no-wrap)
+    }
+
+    @include size(978px,100%);
+    @include flex(center,center,column,no-wrap);
+}
+
+.news__slider {
+
+    &__text {
+        gap: 10px;
+        margin-bottom: 60px;
+
+        & h4 {
+            max-width: 330px;
+            @extend %news__title;
+        }
+
+        & p {
+            max-width: 330px;
+            @extend %news__text;
+        }
+
+        @include flex(center,center,column,no-wrap)
+    }
+
+    &__avatar {
+        border-radius: 50%;
+        gap: 15px;
+        margin-left: 10px;
+        align-self: flex-start;
+        @include flex(flex-start,center,row,no-wrap);
+    }
+
+    &__item {
+        margin: 0 10px 0 10px;
+        background-color: white;
+
+        & img {
+            margin-bottom: 20px;
+        }
+
+        @include size(514px, 370px);
+        @include flex(flex-start,center,column,no-wrap)
+    }
+
+    @include size(auto,1170px);
+    @include flex(center,center,row,no-wrap)
+}
+
+.news__slider__avatar__info {
+    margin-bottom: 15px;
+
+    & p {
+        @extend %news__avatar;
+    }
+
+    & time {
+        @extend %news__time;
+    }
+
+}

@@ -1,6 +1,6 @@
 $(".hero__slider").slick({
     dots:true,
     slidesToShow:1,
-    // autoplay:true,
+    autoplay:true,
     speed:700
 })
