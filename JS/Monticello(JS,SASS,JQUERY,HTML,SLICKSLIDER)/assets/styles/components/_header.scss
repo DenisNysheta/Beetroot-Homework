@@ -1,8 +1,12 @@
 @import "../more/variables.scss";
 
 .header {
-    background-color: rgba(88, 57, 57, 0.467);
-    
+    background-color:transparent;
+    margin: 0 auto;
+    z-index: 5;
+    top: 53px;
+    position: relative;
+
     &__wrapper {
         
         width: 1170px;
@@ -10,8 +14,12 @@
         @include flex(space-between,center,row,no-wrap)
     }
     
-    @include size(200px,100%);
-    @include flex(center,center,row,no-wrap)
+    @include size(54px,1170px);
+    @include flex(space-between,center,row,no-wrap)
+}
+
+.logo {
+    @include size(54px,241px)
 }
 
 .header__menu {
@@ -53,6 +61,7 @@
 }
 
 .socials {
+    gap: 20px;
 
     &__item {
         border: 1px solid rgba(255, 255, 255, 0.502);

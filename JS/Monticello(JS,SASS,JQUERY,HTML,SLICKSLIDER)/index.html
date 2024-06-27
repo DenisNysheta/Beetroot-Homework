@@ -8,55 +8,94 @@
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="assets/styles/main-style/normalize.css">
     <link rel="stylesheet" href="assets/styles/main-style/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 </head>
 <body>
-    <header class="header">
-        <div class="header__wrapper">
-            <div class="logo">
-               <img src="assets/images/logo.png" alt="">
-            </div>
-            <ul class="header__menu"> 
-                <li class="header__menu__item">
-                    <a href="#aboutUs">about us</a>
-                </li>
-                <li class="header__menu__item">
-                    <a href="#projects">projects</a>
-                </li>
-                <li class="header__menu__item">
-                    <a href="#news">news</a>
-                </li>
-                <li class="header__menu__item">
-                    <a href="#contact">contact</a>
-                </li>
-            </ul>
-            <ul class="socials">
-                <li class="socials__item">
-                    <a href="">
-                        <svg>
-                            <use xlink:href="assets/svg/sprite.svg#facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="socials__item">
-                    <a href="">
-                        <svg>
-                            <use xlink:href="assets/svg/sprite.svg#twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="socials__item">
-                    <a href="">
-                        <svg>
-                            <use xlink:href="assets/svg/sprite.svg#instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </header>
+    <div class="wrapper">
+        <header class="header">
+                <div class="logo">
+                   <svg>
+                    <use xlink:href="./assets/svg/sprite.svg#logo"></use>
+                   </svg>
+                </div>
+                <ul class="header__menu"> 
+                    <li class="header__menu__item">
+                        <a href="#aboutUs">about us</a>
+                    </li>
+                    <li class="header__menu__item">
+                        <a href="#projects">projects</a>
+                    </li>
+                    <li class="header__menu__item">
+                        <a href="#news">news</a>
+                    </li>
+                    <li class="header__menu__item">
+                        <a href="#contact">contact</a>
+                    </li>
+                </ul>
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a target="_blank" href="#facebook">
+                            <svg>
+                                <use xlink:href="assets/svg/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a target="_blank" href="#twitter">
+                            <svg>
+                                <use xlink:href="assets/svg/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a target="_blank" href="#instagram">
+                            <svg>
+                                <use xlink:href="assets/svg/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero__slider">
+                    <div class="hero__slider__item">
+                        <div class="gradient"></div>
+                        <img src="assets/images/hero-slider/first-slider.avif" alt="">
+                    </div>
+                    <div class="hero__slider__item">
+                        <div class="gradient"></div>
+                        <img src="assets/images/hero-slider/second-slider.avif" alt="">
+                    </div>
+                    <div class="hero__slider__item">
+                        <div class="gradient"></div>
+                        <img src="assets/images/hero-slider/third-slider.avif" alt="">
+                    </div>
+                    <div class="hero__slider__item">
+                        <div class="gradient"></div>
+                        <img src="assets/images/hero-slider/four-slider.avif" alt="">
+                    </div>
+                    <div class="hero__slider__item">
+                        <div class="gradient"></div>
+                        <img src="assets/images/hero-slider/five-slider.avif" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <!-- Connect main file Java Script(here all scripts) -->
+    <script async type="module" src="assets/scripts/script.js"></script>
+    <!-- Connect files for sliders -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Use library for animation -->
     <script src="js/wow.min.js"></script>
+    <!-- Innitialization WOW  -->
     <script>
-    new WOW().init();
+        new WOW().init();
     </script>
 </body>
 </html>

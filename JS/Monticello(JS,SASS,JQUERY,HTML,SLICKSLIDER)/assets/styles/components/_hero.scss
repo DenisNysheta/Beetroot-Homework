@@ -1,1 +1,28 @@
-@import "../more/variables.scss"
+@import "../more/variables.scss";
+
+.hero {
+
+    & .gradient{
+        width: 100%;
+        height: 800px ;
+        opacity: 0.9;
+        position: absolute;
+        z-index: 1;
+        background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%) !important; 
+    }
+
+    @include size(800px,100%)
+}
+
+.hero__slider {
+
+    &__item img{
+        position: relative;
+        z-index: -1;
+    }
+
+    &__item {
+         position: relative;
+    }
+    
+}
