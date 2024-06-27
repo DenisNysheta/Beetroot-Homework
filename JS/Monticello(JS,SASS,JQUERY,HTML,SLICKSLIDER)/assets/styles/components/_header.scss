@@ -5,7 +5,7 @@
     margin: 0 auto;
     z-index: 5;
     top: 53px;
-    position: relative;
+    position: absolute;
 
     &__wrapper {
         
@@ -14,13 +14,9 @@
         @include flex(space-between,center,row,no-wrap)
     }
     
-    @include size(54px,1170px);
-    @include flex(space-between,center,row,no-wrap);
+    @include size(54px,100%);
+    @include flex(space-evenly,center,row,no-wrap);
 
-
-    @include desctop-hd-portrait {
-        width: 73.125%;
-    }
 
     @include tablet-xl-portrait {
         gap: 40px;
@@ -32,7 +28,6 @@
         margin: 0;
         width: 95%;
         padding-left: 8px;
-        position: relative;
         justify-content: space-between;
     }
 }
@@ -190,12 +185,17 @@
 
 }
 
+.hidden-y {
+    overflow-y: hidden;
+}
+
 .active-menu {
     display: flex;
     top: 100px;
-    position: absolute;
+    overflow-y: hidden;
+    position: fixed;
     width: 104%;
-    height:100vh;
+    height:113vh;
     left: 0;
     top: -55px;
     flex-direction: column;
@@ -205,6 +205,10 @@
     & html {
         overflow-x: hidden;
         overflow-y: hidden;
+    }
+
+    .burger {
+        position: fixed
     }
 
     @include flex(center,center,column,no-wrap);

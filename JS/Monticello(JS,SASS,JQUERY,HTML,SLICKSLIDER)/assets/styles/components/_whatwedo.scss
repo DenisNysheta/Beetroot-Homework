@@ -1,1 +1,40 @@
-@import "../more/variables.scss"
+@import "../more/variables.scss";
+
+.what {
+    width: 100%;
+    height: auto;
+    margin: 100px 0 150px 0;
+
+    &__title {
+        position: relative;
+        margin: 0 0 90px 0;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 100px;
+            position: relative;
+            box-sizing: border-box;
+            border: 1px solid black
+        }
+
+        @include size(84px,324px);
+        @extend %title__what;
+        @include flex(space-between,center,column,no-wrap)
+    }
+
+    &__first {
+        background-color: darkgray;
+        margin: 0 0 120px 0;
+        align-self: flex-start;
+        @include size(527px,1385px)
+    }
+
+    &__second {
+        align-self: flex-end;
+        background-color: darkgray;
+        @include size(527px,1385px)
+    }
+
+    @include flex(center,center,column,no-wrap)
+}
