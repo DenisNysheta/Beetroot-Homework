@@ -1,0 +1,98 @@
+@import "../more/variables.scss";
+
+.header {
+    background-color: rgba(88, 57, 57, 0.467);
+    
+    &__wrapper {
+        
+        width: 1170px;
+        
+        @include flex(space-between,center,row,no-wrap)
+    }
+    
+    @include size(200px,100%);
+    @include flex(center,center,row,no-wrap)
+}
+
+.header__menu {
+    gap: 70px;
+
+    &__item {
+        position: relative;
+        align-content: center;
+        gap:10px;
+        cursor: pointer;
+
+        &:hover::before {
+            background-color: white;
+        }
+
+        &::before {
+            transition: .3s ease;
+            content: "";
+            border: 1px solid white;
+            display: block;
+            border-radius: 50%;
+            position: relative;
+            top: -1px;
+
+            @include size(9px,9px);
+        }
+
+        & a {
+            display: block;
+            color: white
+        }
+
+        @extend %menu__text;
+
+        @include flex(center,center,row,no-wrap)
+    }
+
+    @include flex(center,center,row,no-wrap)
+}
+
+.socials {
+
+    &__item {
+        border: 1px solid rgba(255, 255, 255, 0.502);
+        border-radius: 50%;
+        transition: .4s ease;
+        cursor: pointer;
+
+        & a {
+            width: 18px;
+            height: 18px;
+            display: block;
+        }
+        & a svg {
+            fill: white;
+            transition: .4s ease;
+        }
+
+        &:hover {
+            background-color: white;
+        }
+
+        &:hover a svg {
+            fill: black
+        }
+
+        @include size(40px,40px);
+        @include flex(center,center,row,no-wrap)
+    }
+
+    &__item:nth-child(1) a {
+        @include size(16px,12px)
+    }
+    
+    &__item:nth-child(2) a {
+        @include size(16px,16px)
+    }
+
+    &__item:nth-child(3) a {
+        @include size(14px,14px)
+    }
+
+    @include flex(center,center,row,no-wrap)
+}

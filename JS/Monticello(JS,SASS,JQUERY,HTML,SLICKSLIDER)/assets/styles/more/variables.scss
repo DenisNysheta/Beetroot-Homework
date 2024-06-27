@@ -1,0 +1,14 @@
+@import "./extencions.scss";
+
+@mixin flex($justify,$align,$direction,$wrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+@mixin size($height,$width) {
+    height: $height;
+    width: $width;
+}
