@@ -12,3 +12,29 @@
     height: $height;
     width: $width;
 }
+
+// <--Media
+
+@mixin desctop-hd-portrait{
+    @media (max-width:1600px) {
+        @content
+    }
+};
+
+@mixin desctop-xga-portrait {
+    @media (max-width:1150px) {
+        @content
+    }
+};
+
+@mixin tablet-xl-portrait {
+    @media (max-width:950px) {
+        @content
+    }
+};
+
+@mixin tablet-l-portrait {
+    @media (max-width:768px) {
+        @content
+    }
+}

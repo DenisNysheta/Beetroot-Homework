@@ -15,7 +15,26 @@
     }
     
     @include size(54px,1170px);
-    @include flex(space-between,center,row,no-wrap)
+    @include flex(space-between,center,row,no-wrap);
+
+
+    @include desctop-hd-portrait {
+        width: 73.125%;
+    }
+
+    @include tablet-xl-portrait {
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    @include tablet-l-portrait {
+        flex-direction: row;
+        margin: 0;
+        width: 95%;
+        padding-left: 8px;
+        position: relative;
+        justify-content: space-between;
+    }
 }
 
 .logo {
@@ -57,7 +76,22 @@
         @include flex(center,center,row,no-wrap)
     }
 
-    @include flex(center,center,row,no-wrap)
+    @include flex(center,center,row,no-wrap);
+
+    @include desctop-hd-portrait {
+        width: 60%;
+        gap: 0px;
+        justify-content: space-around;
+    }
+
+    @include tablet-xl-portrait {
+        width: 420px;
+        justify-content: space-between;
+    }
+
+    @include tablet-l-portrait {
+        display: none;
+    }
 }
 
 .socials {
@@ -103,5 +137,76 @@
         @include size(14px,14px)
     }
 
-    @include flex(center,center,row,no-wrap)
+    @include flex(center,center,row,no-wrap);
+
+    @include desctop-xga-portrait {
+        display: none;
+    }
 }
+
+.burger {
+    z-index: 20;
+    display: none;
+    position: relative;
+    transition: .3s ease;
+
+    & .line {
+        width: 100%;
+        position: relative;
+        box-sizing: border-box;
+        border: 2px solid white;
+        display: block;
+        transition: .3s ease;
+    }
+
+    @include size(35px,50px);
+
+    @include tablet-l-portrait {
+        @include flex(space-between,center,column,no-wrap)
+    }
+
+}
+
+.active {
+    transform: rotate(360deg);
+
+    & .line {
+        transition: .3s ease;
+    }
+
+    & .line:first-child{
+        transform: rotate(45deg);
+        top: 15px;
+    }
+
+    & .line:nth-child(2) {
+        transform: rotate(45deg);
+    }
+
+    & .line:nth-child(3) {
+        transform: rotate(-45deg);
+        bottom: 15px;
+    }
+
+}
+
+.active-menu {
+    display: flex;
+    top: 100px;
+    position: absolute;
+    width: 104%;
+    height:100vh;
+    left: 0;
+    top: -55px;
+    flex-direction: column;
+    background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%) ;
+    gap: 55px;
+
+    & html {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    @include flex(center,center,column,no-wrap);
+}
+

@@ -15,9 +15,7 @@
     <div class="wrapper">
         <header class="header">
                 <div class="logo">
-                   <svg>
-                    <use xlink:href="./assets/svg/sprite.svg#logo"></use>
-                   </svg>
+                    <img src="./assets/images/Logo (2).png" alt="">
                 </div>
                 <ul class="header__menu"> 
                     <li class="header__menu__item">
@@ -56,31 +54,44 @@
                         </a>
                     </li>
                 </ul>
+                <div class="burger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
         </header>
         <main>
             <section class="hero">
                 <div class="hero__slider">
                     <div class="hero__slider__item">
                         <div class="gradient"></div>
-                        <img src="assets/images/hero-slider/first-slider.avif" alt="">
+                        <img src="./assets/images/hero-slider/firs.jpg" alt="">
                     </div>
                     <div class="hero__slider__item">
                         <div class="gradient"></div>
-                        <img src="assets/images/hero-slider/second-slider.avif" alt="">
+                        <img src="./assets/images/hero-slider/second.jpg" alt="">
                     </div>
                     <div class="hero__slider__item">
                         <div class="gradient"></div>
-                        <img src="assets/images/hero-slider/third-slider.avif" alt="">
+                        <img src="./assets/images/hero-slider/third.jpg" alt="">
                     </div>
                     <div class="hero__slider__item">
                         <div class="gradient"></div>
-                        <img src="assets/images/hero-slider/four-slider.avif" alt="">
+                        <img src="./assets/images/hero-slider/four.jpg" alt="">
                     </div>
                     <div class="hero__slider__item">
                         <div class="gradient"></div>
-                        <img src="assets/images/hero-slider/five-slider.avif" alt="">
+                        <img src="./assets/images/hero-slider/five.jpg" alt="">
                     </div>
                 </div>
+                <!-- <picture class="say__quote__img">
+                    <source media="(max-width: 576px)" srcset="./assets/images/Phone/ReviewPhoto-mobile.avif">
+                    <source media="(max-width: 768px)" srcset="./assets/images/Tablet/ReviewPhoto-tablet.avif">
+                    <source media="(max-width: 1024px)" srcset="./assets/images/XGA/ReviewPhoto-xga.avif">
+                    <source media="(max-width: 1360px)" srcset="./assets/images/HD/ReviewPhoto-hd.avif">
+                    <source media="(max-width: 1920px)" srcset="./assets/images/FullHD/ReviewPhoto-full.avif">
+                    <img src="./assets/images/FullHD/ReviewPhoto-full.avif" alt="Picture tourist">
+                  </picture> -->
             </section>
         </main>
     </div>
@@ -89,10 +100,10 @@
     <!-- Connect main file Java Script(here all scripts) -->
     <script async type="module" src="assets/scripts/script.js"></script>
     <!-- Connect files for sliders -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <!-- Use library for animation -->
-    <script src="js/wow.min.js"></script>
+    <script async src="js/wow.min.js"></script>
     <!-- Innitialization WOW  -->
     <script>
         new WOW().init();

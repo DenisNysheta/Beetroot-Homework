@@ -1,28 +1,58 @@
 @import "../more/variables.scss";
 
 .hero {
+    width: 100%;
+    height: 800px ;
 
     & .gradient{
         width: 100%;
-        height: 800px ;
+        height: 800px;
         opacity: 0.9;
         position: absolute;
         z-index: 1;
-        background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%) !important; 
-    }
-
-    @include size(800px,100%)
-}
-
-.hero__slider {
-
-    &__item img{
-        position: relative;
-        z-index: -1;
-    }
-
-    &__item {
-         position: relative;
+        background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%) ; 
     }
     
 }
+
+.hero__slider {
+    
+    &__item {
+        position: relative;
+        width: 100%;
+        height: 800px !important;
+        background-size: cover;
+    }
+    
+    & > .slick-dots {
+        position: absolute;
+        top: 40%;
+        right: 3%;
+        gap: 40px;
+
+        & li {
+            box-sizing: border-box;
+            width: 15px;
+            height: 15px;
+            background-color: transparent;
+            border-radius: 50%;
+            border: 1px solid white;
+        }
+
+        & li button::before {
+            color: none !important;
+            opacity: 0 !important;
+        }
+
+        .slick-active {
+            background-color: white;
+        }
+
+        @include size(210px, 20px);
+        @include flex(center,center,column,no-wrap)
+    }
+    
+    @include size(inherit,inherit)
+}
+
+
