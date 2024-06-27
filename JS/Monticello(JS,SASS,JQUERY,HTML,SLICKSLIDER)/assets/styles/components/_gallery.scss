@@ -1,1 +1,133 @@
-@import "../more/variables.scss"
+@import "../more/variables.scss";
+
+.gallery {
+    padding: 150px 0;
+    gap: 70px;
+    position: relative;
+
+    &__title {
+        position: relative;
+        z-index: 2;
+        color: black;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 100px;
+            position: relative;
+            box-sizing: border-box;
+            border: 1px solid black
+        }
+
+        @include size(84px,auto);
+        @extend %title__what;
+        @include flex(space-between,center,column,no-wrap)
+    }
+
+    &__box {
+        display: grid;
+        grid-template: 
+        "first second third"
+        "first four five";
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+        @include size(445px,1170px);
+
+        @include desctop-l-portrait {
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            grid-template: 
+            "first first"
+            "first first"
+            "second third"
+            "four five";
+            gap: 0;
+            @include size(885px,585px)
+        }
+
+        @include tablet-l-portrait {
+            @include size(auto,85%)
+        }
+    }
+
+    &__img {
+
+        &:hover .gallery__zoom {
+            z-index: 1;
+            opacity: 1;
+            cursor: pointer;
+        }
+
+        position: relative;
+
+        @include tablet-l-portrait {
+            width: 100%;
+        }
+    }
+    
+    &__img:nth-child(1) {
+        grid-area: first
+    }
+    &__img:nth-child(2) {
+        grid-area: second
+    }
+    &__img:nth-child(3) {
+        grid-area: third
+    }
+    &__img:nth-child(4) {
+        grid-area: four
+    }
+    &__img:nth-child(5) {
+        grid-area: five
+    }
+
+    &__btn {
+        background-color: transparent;
+        border: 1px solid black;
+        margin: 0 0  60px 0;
+        cursor: pointer;
+
+        &:active {
+            transition: .2s ease;
+            box-shadow: 0px 0px 20px 0px inset;
+        }
+
+        @include size(50px,190px);
+        @extend %btn__what-we-do;
+    }
+
+    &__zoom {
+        transition: .5s ease;
+        border-radius: 20px;
+        top: 1%;
+        left: 1%;
+        opacity: 0;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.474);
+
+        & svg {
+            @include size(70px,70px);
+        }
+
+        @include flex(center,center,row,no-wrap);
+        @include size(95.8%,98%);
+
+        @include desctop-l-portrait {
+            @include size(93.8%,95%)
+        }
+    }
+
+    @include size(auto,100%);
+    @include flex(center,center,column,no-wrap)
+}
+
+.gallery-zoom {
+    opacity: .5;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}

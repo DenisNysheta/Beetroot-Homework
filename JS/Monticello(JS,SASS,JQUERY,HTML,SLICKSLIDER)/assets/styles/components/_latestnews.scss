@@ -79,11 +79,94 @@
         }
 
         @include size(514px, 370px);
-        @include flex(flex-start,center,column,no-wrap)
+        @include flex(flex-start,center,column,no-wrap);
+
+        @include desctop-l-portrait {
+        }
     }
 
     @include size(auto,1170px);
+    @include flex(center,center,row,no-wrap);
+
+    @include desctop-xl-portrait {
+        width: 780px;
+    }
+
+    @include tablet-xl-portrait {
+        width: 390px;
+    }
+}
+
+.news__slider > .slick-dots.slick-dots {
+    position: relative;
+    gap: 40px;
+
+    & li {
+        box-sizing: border-box;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 1px solid white;
+
+        @include size(15px,15px);
+    }
+
+    & li button::before {
+        color: none !important;
+        opacity: 0 !important;
+    }
+
+    .slick-active {
+        background-color: white;
+    }
+
+    @include size(50px, auto);
     @include flex(center,center,row,no-wrap)
+}
+
+.news__slider > .slick-prev {
+
+    &::before {
+        transform: rotate(45deg);
+        content: "";
+        display: block;
+        border-left: 1px solid white;
+        border-bottom: 1px solid white;
+        box-sizing: border-box;
+        @include size(9px,8.7px)
+    }
+
+    border: 1px solid white;
+    border-radius: 50%;
+    right: 100%;
+    left: -5% !important;
+    @include size(40px,40px);
+    @include flex(center,center,row,no-wrap);
+
+    @include tablet-xl-portrait {
+        left: -15% !important;
+    }
+}
+.news__slider > .slick-next {
+
+    &::before {
+        transform: rotate(225deg);
+        content: "";
+        display: block;
+        border-left: 1px solid white;
+        border-bottom: 1px solid white;
+        box-sizing: border-box;
+        @include size(9px,8.7px)
+    }
+
+    border: 1px solid white;
+    border-radius: 50%;
+    right: -5% !important;
+    @include size(40px,40px);
+    @include flex(center,center,row,no-wrap);
+
+    @include tablet-xl-portrait {
+        right: -15% !important;
+    }
 }
 
 .news__slider__avatar__info {

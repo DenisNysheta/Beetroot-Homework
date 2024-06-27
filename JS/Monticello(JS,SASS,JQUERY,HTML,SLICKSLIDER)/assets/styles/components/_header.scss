@@ -38,6 +38,7 @@
 
 .header__menu {
     gap: 70px;
+    transition: .5s ease;
 
     &__item {
         position: relative;
@@ -85,7 +86,23 @@
     }
 
     @include tablet-l-portrait {
-        display: none;
+        position: fixed;
+        @include size(105vh,104%);
+        flex-direction: column;
+        background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%) ; 
+        justify-content: center;
+        display: flex;
+        top: -110%;
+        gap: 80px;
+
+        & html {
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        .burger {
+            position: fixed
+        }
     }
 }
 
@@ -194,18 +211,9 @@
     overflow-y: hidden;
 }
 
-.active-menu {
-    display: flex;
-    top: 100px;
-    overflow-y: hidden;
-    position: fixed;
-    width: 104%;
-    height:113vh;
+.active__menu {
+    top: 0;
     left: 0;
-    top: -55px;
-    flex-direction: column;
-    background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%) ;
-    gap: 55px;
 
     & html {
         overflow-x: hidden;
@@ -215,7 +223,4 @@
     .burger {
         position: fixed
     }
-
-    @include flex(center,center,column,no-wrap);
 }
-

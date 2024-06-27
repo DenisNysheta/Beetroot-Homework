@@ -17,7 +17,7 @@
                 <div data-wow-duration="3.5s" data-wow-iteration="infinite" class="logo wow pulse">
                     <img src="./assets/images/logo.png" alt="">
                 </div>
-                <ul data-wow-delay=".5s" class="header__menu wow fadeInDown"> 
+                <ul class="header__menu"> 
                     <li class="header__menu__item">
                         <a href="#what">about us</a>
                     </li>
@@ -154,7 +154,7 @@
                 </button>
             </section>
             <section class="what">
-                <h2 id="what" class="what__title wow fadeInUp">
+                <h2 data-wow-delay=".3s" id="what" class="what__title wow fadeInUp">
                     WHAT WE DO
                 </h2>
                 <div class="what__first wow fadeInLeftBig">
@@ -208,10 +208,10 @@
                     </div>
                 </div>
             </section>
-            <section class="news">
+            <section id="news" class="news">
                 <img src="./assets/images/news/background-news.png" alt="" class="news__background"/>
                 <div class="news__gradient"></div>
-                <h2 class="news__title">
+                <h2 data-wow-delay=".3s" class="news__title wow fadeInUp">
                     LATEST NEWS
                 </h2>
                 <div class="news__slider">
@@ -285,21 +285,55 @@
                             </div>
                         </div>
                     </div>
-                    <div class="news__slider__item">
-                        <img src="assets/images/news/third.png" alt="">
-                        <div class="news__slider__text">
-                            <h4>HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
-                            <p>There are many things that are important to catalog design...</p>
+                </div>
+            </section>
+            <section class="gallery">
+                <h2 data-wow-delay=".3s" id="projects" class="gallery__title wow fadeInUp">
+                    GALLERY
+                </h2>
+                <div class="gallery__box">
+                    <div class="gallery__img wow fadeInDown">
+                        <div class="gallery__zoom">
+                            <svg>
+                                <use xlink:href="./assets/svg/sprite.svg#zoom"></use>
+                            </svg>
                         </div>
-                        <div class="news__slider__avatar">
-                            <img class="news__slider__avatar" src="assets/images/news/avatars/third.png" alt="ALICE WARD">
-                            <div class="news__slider__avatar__info">
-                                <p>ALICE WARD</p>
-                                <time datetime="2019-11-30">30 Nov 2019</time>
-                            </div>
+                        <img class="gallery__img" src="assets/images/gallery/first.png" alt="">
+                    </div>
+                    <div class="gallery__img wow fadeInDown">
+                        <div class="gallery__zoom">
+                            <svg>
+                                <use xlink:href="./assets/svg/sprite.svg#zoom"></use>
+                            </svg>
                         </div>
+                        <img class="gallery__img" src="assets/images/gallery/second.png" alt="">
+                    </div>
+                    <div class="gallery__img wow fadeInDown">
+                        <div class="gallery__zoom">
+                            <svg>
+                                <use xlink:href="./assets/svg/sprite.svg#zoom"></use>
+                            </svg>
+                        </div>
+                        <img class="gallery__img" src="assets/images/gallery/third.png" alt="">
+                    </div>
+                    <div class="gallery__img wow fadeInDown">
+                        <div class="gallery__zoom">
+                            <svg>
+                                <use xlink:href="./assets/svg/sprite.svg#zoom"></use>
+                            </svg>
+                        </div>
+                        <img class="gallery__img" src="assets/images/gallery/four.png" alt="">
+                    </div>
+                    <div class="gallery__img wow fadeInDown">
+                        <div class="gallery__zoom">
+                            <svg>
+                                <use xlink:href="./assets/svg/sprite.svg#zoom"></use>
+                            </svg>
+                        </div>
+                        <img class="gallery__img" src="assets/images/gallery/five.png" alt="">
                     </div>
                 </div>
+                <button class="gallery__btn">SEE MORE</button>
             </section>
         </main>
     </div>

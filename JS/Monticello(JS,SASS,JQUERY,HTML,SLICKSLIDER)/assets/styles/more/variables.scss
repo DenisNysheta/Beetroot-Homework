@@ -27,6 +27,12 @@
     }
 };
 
+@mixin desctop-xl-portrait{
+    @media (max-width:1390px) {
+        @content
+    }
+};
+
 @mixin desctop-l-portrait{
     @media (max-width:1300px) {
         @content
