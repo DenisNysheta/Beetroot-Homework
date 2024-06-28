@@ -134,6 +134,11 @@
         & li button::before {
             color: none !important;
             opacity: 0 !important;
+
+            @include size(25px,25px)
+        }
+
+        & li button {
         }
 
         .slick-active {

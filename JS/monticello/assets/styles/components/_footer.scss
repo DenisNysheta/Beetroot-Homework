@@ -13,7 +13,28 @@
         @include size(inherit,100%)
     }
 
-    @include size(1000px, 100%);
+    &__copyright-links {
+        position: relative;
+        z-index: 2;
+        color: white;
+        width: 770px;
+        top: -10%;
+
+        @extend %copyright__text;
+        @include flex(space-between,center,row,no-wrap);
+
+        @include desctop-xl-portrait {
+            top: 30%;
+            width: 85%;
+        };
+
+        @include mobile-l-portrait {
+            flex-direction: column;
+            gap: 35px;
+        }
+    }
+
+    @include size(549px, 100%);
     @include flex(center,center,column,no-wrap)
 }
 
@@ -222,4 +243,23 @@
     }
 
     @include flex(center,center,row,no-wrap)
+}
+
+.footer-socials {
+    position: relative;
+    z-index: 2;
+
+    @include desctop-xga-portrait {
+        display: flex;
+    }
+}
+
+.footer-logo {
+    position: relative;
+    z-index: 2;
+}
+
+.footer-l {
+    gap: 41px;
+    height: auto !important;
 }
