@@ -1,0 +1,12 @@
+@import "../more/variables.scss";
+
+.map {
+    background-color: rgba(0, 0, 0, 0.346);
+    @include size(800px, 100%)
+}
+
+.canvas {
+    width: 10px;
+    background-color: red;
+    height: 10px;
+}

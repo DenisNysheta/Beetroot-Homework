@@ -23,7 +23,8 @@ $(".news__slider").slick({
           breakpoint: 550,
           settings: {
             slidesToShow:1,
-            arrows:false
+            arrows:false,
+            autoplay:false
         }
         }
       ]

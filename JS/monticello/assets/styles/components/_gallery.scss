@@ -123,11 +123,68 @@
 }
 
 .gallery-zoom {
-    opacity: .5;
+    opacity: 1;
     background-color: black;
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+}
+
+.zoom-wrapper {
+    width: inherit;
+    height: inherit;
+
+    & img {
+        position: relative;
+        z-index: 2;
+    }
+
+    @include flex(center,center,column,no-wrap)
+}
+
+.zoom-btn {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+        border: 1px solid black;
+        cursor: pointer;
+
+        &:active {
+            transition: .2s ease;
+            box-shadow: 0px 0px 20px 0px inset;
+        }
+
+        @include size(50px,190px);
+        @extend %btn__what-we-do;
+}
+
+.zoom-background {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.46);
+    z-index: 1;
+}
+
+.back-img {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.zoom-image {
+
+    @include tablet-l-portrait {
+        width: 320px !important;
+    }
+}
+
+.zoom {
+    height: -webkit-fill-available !important;
 }
