@@ -39,21 +39,21 @@
                 </ul>
                 <ul class="socials wow fadeInRightBig">
                     <li class="socials__item">
-                        <a target="_self" href="#facebook">
+                        <a aria-label="facebook" target="_self" href="#facebook">
                             <svg>
                                 <use xlink:href="assets/svg/sprite.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="socials__item">
-                        <a target="_self" href="#twitter">
+                        <a aria-label="twitter" target="_self" href="#twitter">
                             <svg>
                                 <use xlink:href="assets/svg/sprite.svg#twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="socials__item">
-                        <a target="_self" href="#instagram">
+                        <a aria-label="instagram" target="_self" href="#instagram">
                             <svg>
                                 <use xlink:href="assets/svg/sprite.svg#instagram"></use>
                             </svg>
@@ -155,8 +155,8 @@
                         </picture>
                     </div>
                 </div>
-                <button class="hero__down wow fadeIn">
-                    <a href="#what"></a>
+                <button aria-label="scroll to down" class="hero__down wow fadeIn">
+                    <a aria-label="scroll to down" href="#what"></a>
                 </button>
             </section>
             <section class="what">
@@ -346,10 +346,34 @@
             </section>
             <footer class="footer">
                 <div class="footer__gradient"></div>
-                    <img src="" alt="">
-                </div>
                 <div class="form">
-
+                    <h2 class="form__title">
+                        GET IN TOUCH
+                    </h2>
+                    <div class="form__contact">
+                        <div class="form__contact__info">
+                            <p class="form__contact__street">
+                               <img class="form__contact__icon" src="assets/images/icons/street.png" alt=""> 91 Nolan Extensions Suite 670
+                            </p>
+                            <p class="form__contact__num">
+                               <img class="form__contact__icon" src="assets/images/icons/telephone.png" alt=""> +001 356-868-2454
+                            </p>
+                            <p class="form__contact__email">
+                               <a href=""><img class="form__contact__icon" src="assets/images/icons/email.png" alt="">montichello@service.com</a> 
+                            </p>
+                            <p class="form__contact__work-time">
+                              <img class="form__contact__icon" src="assets/images/icons/time.png" alt=""> From 07:05AM to 19:30PM
+                            </p>
+                        </div>
+                        <form class="form__contact__inputs" action="post">
+                            <input type="text"  placeholder="Name" name="text" id="name">
+                            <input type="email"  name="email" placeholder="Email" id="email">
+                            <input type="submit" class="form__contact__btn" value="SUBMIT">
+                            <p class="incorrect-name">Incorrect value name</p>
+                            <p class="incorrect-email">Incorrect value email</p>
+                            <div class="correct"></div>
+                        </form>
+                    </div>
                 </div>
             </footer>
         </main>

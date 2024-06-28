@@ -13,5 +13,213 @@
         @include size(inherit,100%)
     }
 
-    @include size(1000px, 100%)
+    @include size(1000px, 100%);
+    @include flex(center,center,column,no-wrap)
+}
+
+.form {
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    top: -325px;
+
+    &__title {
+        position: relative;
+        z-index: 1;
+        margin: 0 0 30px 0;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 100px;
+            position: relative;
+            box-sizing: border-box;
+            border: 1px solid black
+        }
+
+        @include size(84px,335px);
+        @extend %title__what;
+        @include flex(space-between,center,column,no-wrap);
+
+        @include mobile-portrait {
+            font-size: 30px;
+        }
+    }
+
+    @include size(450px,770px);
+    @include flex(center,center,column,no-wrap);
+
+    @include tablet-xl-portrait {
+        height: 675px;
+        width: 85%
+    }
+}
+
+.form__contact {
+
+    &__info {
+
+        @include flex(space-between,flex-start,column,no-wrap);
+        @include size(196px,286px);
+
+        @include mobile-portrait {
+            margin-left: 130px;
+        }
+    }
+
+    &__num {
+        position: relative;
+
+        @extend %contact__text;
+    }
+
+    &__email {
+        color: black;
+        position: relative;
+
+        @extend %contact__text;
+    }
+
+    &__work-time {
+        position: relative;
+
+        @extend %contact__text;
+    }
+
+    &__street {
+        position: relative;
+
+        @extend %contact__text;
+    }
+
+    &__inputs {
+        position: relative;
+
+        @include flex(space-between,center,column,no-wrap);
+        @include size(195px,310px);
+
+    }
+
+    &__icon {
+        position: absolute;
+        top: 0;
+        left: -35px;
+        @include size(25px,25px)
+    }
+
+    &__btn {
+        align-self: flex-end;
+    }
+
+    @include flex(center,center,row,no-wrap);
+
+    @include tablet-xl-portrait {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+[type="email"],[type="text"] {
+    border-left: none;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid gray;
+    font-family: "Montserrat" sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    transition: .2s ease;
+    padding: 0 0 14px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    
+
+    &:focus {
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-color: black;
+    }
+
+    &:focus::placeholder {
+        color: transparent;
+    }
+
+    &::placeholder {
+        font-family: "Montserrat", sans-serif;
+        transition: .5s ease;
+    }
+
+    @include size(auto,100%);
+
+    @include mobile-portrait {
+        width: 80%;
+    }
+}
+
+[type="submit"] {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid black;
+    background-color: transparent;
+    text-align: center;
+    transition: .2s ease;
+
+    &:active {
+        box-shadow: 0 0 20px 1px inset;
+    }
+
+    @include size(50px,140px);
+
+    @include mobile-portrait {
+        margin-right: 15px;
+    }
+}
+
+.incorrect-email {
+    display: none;
+    transition: .5s ease;
+    color: red;
+    position: absolute;
+    top: 120px;
+}
+
+.incorrect-name {
+    top: 45px;
+    display: none;
+    transition: .5s ease;
+    color: red;
+    position: absolute;
+}
+
+.correct {
+    position: absolute;
+    top: 65%;
+    left: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: .5s ease;
+    border: 1px solid green;
+    transform: rotate(225deg);
+    opacity: 0;
+
+    &:before {
+        content: "";
+        width: 10px;
+        box-sizing: border-box;
+        border-top: 1px solid green;
+        border-left: 1px solid green;
+        height: 18px;
+        display: block;
+        position: absolute;
+    }
+
+    @include flex(center,center,row,no-wrap)
 }

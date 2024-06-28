@@ -118,3 +118,18 @@
     text-align: left;
     font-family: "Montserrat", sans-serif;
 }
+
+%contact__text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    font-size: clamp(0.75rem, 0.2283rem + 2.6087vw, 1.125rem);
+}
+
+%title__form {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 53.64px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}

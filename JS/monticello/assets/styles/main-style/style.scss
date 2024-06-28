@@ -5,6 +5,10 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+  color: black;
+}
+
 body::-webkit-scrollbar {
     background-color: transparent;
     width: 10px; 
