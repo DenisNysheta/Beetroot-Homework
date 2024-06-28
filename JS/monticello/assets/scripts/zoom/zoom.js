@@ -41,3 +41,10 @@ document.body.addEventListener("click", (e) => {
 document.body.addEventListener("click", (e) => {
     console.log(e.target.closest("div"))
 })
+
+
+let box = document.querySelector(".mapboxgl-marker")
+
+box.firstElementChild.remove()
+box.lastElementChild.remove()
+box.classList.add("castom-marker")

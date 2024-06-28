@@ -55,4 +55,11 @@
     @media (max-width:768px) {
         @content
     }
-}
+};
+
+@mixin mobile-portrait {
+    @media (max-width:450px) {
+        @content
+    }
+};
+

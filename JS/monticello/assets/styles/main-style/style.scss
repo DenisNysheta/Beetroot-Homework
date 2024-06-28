@@ -27,6 +27,10 @@ body::-webkit-scrollbar {
     @include desctop-fullHd-portrait {
         width: 1920px;
         margin: 0 auto;
+    };
+
+    @include mobile-portrait {
+      width:370px;
     }
 }
 

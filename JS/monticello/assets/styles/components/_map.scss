@@ -2,11 +2,41 @@
 
 .map {
     background-color: rgba(0, 0, 0, 0.346);
-    @include size(800px, 100%)
+    @include size(700px, 100%)
 }
 
 .canvas {
     width: 10px;
     background-color: red;
     height: 10px;
+}
+
+.castom-marker {
+    background-color: rgb(236, 236, 236);
+    border-radius: 50%;
+    animation-name: marker;
+    animation-duration: 3s;
+    animation-iteration-count: infinite !important;
+
+    &:before {
+        content: "";
+        width: 20px;
+        border-radius: 50%;
+        display: block;
+        height: 20px;
+        background-color: #7E5AFF;
+    }
+
+    @include flex(center,center,row,no-wrap);
+    @include size(50px !important,50px !important)
+}
+
+@keyframes marker {
+    0% {
+        background-color: rgb(236, 236, 236);
+    } 50% {
+        background-color:rgb(6, 6, 6);
+    } 100% {
+        background-color: rgb(236, 236, 236);
+    }
 }

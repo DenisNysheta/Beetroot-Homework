@@ -167,7 +167,7 @@
     display: none;
     position: relative;
     transition: .3s ease;
-
+    
     & .line {
         width: 100%;
         position: relative;
@@ -176,10 +176,11 @@
         display: block;
         transition: .3s ease;
     }
-
+    
     @include size(35px,50px);
-
+    
     @include tablet-l-portrait {
+        margin-right: 30px;
         @include flex(space-between,center,column,no-wrap)
     }
 
