@@ -1,0 +1,42 @@
+.text-marker {
+    max-width: 500px;
+    height: auto;
+    min-height: 20px;
+    font-weight: 900;
+    font-size: 40px;
+    word-wrap: break-word;
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.434);
+}
+
+.marker {
+    margin-bottom: 50px;
+}
+
+.list {
+    padding: 0;
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+li {
+    margin: 10px;
+    list-style-type: none;
+    border: 1px dashed black;
+    height: 40px;
+    text-align: center;
+    width: 460px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+span {
+    display: block;
+}
