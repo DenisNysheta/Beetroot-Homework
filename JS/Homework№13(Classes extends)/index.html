@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Zones</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+<body>
+    <div class="time wow fadeIn">
+        <h1 class="time__title wow fadeIn">Set time zones below, and add new clock!</h1>
+        <ul class="time__list wow fadeInLeft">
+            <li class="time__zone">Europe/Kiev</li>
+            <li class="time__zone">Asia/Dubai</li>
+            <li class="time__zone">Europe/Lisbon</li>
+            <li class="time__zone">Europe/Berlin</li>
+            <li class="time__zone">Asia/Tokyo</li>
+            <li class="time__zone">Asia/Singapore</li>
+            <li class="time__zone">Australia/Brisbane</li>
+            <li class="time__zone">America/Havana</li>
+            <li class="time__zone">America/Toronto</li>
+
+            <li class="time__zone">America/Nome</li>
+            <li class="time__zone">America/Caracas</li>
+            <li class="time__zone">Africa/Monrovia</li>
+            <li class="time__zone">Antarctica/Troll</li>
+            <li class="time__zone">Pacific/Rarotonga</li>
+            <li class="time__zone">Asia/Karachi</li>
+            <li class="time__zone">Indian/Mauritius</li>
+        </ul>
+        <input type="text" name="time-zones" id="time-zones">
+        <button class="time__add">Add new clock</button>
+    </div>
+    <div class="clocks wow fadeIn">
+        <div class="clock__list">
+        </div>
+    </div>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script type="module" src="assets/scripts/script.js"></script>
+</body>
+</html>

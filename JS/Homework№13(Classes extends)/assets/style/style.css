@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.175);
+    box-shadow: 0 0 20px 0;
+    border-radius: 20px 20px 0 0;
+}
+
+.time__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    color: rgb(50, 85, 83);
+}
+
+.time__list {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+
+.time__zone {
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: "Montserrat", sans-serif;
+    color: azure;
+    margin: 10px;
+    transition: .2s ease;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+.time__zone:hover {
+    border-color: rgba(0, 0, 0, 0.432);
+    cursor: pointer;
+    background-color: rgba(255, 244, 244, 0.249)
+}
+
+[name="time-zones"] {
+    margin: 40px 0 20px 0;
+    border: 1px solid gray;
+    outline: none;
+    color: red;
+    border-radius: 20px;
+    padding: 10px;
+    transition: .3s ease;
+    background-color: rgba(227, 145, 145, 0.215);
+}
+
+[name="time-zones"]:focus {
+    box-shadow:0 0 10px 3px rgba(0, 0, 0, 0.385);
+}
+
+.time__add {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: transparent;
+    transition: .5s ease;
+    cursor:  pointer;
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: darkred;
+    margin-bottom: 20px;
+}
+
+.time__add:hover {
+    background-color: white;
+}
+
+.clocks {
+    background-color: rgba(0, 0, 0, 0.116);
+    height: auto;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: inset 0px 0px 10px 1px ;
+}
+
+.clock__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    min-height: 180px;
+}
+
+.clock__item {
+    opacity: 0;
+    transition: .5s ease;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.clock__dashboard {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.382);
+    margin-bottom: 20px;
+}
+
+.btn-current-date {
+    cursor: pointer;
+    transition: .4s ease;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+    font-size: 12px;
+    background-color: rgba(95, 158, 160, 0.485);    
+}
+.btn-current-time {
+    cursor: pointer;
+    transition: .4s ease;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+    font-size: 12px;
+    background-color: rgba(106, 95, 160, 0.304);
+}
+
+.btn-delete {
+    cursor: pointer;
+    transition: .4s ease;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+    font-size: 12px;
+    background-color: rgba(255, 0, 0, 0.182);
+}
+
+.btn-current-date:hover {
+    background-color: white;
+}
+.btn-current-time:hover {
+    background-color: white;
+}
+.btn-delete:hover {
+    background-color: white;
+}
+
+.clock__dashboard {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
