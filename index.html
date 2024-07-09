@@ -154,6 +154,54 @@
         color: aliceblue;
       }
 
+      .react {
+        height: 850px;
+        background-color: rgba(111, 34, 34, .3);
+        padding: 20px 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+        width: 590px;
+        gap: 15px;
+        transition: .3s ease;
+      }
+
+      .react:hover {
+        border-radius: 20px;
+        background-color: rgba(54, 54, 160, 0.494);
+      }
+
+      .link__react:before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background-color:rgb(49, 13, 112);
+        display: block;
+        border-radius: 50%;
+        opacity: 0;
+        outline: 4px solid rgb(128, 47, 47);
+        transition: .3s ease;
+      }
+
+      .link__react:hover:before
+      {
+        opacity: 1;
+      }
+
+      .link__react {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+      }
+
+      .link__react a {
+        color:rgb(202, 218, 34);
+      }
+
+      .link__react a:hover {
+        color: rgb(45, 135, 155);
+      }
+
+
     </style>
   </head>
   <body>
@@ -261,6 +309,12 @@
       <li class="link__js">
         <a href="./JS/Homework№13(Classes extends)/">Homework №13(Classes.Inheritance)</a>
       </li>
+    </ul>
+
+    <ul class="react">
+     <li class="link__react">
+      <a href="React/Homework№1/dist/index.html">Homework№1</a>
+     </li>
     </ul>
   </body>
 </html>
