@@ -4,6 +4,15 @@
 
     position: relative;
 
+    &__copyright {
+        position: relative;
+        top: 41px;
+
+        @include tablet-l-portrait {
+            top: 15px;
+        }
+    }
+
     &__gradient {
         position: absolute;
         background: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
@@ -24,9 +33,17 @@
         @include flex(space-between,center,row,no-wrap);
 
         @include desctop-xl-portrait {
-            top: 30%;
+            top: 0%;
             width: 85%;
         };
+
+        @include tablet-xl-portrait {
+            top: 25%;
+        }
+
+        @include tablet-l-portrait {
+            top: 30%;
+        }
 
         @include mobile-l-portrait {
             flex-direction: column;
