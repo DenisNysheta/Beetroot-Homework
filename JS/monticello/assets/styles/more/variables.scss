@@ -61,10 +61,10 @@
     @media (max-width:550px) {
         @content
     }
-}
+};
 
 @mixin mobile-portrait {
-    @media (max-width:450px) {
+    @media (max-width:370px) {
         @content
     }
 };
